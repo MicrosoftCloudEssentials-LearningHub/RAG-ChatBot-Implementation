@@ -39,22 +39,17 @@ Last updated: 2025-03-20
 
 ## Overview 
 
-| **Step**       | **Description**                                                                                                                                                                                                 |
-|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Retrieval**  | The system retrieves relevant documents or pieces of information from a knowledge base or external data source based on the input query. This step ensures that the model has access to up-to-date and specific information that can enhance the response. |
-| **Augmentation** | The retrieved information is then used to augment the input query. This augmented input provides additional context and details that the generative model can use to produce a more informed response.                                                   |
-| **Generation** | A generative model (such as GPT-4) processes the augmented input to generate a coherent and contextually relevant response. The output is a combination of the model's language generation capabilities and the retrieved factual information.               |
-
-> Applications of RAG Pattern:
-- **Question Answering**: Providing accurate answers by retrieving relevant documents and generating responses based on them.
-- **Document Summarization**: Summarizing documents by retrieving key sections and generating concise summaries.
-- **Conversational AI**: Enhancing chatbot responses with up-to-date information from external sources.
+| **Step**       | **Definition** | **Implementation with Azure** |
+|----------------|----------------|-------------------------------|
+| **Retrieval**  | Retrieval involves searching and extracting relevant documents or data from a knowledge base or external data source based on the input query. | Use Azure AI Search to index and query documents stored in Azure Storage Blob Containers. Configure the search index to perform semantic search and return the most relevant results. |
+| **Augmentation** | Augmentation involves enhancing the input query with the retrieved information to provide additional context and details. | Use Azure AI Search skillsets to preprocess the retrieved data, extracting key phrases, entities, and contextual information. This augmented input is then used to inform the generative model. |
+| **Generation** | Generation involves using a generative model to process the augmented input and produce a coherent and contextually relevant response. | Deploy a generative model like GPT-4 on Azure OpenAI Service. Use an Azure Function App to orchestrate the data flow, calling the Azure OpenAI API to generate responses based on the augmented input. |
 
 > Implementing RAG Pattern with Azure AI:
 
 ```mermaid
 graph LR
-    A[Set Up a Knowledge Base] --> B[Configure a Retrieval System] --> C[Integrate with a Generative Model]
+    A[Set Up a Knowledge Base] --> B[Configure Retrieval System] --> C[Integrate with a GenModel]
 ```
 
 1. **Set Up a Knowledge Base**: Store your documents in Azure Storage Blob Containers or another accessible data source.
@@ -63,8 +58,8 @@ graph LR
 
 > Traditional methods and the `Retrieval-Augmented Generation (RAG)` pattern:
 
-| **Aspect**                | **Traditional Methods**                                                                 | **RAG Pattern**                                                                                   |
-|---------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Aspect**                | **Traditional Methods**| **RAG Pattern** |
+|---------------------------|-------------------------------------|-----------------------------------------------------|
 | **Model Type**            | Static, pre-trained models that rely on historical data. These models do not update dynamically and can become outdated. | Dynamic integration of retrieval and generative models, allowing for real-time data updates, keeping responses current and relevant. |
 | **Data Freshness**        | Relies on pre-trained data, which may not reflect the latest information.                | Retrieves the most recent data from external sources, ensuring up-to-date information.            |
 | **Context Understanding** | Often lacks the ability to fully understand the context of a query, leading to less accurate results. | Enhances context understanding by incorporating real-time information retrieval, providing richer context for responses. |
@@ -75,6 +70,79 @@ graph LR
 | **Adaptability**          | Requires extensive retraining to incorporate new information, which can be time-consuming and costly. | More adaptable as it integrates real-time data without the need for frequent retraining.           |
 | **Cost Efficiency**       | Can be resource-intensive due to the need for frequent retraining and large labeled datasets. | More cost-effective as it minimizes the need for extensive retraining and leverages existing data sources. |
 | **Applications**          | Suitable for basic search and static content generation.                                | Ideal for complex applications such as healthcare, customer support, and content creation, where up-to-date and contextually relevant information is crucial. |
+
+
+## Applications of RAG Pattern
+
+```mermaid
+ graph TD
+    A[RAG Pattern]
+    A --> B[Retrieval]
+    B --> C[Knowledge Base]
+    B --> D[External Data Source]
+    A --> E[Augmentation]
+    E --> F[Contextual Info]
+    E --> G[Enhanced Query]
+    A --> H[Generation]
+    H --> I[LLM: e.g GPT-4]
+    H --> J[Coherent Response]
+    A --> K[Applications]
+    K --> L[Question Answering]
+    L --> M[Definition]
+    L --> N[Implementation]
+    K --> O[Document Summarization]
+    O --> P[Definition]
+    O --> Q[Implementation]
+    K --> R[Conversational AI]
+    R --> S[Definition]
+    R --> T[Implementation] 
+```
+<details>
+<summary><b>Question Answering</b></summary>
+
+> Providing accurate answers by retrieving relevant documents and generating responses based on them.
+- **Implementation**:
+  - **Retrieval**:
+    - Use Azure AI Search to index a large corpus of documents, such as research papers, articles, or FAQs.
+    - Perform semantic search to retrieve the most relevant documents based on the query.
+  - **Augmentation**: Extract key information from the retrieved documents using Azure AI Search skillsets (key phrase extraction, entity recognition, language detection).
+  - **Generation**:
+    - Use Azure OpenAI Service to generate a coherent and contextually relevant answer by processing the augmented input.
+    - Orchestrate the data flow using Azure Function App.
+
+</details>
+
+<details>
+<summary><b>Document Summarization</b></summary>
+
+> Summarizing documents by retrieving key sections and generating concise summaries.
+
+- **Implementation**:
+  - **Retrieval**:
+    - Use Azure AI Search to index documents such as reports, articles, and books.
+    - Retrieve the most relevant sections of the document based on the summary request.
+  - **Augmentation**: Identify key sentences, paragraphs, and sections using Azure AI Search skillsets.
+  - **Generation**:
+    - Use Azure OpenAI Service to generate a concise summary by processing the augmented input.
+    - Orchestrate the data flow using Azure Function App.
+
+</details>
+
+<details>
+<summary><b>Conversational AI</b></summary>
+
+> Enhancing chatbot responses with up-to-date information from external sources.
+
+- **Implementation**:
+  - **Retrieval**:
+    - Use Azure AI Search to index a knowledge base containing FAQs, support articles, and user manuals.
+    - Retrieve the most relevant documents based on the conversation.
+  - **Augmentation**: Extract key information from the retrieved documents using Azure AI Search skillsets (answers to common questions, troubleshooting steps, product details).
+  - **Generation**:
+    - Use Azure OpenAI Service to generate coherent and contextually relevant chatbot responses by processing the augmented input.
+    - Orchestrate the data flow using Azure Function App.
+
+</details>
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
