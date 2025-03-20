@@ -1,4 +1,6 @@
-# Retrieval-Augmented Generation (RAG) ChatBot - Basic Architecture 
+# RAG ChatBot - Basic Architecture 
+
+> Retrieval-Augmented Generation (RAG)
 
 Costa Rica
 
@@ -9,10 +11,33 @@ Last updated: 2025-03-20
 
 ----------
 
-> This approach focuses on `setting up the required infrastructure via Terraform`. It allows for source control of not only the solution code, connections, and setups `but also the infrastructure itself`.
-
 > [!IMPORTANT]
 > Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture designed for scenarios without network isolation. This is `just a guide `. It is not an official solution guide. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Referenceto Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
+```mermaid
+mindmap
+  root(RAG Pattern)
+    Retrieval
+      Knowledge Base
+      External Data Source
+    Augmentation
+      Contextual Information
+      Enhanced Query
+    Generation
+      LLM: e.g GPT-4
+      Coherent Response
+    Applications
+      Question Answering
+      Document Summarization
+      Conversational AI
+    Implementation
+      Knowledge Base Setup
+      Retrieval System Configuration
+      Generative Model Integration
+```
+
+> [!NOTE]
+> This approach focuses on `setting up the required infrastructure via Terraform`. It allows for source control of not only the solution code, connections, and setups `but also the infrastructure itself`.
 
 ## Prerequisites
 
@@ -25,12 +50,17 @@ Last updated: 2025-03-20
 ## Where to start? 
 
 1. Please follow the [Terraform guide](./terraform-infrastructure/README.md) to deploy the necessary Azure resources for the solution.
-2. Then, follow each [each section](#content).
+
+      <div align="center">
+        <img src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+      </div>
+
+2. Then, follow each [section](#content) to complete the implementation.
 
 ## Content 
 
-- [RAG Overview](./0_Overview.md): Understand the core components and capabilities.
-
+- [RAG Overview](./instructions/0_RAG_Overview.md): Quick overview, explaining how it works, its applications, and how to implement it using Azure AI services.
+- [Implementation Overview](./instructions/1_Implementation_Overview.md): Quick overview of the implementation steps required to configure the RAG solution using Azure AI services, including setting up Azure AI Search, deploying Azure OpenAI Service, configuring Azure Function App, Storage Account, securing with Azure Key Vault, setting up Azure Cosmos DB, etc.
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
