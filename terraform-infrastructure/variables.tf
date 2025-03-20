@@ -13,33 +13,38 @@ variable "location" {
   type        = string
 }
 
+
 variable "storage_account_name" {
-  description = "The name of the storage account."
+  description = "The name of the storage account"
   type        = string
 }
 
-variable "cosmosdb_account_name" {
-  description = "The name of the CosmosDB account."
+variable "function_app_name" {
+  description = "The name of the Linux Function App."
   type        = string
 }
 
 variable "app_service_plan_name" {
-  description = "The name of the App Service plan."
+  description = "The name of the App Service plan"
   type        = string
 }
 
-variable "app_service_name" {
-  description = "The name of the App Service."
+variable "app_insights_name" {
+  description = "The name of the Application Insights instance"
+  type        = string
+}
+
+variable "log_analytics_workspace_name" {
+  description = "The name of the Log Analytics workspace"
   type        = string
 }
 
 variable "key_vault_name" {
-  description = "The name of the Key Vault."
+  description = "The name of the Key Vault"
   type        = string
 }
-
-variable "tenant_id" {
-  description = "The tenant ID for the Azure account."
+variable "cosmosdb_account_name" {
+  description = "The name of the CosmosDB account."
   type        = string
 }
 
