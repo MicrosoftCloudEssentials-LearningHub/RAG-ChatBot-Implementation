@@ -14,6 +14,12 @@ terraform {
 }
 
 provider "azurerm" {
-  features {}                        # Enable all features for the AzureRM provider
+    features {  # Enable features for the AzureRM provider
+        key_vault {
+        recover_soft_deleted_key_vaults = false
+        purge_soft_delete_on_destroy    = true
+        }
+  }
+                      
   subscription_id = var.subscription_id  # Use the subscription ID variable
 }
