@@ -10,7 +10,7 @@ Last updated: 2025-03-20
 ----------
 
 <div align="center">
-  <img src="" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
 ## Overview 
@@ -47,11 +47,12 @@ graph TD;
 > [!IMPORTANT]
 > Please modify `terraform.tfvars` with your information, then run the following flow. If you need more visual guidance, please check the video that illustrates the provisioning steps. 
 
-
 1. **Login to Azure**: This command logs you into your Azure account. It opens a browser window where you can enter your Azure credentials. Once logged in, you can manage your Azure resources from the command line.
 
+    > Go to the path where Terraform files are located:
+
     ```sh
-    cd {to-the-template-resource-folder}
+    cd terraform-infrastructure
     ```
     
     ```sh
