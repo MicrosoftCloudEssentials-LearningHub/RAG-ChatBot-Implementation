@@ -1,0 +1,273 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "prod-environment"
+    },
+    "location": {
+      "value": "East US"
+    },
+    "principalId": {
+      "value": "your-principal-id"
+    },
+    "resourceGroupName": {
+      "value": "gpt-rag-resource-group"
+    },
+    "networkIsolation": {
+      "value": true
+    },
+    "provisionLoadTesting": {
+      "value": true
+    },
+    "vnetName": {
+      "value": "gpt-rag-vnet"
+    },
+    "vnetAddress": {
+      "value": "10.0.0.0/16"
+    },
+    "chatGptDeploymentName": {
+      "value": "gpt4o-deployment"
+    },
+    "aiSubnetName": {
+      "value": "ai-subnet"
+    },
+    "aiSubnetPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "bastionSubnetPrefix": {
+      "value": "10.0.2.0/24"
+    },
+    "bastionKvName": {
+      "value": "gpt-rag-bastion-kv"
+    },
+    "chunkNumTokens": {
+      "value": 1000
+    },
+    "chunkMinSize": {
+      "value": 500
+    },
+    "chunkTokenOverlap": {
+      "value": 50
+    },
+    "appIntSubnetName": {
+      "value": "app-int-subnet"
+    },
+    "appIntSubnetPrefix": {
+      "value": "10.0.3.0/24"
+    },
+    "appServicesSubnetName": {
+      "value": "app-services-subnet"
+    },
+    "appServicesSubnetPrefix": {
+      "value": "10.0.4.0/24"
+    },
+    "databaseSubnetName": {
+      "value": "database-subnet"
+    },
+    "databaseSubnetPrefix": {
+      "value": "10.0.5.0/24"
+    },
+    "vmKeyVaultSecName": {
+      "value": "gpt-rag-vm-kv-sec"
+    },
+    "ztVmName": {
+      "value": "gpt-rag-vm"
+    },
+    "deployVM": {
+      "value": true
+    },
+    "vmUserInitialPassword": {
+      "value": "$(secretOrRandomPassword gpt-rag-bastion-kv vmUserInitialPassword)"
+    },
+    "vmUserName": {
+      "value": "vm-user"
+    },
+    "keyVaultName": {
+      "value": "gpt-rag-key-vault"
+    },
+    "searchUseMIS": {
+      "value": true
+    },
+    "chatGptDeploymentCapacity": {
+      "value": 2
+    },
+    "chatGptModelDeploymentType": {
+      "value": "standard"
+    },
+    "chatGptModelName": {
+      "value": "gpt-4o"
+    },
+    "chatGptModelVersion": {
+      "value": "1.0"
+    },
+    "embeddingsModelName": {
+      "value": "adam"
+    },
+    "embeddingsModelVersion": {
+      "value": "1.0"
+    },
+    "embeddingsDeploymentName": {
+      "value": "adam-embeddings-deployment"
+    },
+    "embeddingsVectorSize": {
+      "value": 1536
+    },
+    "openaiApiVersion": {
+      "value": "2023-03-15-preview"
+    },
+    "orchestratorMessagesLanguage": {
+      "value": "en"
+    },
+    "provisionApplicationInsights": {
+      "value": true
+    },
+    "retrievalApproach": {
+      "value": "semantic"
+    },
+    "searchAnalyzerName": {
+      "value": "standard.lucene"
+    },
+    "useSemanticReranking": {
+      "value": true
+    },
+    "searchIndex": {
+      "value": "gpt-rag-search-index"
+    },
+    "searchApiVersion": {
+      "value": "2021-04-30-preview"
+    },
+    "searchIndexInterval": {
+      "value": 5
+    },
+    "speechRecognitionLanguage": {
+      "value": "en-US"
+    },
+    "speechSynthesisLanguage": {
+      "value": "en-US"
+    },
+    "speechSynthesisVoiceName": {
+      "value": "en-US-JennyNeural"
+    },
+    "storageAccountName": {
+      "value": "gptragstorageaccount"
+    },
+    "storageContainerName": {
+      "value": "gptragcontainer"
+    },
+    "aiServicesName": {
+      "value": "gpt-rag-ai-services"
+    },
+    "appServicePlanName": {
+      "value": "gpt-rag-app-service-plan"
+    },
+    "appInsightsName": {
+      "value": "gpt-rag-app-insights"
+    },
+    "appServiceName": {
+      "value": "gpt-rag-app-service"
+    },
+    "loadTestingName": {
+      "value": "gpt-rag-load-testing"
+    },
+    "orchestratorFunctionAppName": {
+      "value": "gpt-rag-orchestrator-function-app"
+    },
+    "dataIngestionFunctionAppName": {
+      "value": "gpt-rag-data-ingestion-function-app"
+    },
+    "searchServiceName": {
+      "value": "gpt-rag-search-service"
+    },
+    "openAiServiceName": {
+      "value": "gpt-rag-openai-service"
+    },
+    "azureStorageAccountPe": {
+      "value": "gpt-rag-storage-account-pe"
+    },
+    "azureDbAccountPe": {
+      "value": "gpt-rag-db-account-pe"
+    },
+    "azureKeyvaultPe": {
+      "value": "gpt-rag-keyvault-pe"
+    },
+    "azureOrchestratorPe": {
+      "value": "gpt-rag-orchestrator-pe"
+    },
+    "azureFrontendPe": {
+      "value": "gpt-rag-frontend-pe"
+    },
+    "azureDataIngestionPe": {
+      "value": "gpt-rag-data-ingestion-pe"
+    },
+    "azureAiServicesPe": {
+      "value": "gpt-rag-ai-services-pe"
+    },
+    "azureOpenAiPe": {
+      "value": "gpt-rag-openai-pe"
+    },
+    "azureSearchPe": {
+      "value": "gpt-rag-search-pe"
+    },
+    "deploymentTags": {
+      "value": {}
+    },
+    "azureDbConfig": {
+      "value": {
+        "dbAccountName": "gpt-rag-db-account",
+        "dbDatabaseName": "gpt-rag-db-database",
+        "conversationContainerName": "gpt-rag-conversations-container",
+        "datasourcesContainerName": "gpt-rag-datasources-container"
+      }
+    },
+    "azureReuseConfig": {
+      "value": {
+        "aoaiReuse": false,
+        "existingAoaiResourceGroupName": "",
+        "existingAoaiName": "",
+        "appInsightsReuse": false,
+        "existingAppInsightsResourceGroupName": "",
+        "existingAppInsightsName": "",
+        "logAnalyticsWorkspaceReuse": false,
+        "existingLogAnalyticsWorkspaceResourceId": "",
+        "appServicePlanReuse": false,
+        "existingAppServicePlanResourceGroupName": "",
+        "existingAppServicePlanName": "",
+        "aiSearchReuse": false,
+        "existingAiSearchResourceGroupName": "",
+        "existingAiSearchName": "",
+        "orchestratorFunctionAppReuse": false,
+        "existingOrchestratorFunctionAppResourceGroupName": "",
+        "existingOrchestratorFunctionAppName": "",
+        "dataIngestionFunctionAppReuse": false,
+        "existingDataIngestionFunctionAppResourceGroupName": "",
+        "existingDataIngestionFunctionAppName": "",
+        "appServiceReuse": false,
+        "existingAppServiceName": "",
+        "existingAppServiceNameResourceGroupName": "",
+        "orchestratorFunctionAppStorageReuse": false,
+        "existingOrchestratorFunctionAppStorageName": "",
+        "existingOrchestratorFunctionAppStorageResourceGroupName": "",
+        "dataIngestionFunctionAppStorageReuse": false,
+        "existingDataIngestionFunctionAppStorageName": "",
+        "existingDataIngestionFunctionAppStorageResourceGroupName": "",
+        "aiServicesReuse": false,
+        "existingAiServicesResourceGroupName": "",
+        "existingAiServicesName": "",
+        "cosmosDbReuse": false,
+        "existingCosmosDbResourceGroupName": "",
+        "existingCosmosDbAccountName": "",
+        "existingCosmosDbDatabaseName": "",
+        "keyVaultReuse": false,
+        "existingKeyVaultResourceGroupName": "",
+        "existingKeyVaultName": "",
+        "storageReuse": false,
+        "existingStorageResourceGroupName": "",
+        "existingStorageName": "",
+        "vnetReuse": false,
+        "existingVnetResourceGroupName": "",
+        "existingVnetName": ""
+      }
+    }
+  }
+}
