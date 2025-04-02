@@ -1,4 +1,4 @@
-# RAG ChatBot - Basic Architecture 
+# RAG ChatBot Implementation
 
 > Retrieval-Augmented Generation (RAG)
 
@@ -7,47 +7,38 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-02
+Last updated: 2025-03-20
 
 ----------
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Azure Developer CLI commands overview](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands)
+- [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
+- [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
+- [Integrate Azure services with virtual networks for network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services)
+
+</details>
 
 > [!IMPORTANT]
 > Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture designed for scenarios without network isolation. This is `just a guide `. It is not an official solution guide. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Referenceto Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
-```mermaid
-mindmap
-  root(RAG Pattern)
-    Retrieval
-      Knowledge Base
-      External Data Source
-    Augmentation
-      Contextual Information
-      Enhanced Query
-    Generation
-      LLM: e.g GPT-4
-      Coherent Response
-    Applications
-      Question Answering
-      Document Summarization
-      Conversational AI
-    Implementation
-      Knowledge Base Setup
-      Retrieval System Configuration
-      Generative Model Integration
-```
-
-> [!NOTE]
-> This approach focuses on `setting up the required infrastructure via Terraform`. It allows for source control of not only the solution code, connections, and setups `but also the infrastructure itself`.
-
-## Prerequisites
+## Where to start? 
 
 - An `Azure subscription is required`. All other resources, including instructions for creating a Resource Group, are provided.
 - `Contributor role assigned or any custom role that allows`: access to manage all resources, and the ability to deploy resources within subscription.
-- If you choose to use the Terraform approach, please ensure that:
+- If you choose to use the [Basic Architecture](#basic-architecture), uses a Terraform approach, please ensure that:
   -  [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
   -  [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
+- If you opt for the [Zero Trust Architecture](#zero-trust-architecture), uses a Bicep approach, please ensure that you have installed all the requirements mentioned in the [prerequisites section](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#getting-started) before proceeding.
 
-## Where to start? 
+
+## Basic Architecture
+
+- [RAG Overview](./instructions/0_RAG_Overview.md): Quick overview, explaining how it works, its applications, and how to implement it using Azure AI services.
+- [Implementation Overview](./instructions/2_Implementation_Overview.md): Quick overview of the implementation steps required to configure the RAG solution using Azure AI services, including setting up Azure AI Search, deploying Azure OpenAI Service, configuring Azure Function App, Storage Account, securing with Azure Key Vault, setting up Azure Cosmos DB, etc.
+
 
 1. Please follow the [Terraform guide](./terraform-infrastructure/README.md) to deploy the necessary Azure resources for the solution.
 
@@ -57,17 +48,77 @@ mindmap
 
 2. Then, follow each [section](#content) to complete the implementation.
 
-## Content 
 
-- [RAG Overview](./instructions/0_RAG_Overview.md): Quick overview, explaining how it works, its applications, and how to implement it using Azure AI services.
-- [Implementation Overview](./instructions/2_Implementation_Overview.md): Quick overview of the implementation steps required to configure the RAG solution using Azure AI services, including setting up Azure AI Search, deploying Azure OpenAI Service, configuring Azure Function App, Storage Account, securing with Azure Key Vault, setting up Azure Cosmos DB, etc.
-
-## Zero Trust 
+## Zero Trust Architecture
 
 > Zero Trust AI architecture in Microsoft Azure is a `security framework designed to protect data, applications, and infrastructure by assuming that threats can come from both inside and outside the network`. This model operates on the principle of "never trust, always verify", meaning `every access request is thoroughly authenticated and authorized based on all available data points, regardless of its origin. The architecture integrates multiple layers of security, including strong identity verification, device compliance checks, and least privilege access, ensuring that only authorized users and devices can access sensitive resources`. By continuously monitoring and validating each request, Zero Trust AI architecture helps organizations minimize risks and enhance their overall security posture
 
 > [!IMPORTANT]
 > Click [here for a more quick guidance about Zero Trust](./instructions/1_ZeroTrustRAG). For a `solution accelerator with a zero-trust architecture` please refer to [Microsoft's official GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
+To deploy this solution accelerator, please make sure that you have installed all the requirements mentioned in the [prerequisites section](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#getting-started) before proceeding. Below, you will find visual guidance that complements the [Zero Trust Architecture Deployment](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment) from the [Microsoft's official GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG).
+
+### Install azd 
+
+> The Azure Developer CLI (azd) is an `open-source tool` designed to streamline the end-to-end developer workflow on Azure. It provides `high-level commands` that simplify common developer tasks such as `project initialization, infrastructure provisioning, code deployment, and monitoring`. 
+
+| **Category** | **Details**|
+|-----------------------------|----------------------------------------|
+| **Key Features**            | - High-level commands for common developer tasks<br>- Integration with azd templates<br>- Support for terminal, IDE, and CI/CD pipelines<br>- Developer-friendly commands mapping to key workflow stages <br/> - Supported Languages: C#, Java, Node.js, Python  <br/> - Integration: Terminal, IDE (Integrated Development Environment), GitHub Actions pipeline |
+| **Commands Overview**       | - `azd init`: Initialize a new project<br>- `azd provision`: Provision multiple Azure resources<br>- `azd deploy`: Deploy application code<br>- `azd monitor`: Monitor deployed resources                    |
+| **Comparison with Other Tools** | - **Azure CLI**: Provides granular control over individual Azure resources<br>- **Azure PowerShell**: Similar to Azure CLI but uses PowerShell cmdlets<br>- **azd**: Automates higher-level development tasks |
+| **Templates**               | - Code projects adhering to azd structural conventions<br>- Include sample application code, infrastructure files, and configuration files<br>- `.azure` folder for essential Azure configurations            |
+| **Customization**           | - **Use Terraform with azd**: Integrate Terraform scripts within azd workflows to manage infrastructure as code, allowing for consistent and repeatable deployments across different environments. <br>- **Customize workflows using hooks**: Implement custom scripts or commands at various stages of the azd workflow (e.g., pre-deploy, post-deploy) to tailor the deployment process to specific project needs. <br>- **Manage environment variables**: Define and manage environment variables within azd to configure application settings and secrets, ensuring consistent behavior across different deployment environments. <br>- **Remote environment support**: Use azd to manage and deploy applications to remote environments, facilitating development and testing across geographically distributed teams and resources. |
+
+### Install PowerShell 7
+
+> PowerShell 7 `complements Azure Developer CLI (azd) by providing robust automation capabilities that enhance the development and deployment workflows on Azure`. With PowerShell 7, you can `automate tasks such as provisioning resources, deploying applications, and managing configurations, which are integral to azd's operations.` For instance, you can use PowerShell scripts to automate the azd provision command, ensuring consistent infrastructure setup across different environments. PowerShell 7's ability to execute commands remotely aligns with azd's remote environment support, allowing seamless management of Azure resources from any location. By integrating PowerShell 7 scripts into azd workflows, developers can streamline their processes, improve efficiency, and maintain greater control over their Azure deployments.
+
+### Download the repository
+
+> Standard orchestrator
+
+  ```
+  azd init -t azure/gpt-rag
+  ```
+
+> Add -b agentic if you want to use the Agentic AutoGen-based orchestrator
+
+  ```
+  azd init -t azure/gpt-rag -b agentic
+  ```
+
+### Enable network isolation
+
+> Azure network isolation is a security strategy that segments a network into distinct subnets or segments, each functioning as its own small network. This approach enhances security by preventing unauthorized access and data leakage. In Azure, network isolation can be achieved using Virtual Networks (VNets), Network Security Groups (NSGs), and Private Link, allowing precise control over inbound and outbound traffic.
+
+  ```
+  azd env set AZURE_NETWORK_ISOLATION true  
+  ```
+
+### Login to Azure
+
+> Make sure you log in to both:
+
+1. Azure Developer CLI: 
+      
+      ```
+      azd auth login
+      ```
+
+2. Azure CLI:
+
+      ```
+      az login
+      ```
+
+### Deploy the insfrastructure
+
+> `azd provision` command in Azure Developer CLI (azd) automates the deployment of necessary Azure resources for an application. It uses infrastructure-as-code templates to set up Azure services, ensuring consistent and repeatable deployments across different environments.
+
+  ```
+  azd provision
+  ```
 
 ## Important Considerations for Production Environment
 
