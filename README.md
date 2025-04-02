@@ -48,6 +48,20 @@ Last updated: 2025-04-02
 
 2. Then, follow each [section](#content) to complete the implementation.
 
+### Important Considerations for Production Environment
+
+- **Public Network Site**: This example is based on a public network site and is intended for demonstration purposes only. It showcases how several Azure resources can work together to achieve the desired result.
+- **Private Network Configuration**: For enhanced security, consider configuring your Azure resources to operate within a private network. This can be achieved using Azure Virtual Network (VNet) to isolate your resources and control inbound and outbound traffic. Implementing private endpoints for services like Azure Blob Storage and Azure Functions can further secure your data by restricting access to your VNet.
+- **Security**: Ensure that you implement appropriate security measures when deploying this solution in a production environment. This includes:
+  - **Securing Access**: Use Azure Entra ID (formerly known as Azure Active Directory or Azure AD) for authentication and role-based access control (RBAC) to manage permissions.
+  - **Managing Secrets**: Store sensitive information such as connection strings and API keys in Azure Key Vault.
+  - **Data Encryption**: Enable encryption for data at rest and in transit to protect sensitive information.
+- **Scalability**: While this example provides a basic setup, you may need to scale the resources based on your specific requirements. Azure services offer various scaling options to handle increased workloads. Consider using:
+  - **Auto-scaling**: Configure auto-scaling for Azure Functions and other services to automatically adjust based on demand.
+  - **Load Balancing**: Use Azure Load Balancer or Application Gateway to distribute traffic and ensure high availability.
+- **Cost Management**: Monitor and manage the costs associated with your Azure resources. Use Azure Cost Management and Billing to track usage and optimize resource allocation.
+- **Compliance**: Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
+- **Disaster Recovery**: Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
 
 ## Zero Trust Architecture
 
@@ -119,21 +133,6 @@ To deploy this solution accelerator, please make sure that you have installed al
   ```
   azd provision
   ```
-
-## Important Considerations for Production Environment
-
-- **Public Network Site**: This example is based on a public network site and is intended for demonstration purposes only. It showcases how several Azure resources can work together to achieve the desired result.
-- **Private Network Configuration**: For enhanced security, consider configuring your Azure resources to operate within a private network. This can be achieved using Azure Virtual Network (VNet) to isolate your resources and control inbound and outbound traffic. Implementing private endpoints for services like Azure Blob Storage and Azure Functions can further secure your data by restricting access to your VNet.
-- **Security**: Ensure that you implement appropriate security measures when deploying this solution in a production environment. This includes:
-  - **Securing Access**: Use Azure Entra ID (formerly known as Azure Active Directory or Azure AD) for authentication and role-based access control (RBAC) to manage permissions.
-  - **Managing Secrets**: Store sensitive information such as connection strings and API keys in Azure Key Vault.
-  - **Data Encryption**: Enable encryption for data at rest and in transit to protect sensitive information.
-- **Scalability**: While this example provides a basic setup, you may need to scale the resources based on your specific requirements. Azure services offer various scaling options to handle increased workloads. Consider using:
-  - **Auto-scaling**: Configure auto-scaling for Azure Functions and other services to automatically adjust based on demand.
-  - **Load Balancing**: Use Azure Load Balancer or Application Gateway to distribute traffic and ensure high availability.
-- **Cost Management**: Monitor and manage the costs associated with your Azure resources. Use Azure Cost Management and Billing to track usage and optimize resource allocation.
-- **Compliance**: Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
-- **Disaster Recovery**: Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
