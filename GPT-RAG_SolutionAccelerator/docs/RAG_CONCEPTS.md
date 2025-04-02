@@ -29,3 +29,5 @@ Reference implementation of the Retrieval-Augmented Generation (RAG) pattern.
 * [Microsoft Guidance Validation and Robustness of responses](https://lnkd.in/ggeSQmsV)
 
 * [RAG vs Finetuning](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
+
+Last updated: 2025-04-02

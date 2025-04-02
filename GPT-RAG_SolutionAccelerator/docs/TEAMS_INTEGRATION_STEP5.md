@@ -41,3 +41,4 @@ To publish the Teams App to the developer portal, follow the steps outlined [her
 ## External Resources
 - [Publish Teams apps using Teams Toolkit](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/publish#upload-app-package).
 - [Integrate with Developer Portal](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/publish-your-teams-apps-using-developer-portal).
+Last updated: 2025-04-02

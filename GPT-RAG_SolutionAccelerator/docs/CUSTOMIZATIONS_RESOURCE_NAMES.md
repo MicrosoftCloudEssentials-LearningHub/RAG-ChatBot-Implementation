@@ -44,3 +44,4 @@ This is the full list of resource names variables:
 
 
 > The resource related to the name can be directly inferred from the variable name. However, if you have any doubts, you can visit the [main.bicep](../infra/main.bicep) file and look for the resource associated with this variable (the variables can be found at the end of the file in the template outputs section).
+Last updated: 2025-04-02

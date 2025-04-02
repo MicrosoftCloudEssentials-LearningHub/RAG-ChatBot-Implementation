@@ -57,3 +57,5 @@ Proceed to Step 3: [Provision and Deploy the Azure resources for the Teams App](
 
 ## External Resources
 - [Teams App Test Tool](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/debug-your-teams-app-test-tool?tabs=vscode%2Cclijs).
+
+Last updated: 2025-04-02

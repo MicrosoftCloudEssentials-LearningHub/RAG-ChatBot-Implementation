@@ -115,3 +115,5 @@ The Multi-Project Architecture is an idea that facilitates the reuse of common c
 * [Azure AI Search](https://learn.microsoft.com/azure/search/search-what-is-azure-search)
 
 * [Enhancing LLMs with Knowledge and Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/)
+
+Last updated: 2025-04-02

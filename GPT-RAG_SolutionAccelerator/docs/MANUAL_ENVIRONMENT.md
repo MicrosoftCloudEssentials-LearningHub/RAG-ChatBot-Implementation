@@ -179,3 +179,5 @@ az functionapp config appsettings set --name <FUNCTION_APP_NAME> --resource-grou
 
 az functionapp config appsettings set --name <FUNCTION_APP_NAME> --resource-group <RESOURCE_GROUP> --settings WEBSITE_HTTPLOGGING_RETENTION_DAYS="1"
 ```
+
+Last updated: 2025-04-02

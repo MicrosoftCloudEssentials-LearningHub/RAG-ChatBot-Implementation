@@ -10,3 +10,4 @@ To learn more about performance testing, please take a look at this blog post [L
 Enterprise RAG has three components: data ingestion, frontend, and orchestrator. The orchestrator manages conversation flow and interacts with services like the LLM and search service for data retrieval, and works across channels like web and Teams.
 
 We've developed a load test suite for the **Orchestrator** using Azure Load Testing, executable via a Github Action workflow. For detailed instructions, see [**Load Testing GPT-RAG's orchestrator**](./LOAD_TESTING.md) page.
+Last updated: 2025-04-02

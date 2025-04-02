@@ -63,3 +63,5 @@ If this change adds a new functionality, provide a link to its documentation.
 ## Contributing guidelines
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md) for more details.
+
+Last updated: 2025-04-02

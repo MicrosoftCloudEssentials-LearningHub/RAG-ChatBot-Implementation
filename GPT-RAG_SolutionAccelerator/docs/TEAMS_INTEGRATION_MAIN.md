@@ -38,3 +38,5 @@ Set up the following prerequisites on the machine to be used for development:
 - [Install Teams Toolkit](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/install-teams-toolkit?tabs=vscode).
 - [Microsoft 365 developer program](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/tools-prerequisites#microsoft-365-developer-program).
 
+
+Last updated: 2025-04-02

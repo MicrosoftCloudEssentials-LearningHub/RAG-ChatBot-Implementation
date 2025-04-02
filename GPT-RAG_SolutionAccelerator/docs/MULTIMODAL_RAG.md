@@ -64,3 +64,5 @@ This document outlines the architecture and workflow for our **multimodal Retrie
 - **Simplified Architecture**: Reuses the same embedding model and index for multimodal data.
 - **Enhanced User Experience**: Delivers enriched responses combining textual and visual elements.
 - **Scalability**: Leverages Azure-native services (Functions, Storage, AI Search Service, and Azure OpenAI) for robust and scalable performance.
+
+Last updated: 2025-04-02

@@ -162,3 +162,5 @@ Each stage involves specific hooks and tasks to create or update resources and s
 
 > [!Note]  
 > To support both PowerShell and Bash shells during deployment, the scripts are provided in both formats. To simplify the text, we removed file extensions (e.g., `.ps1` or `.sh`) from the explanation above.
+
+Last updated: 2025-04-02

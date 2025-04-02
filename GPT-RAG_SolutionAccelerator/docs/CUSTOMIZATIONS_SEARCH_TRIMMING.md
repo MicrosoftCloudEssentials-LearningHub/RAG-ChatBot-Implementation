@@ -43,3 +43,5 @@ By default, the Security Trimming feature is activated and always returns docume
 ## References:
 
 * [Azure AI Search - Search Trimming Documentation](https://learn.microsoft.com/en-us/azure/search/search-security-trimming-for-azure-search)
+
+Last updated: 2025-04-02

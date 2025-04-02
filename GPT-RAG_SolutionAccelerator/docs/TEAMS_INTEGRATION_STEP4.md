@@ -33,3 +33,5 @@ Proceed to Step 5: [Publish the Teams App](TEAMS_INTEGRATION_STEP5.md).
 ## External Resources
 - [Teams app package](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/apps-package).
 - [Environments in Microsoft Teams Toolkit](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teamsfx-multi-env).
+
+Last updated: 2025-04-02

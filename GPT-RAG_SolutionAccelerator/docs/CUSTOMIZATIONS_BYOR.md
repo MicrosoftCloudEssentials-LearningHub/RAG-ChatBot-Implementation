@@ -187,3 +187,5 @@ To skip provisioning the Data Science VM when running `azd provision`, remember 
 ```bash
 azd env set AZURE_VM_DEPLOY_VM false
 ```
+
+Last updated: 2025-04-02

@@ -376,3 +376,4 @@ The solution accelerator allows integration with other services to enhance the d
 ### Extending Application Components
 
 After installing the solution accelerator, you may want to customize its application components. For example, you can modify the orchestrator for a specific scenario or adjust the data ingestion app for different chunk generation. See [Extending App Components](EXTENDING_APP_COMPONENTS.md) for details.
+Last updated: 2025-04-02

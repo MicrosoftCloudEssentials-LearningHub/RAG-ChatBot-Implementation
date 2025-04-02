@@ -1403,3 +1403,5 @@ For scenarios involving external data sources, configurations must be set within
 ## Troubleshooting
 
 Refer to the [Troubleshooting Guide](TROUBLESHOOTING.md) for common issues and resolutions related to the GPT-RAG Solution Accelerator.
+
+Last updated: 2025-04-02

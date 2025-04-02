@@ -169,3 +169,5 @@ After completing the installation, verify that all components are correctly depl
 
 > **Note:** After the initial deployment, consider performing periodic reviews and updates to maintain security posture and incorporate new best practices.
 
+
+Last updated: 2025-04-02

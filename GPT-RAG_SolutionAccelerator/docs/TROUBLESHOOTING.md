@@ -177,3 +177,5 @@ Your client’s IP address is not included in the SQL Database server's firewall
 
 4. **Verify Access:**
    - After adding the IP address, try connecting to the database again to ensure that access is now permitted.
+
+Last updated: 2025-04-02

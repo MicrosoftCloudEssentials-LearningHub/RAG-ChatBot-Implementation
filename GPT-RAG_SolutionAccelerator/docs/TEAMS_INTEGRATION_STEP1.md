@@ -39,3 +39,5 @@ Proceed to Step 2: [Connect to GPT-RAG Orchestrator and test locally](TEAMS_INTE
 - [Prepare to build apps using Teams Toolkit](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/build-environments).
 - [Prerequisites for creating your Teams app](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/tools-prerequisites).
 - [Directory structure for different app types](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/create-new-project#directory-structure-for-different-app-types).
+
+Last updated: 2025-04-02

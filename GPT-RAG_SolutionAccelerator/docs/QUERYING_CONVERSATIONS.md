@@ -60,3 +60,4 @@ WHERE c.conversation_data.start_date >= '2024-05-09 00:00:00'
 AND c.conversation_data.start_date <= '2025-12-31 23:59:59'
 ORDER BY c.conversation_data.interactions.response_time DESC
 ```
+Last updated: 2025-04-02

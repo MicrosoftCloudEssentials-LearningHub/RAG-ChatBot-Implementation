@@ -228,3 +228,5 @@ In the case of both this DevOps guide and the core RAG solution, you will likely
 # Additional Resources:
 
 - [Support multiple environments with `azd` (github.com)](https://github.com/jasontaylordev/todo-aspnetcore-csharp-sqlite/blob/main/OPTIONAL_FEATURES.md)
+
+Last updated: 2025-04-02

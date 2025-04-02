@@ -410,3 +410,5 @@ Gather Necessary Information:
 
 14. **External Access**
     - To allow internet access to your app, permit access only from [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-portal) to your App Service.
+
+Last updated: 2025-04-02

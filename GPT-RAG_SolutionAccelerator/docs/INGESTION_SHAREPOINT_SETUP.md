@@ -285,3 +285,5 @@ Before executing this procedure ensure you have the necessary roles for each ste
   - The `Sites.Selected` permission by itself does not grant access to any SharePoint site collections.
   - It allows your application to access only the site collections that you explicitly grant it access to.
   - This approach adheres to the principle of least privilege, enhancing security.
+
+Last updated: 2025-04-02

@@ -59,3 +59,4 @@ To achieve this integration, simply follow these steps:
 3. **Initialize Your Customized Setup**:
    - With your `gpt-rag` repository scripts pointing to your component repositories, initialize the environment.
    - Run the `azd init -t <owner>/<repository>` using your own github org and repository.
+Last updated: 2025-04-02

@@ -235,3 +235,4 @@ Your custom role is now created and assigned, enabling the user to carry out the
 - Aparna Wani, Solution Architect, LTI Mindtree, v-aparnawani@microsoft.com
 - Raghav Agrawal (International Supplier), LTI Mindtree, v-ragagrawal@microsoft.com
 - Varun Balakrishnan Nambiar (International Supplier), Solution Architect, LTI Mindtree, v-vnambiar@microsoft.com
+Last updated: 2025-04-02

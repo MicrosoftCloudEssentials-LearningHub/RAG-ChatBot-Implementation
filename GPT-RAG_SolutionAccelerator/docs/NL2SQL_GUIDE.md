@@ -187,3 +187,5 @@ wwi-sales-aggregated-data-secret
 ![Sample Datasource Secrets](../media/admin-guide-datasource-secrets.png)
 <BR>*Sample Datasource Secrets*
 
+
+Last updated: 2025-04-02

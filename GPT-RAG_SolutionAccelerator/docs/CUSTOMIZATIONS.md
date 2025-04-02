@@ -130,3 +130,4 @@ Azd automatically provisions the infrastructure and deploys the three components
 ## Filter Files with AI Search Using Security Trimming
 
 This customization is particularly valuable in scenarios where sensitive documents need to be accessed by specific groups or individuals within an organization. With this feature you can ensure that AI Search returns results tailored to each user’s access (no RBAC permissions), please take a look at the [Filter Files with AI Search Using Security Trimming](CUSTOMIZATIONS_SEARCH_TRIMMING.md) page.
+Last updated: 2025-04-02

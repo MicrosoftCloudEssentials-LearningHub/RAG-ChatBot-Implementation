@@ -53,3 +53,4 @@ Azure API Management (APIM) is a comprehensive platform for managing APIs (Appli
     If using security hub, add this env variables in the security hub function:
     "APIM_ENABLED": "true",
     "APIM_ENDPOINT": "https://{apim-resource}.azure-api.net"
+Last updated: 2025-04-02

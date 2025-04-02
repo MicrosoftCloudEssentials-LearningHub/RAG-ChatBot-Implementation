@@ -30,3 +30,4 @@ The objective of this test is to evaluate the defender model's ability to mainta
 
 ### Conclusion
 PyRIT is a powerful tool for assessing and improving the security of generative AI systems. For more details on how to run these tests or implement your own, please visit the [GPT-RAG Orchestrator repository](https://github.com/Azure/gpt-rag-orchestrator).
+Last updated: 2025-04-02

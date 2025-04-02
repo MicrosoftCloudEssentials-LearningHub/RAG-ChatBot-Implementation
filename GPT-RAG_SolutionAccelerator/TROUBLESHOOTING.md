@@ -70,3 +70,5 @@ ERROR CODE UNAVAILABLE
 *Cause:*  
    
 For deployment of the zero trust components, it is necessary to perform it from the VM created during the process. 
+
+Last updated: 2025-04-02

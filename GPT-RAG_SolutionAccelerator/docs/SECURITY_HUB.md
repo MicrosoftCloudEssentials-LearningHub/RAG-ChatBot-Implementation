@@ -80,3 +80,4 @@ This feature provides an endpoint that logs all interactions with the orchestrat
 - You can also add this optional variables if you want to add your blocklists(you should first [create and fill the blocklist](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/use-blocklist?tabs=windows%2Crest#create-or-modify-a-blocklist)):
         "BLOCK_LIST_CHECK": "true",
         "BLOCK_LISTS_NAMES": [names]
+Last updated: 2025-04-02

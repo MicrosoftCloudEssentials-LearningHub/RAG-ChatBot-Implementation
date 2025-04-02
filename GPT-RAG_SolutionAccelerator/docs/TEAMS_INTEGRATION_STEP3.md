@@ -71,3 +71,5 @@ Proceed to Step 4: [Build the Teams App](TEAMS_INTEGRATION_STEP4.md).
 ## External Resources
 - [Provision cloud resources](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/provision).
 - [Deploy Microsoft Teams app to the cloud](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/deploy).
+
+Last updated: 2025-04-02

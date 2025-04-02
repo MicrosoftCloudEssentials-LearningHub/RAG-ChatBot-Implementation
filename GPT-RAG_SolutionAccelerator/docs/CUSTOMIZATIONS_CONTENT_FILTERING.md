@@ -58,3 +58,4 @@ In order you update content filters policies for already deployed model, run the
 ```sh
 azd provision
 ```
+Last updated: 2025-04-02

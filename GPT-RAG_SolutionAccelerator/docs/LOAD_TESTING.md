@@ -95,3 +95,4 @@ Next, select the most recent test run, as shown in the following figure. Note th
 In addition to the client metrics available on the test page, you can also add App Components such as the Orchestrator Function App and the Azure OpenAI service to view server metrics on the same page, just click on the "App components" in your test run page.
 
 ![Load Testing](../media/perftest-app-component.png)
+Last updated: 2025-04-02

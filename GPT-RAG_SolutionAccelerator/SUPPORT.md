@@ -11,3 +11,5 @@ For help and questions about using this project, please use our [Discord Channel
 ## Microsoft Support Policy  
 
 Support for this **PROJECT or PRODUCT** is limited to the resources listed above.
+
+Last updated: 2025-04-02

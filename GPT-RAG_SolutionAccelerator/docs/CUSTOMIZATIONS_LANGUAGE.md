@@ -45,3 +45,4 @@ To configure these settings, set the corresponding environment variable before e
 ```sh
 azd env set AZURE_SPEECH_SYNTHESIS_VOICE_NAME pt-BR-FranciscaNeural
 ```
+Last updated: 2025-04-02

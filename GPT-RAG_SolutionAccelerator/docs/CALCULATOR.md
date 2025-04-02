@@ -59,3 +59,5 @@ For **Ada embeddings**, considering the volume of 500 documents used to generate
 ### References
 1. [CosmosDB Capacity Calculator](https://cosmos.azure.com/capacitycalculator/)
 2. [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+
+Last updated: 2025-04-02

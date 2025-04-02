@@ -29,3 +29,4 @@ All notable changes to this project will be documented in this file.
 - **Added**: Blob storage data source soft deletion support.
 - **Changed**: Disabled blob anonymous access.
 - **Changed**: AI Search API version defaults to 2023-10-01-Preview for indexProjections and MIS authResourceId support.
+Last updated: 2025-04-02
