@@ -380,7 +380,9 @@ var _searchAnalyzerName = !empty(searchAnalyzerName) ? searchAnalyzerName : 'sta
 param useSemanticReranking bool = false
 var _useSemanticReranking = useSemanticReranking != null ? useSemanticReranking : false
 
-// Temporary for TechConnect
+// AI search SKU name 
+// If you are an internal MS employee, and don't have enough quota use 
+// var _searchServiceSkuName = _networkIsolation?'standard':'basic' 
 var _searchServiceSkuName = _networkIsolation?'standard2':'standard'
 
 @description('Search index name.')

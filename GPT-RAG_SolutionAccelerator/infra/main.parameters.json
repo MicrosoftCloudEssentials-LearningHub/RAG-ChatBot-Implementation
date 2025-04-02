@@ -6,10 +6,10 @@
       "value": "prod-environment"
     },
     "location": {
-      "value": "East US"
+      "value": "East US 2"
     },
     "principalId": {
-      "value": "your-principal-id"
+      "value": "${AZURE_PRINCIPAL_ID}"
     },
     "resourceGroupName": {
       "value": "gpt-rag-resource-group"
@@ -39,16 +39,16 @@
       "value": "10.0.2.0/24"
     },
     "bastionKvName": {
-      "value": "gpt-rag-bastion-kv"
+      "value": "gpt-rag-bast-keyvault"
     },
     "chunkNumTokens": {
-      "value": 1000
+      "value": "1000"
     },
     "chunkMinSize": {
-      "value": 500
+      "value": "500"
     },
     "chunkTokenOverlap": {
-      "value": 50
+      "value": "50"
     },
     "appIntSubnetName": {
       "value": "app-int-subnet"
@@ -69,7 +69,7 @@
       "value": "10.0.5.0/24"
     },
     "vmKeyVaultSecName": {
-      "value": "gpt-rag-vm-kv-sec"
+      "value": "gpt-rag-kv"
     },
     "ztVmName": {
       "value": "gpt-rag-vm"
@@ -78,13 +78,13 @@
       "value": true
     },
     "vmUserInitialPassword": {
-      "value": "$(secretOrRandomPassword gpt-rag-bastion-kv vmUserInitialPassword)"
+      "value": "YourSecurePassword123!"
     },
     "vmUserName": {
       "value": "vm-user"
     },
     "keyVaultName": {
-      "value": "gpt-rag-key-vault"
+      "value": "gpt-rag-main-keyvault"
     },
     "searchUseMIS": {
       "value": true
@@ -93,28 +93,28 @@
       "value": 2
     },
     "chatGptModelDeploymentType": {
-      "value": "standard"
+      "value": "GlobalStandard"
     },
     "chatGptModelName": {
       "value": "gpt-4o"
     },
     "chatGptModelVersion": {
-      "value": "1.0"
+      "value": "2024-08-06"
     },
     "embeddingsModelName": {
-      "value": "adam"
+      "value": "text-embedding-3-large"
     },
     "embeddingsModelVersion": {
-      "value": "1.0"
+      "value": "1"
     },
     "embeddingsDeploymentName": {
-      "value": "adam-embeddings-deployment"
+      "value": "text-embedding-3-large"
     },
     "embeddingsVectorSize": {
       "value": 1536
     },
     "openaiApiVersion": {
-      "value": "2023-03-15-preview"
+      "value": "2024-11-20"
     },
     "orchestratorMessagesLanguage": {
       "value": "en"
@@ -123,22 +123,22 @@
       "value": true
     },
     "retrievalApproach": {
-      "value": "semantic"
+      "value": "vector"
     },
     "searchAnalyzerName": {
-      "value": "standard.lucene"
+      "value": "standard"
     },
     "useSemanticReranking": {
       "value": true
     },
     "searchIndex": {
-      "value": "gpt-rag-search-index"
+      "value": "gpt-rag-searchindex"
     },
     "searchApiVersion": {
-      "value": "2021-04-30-preview"
+      "value": "2023-11-01"
     },
     "searchIndexInterval": {
-      "value": 5
+      "value": "P1D"
     },
     "speechRecognitionLanguage": {
       "value": "en-US"
@@ -147,7 +147,7 @@
       "value": "en-US"
     },
     "speechSynthesisVoiceName": {
-      "value": "en-US-JennyNeural"
+      "value": "en-US-RyanMultilingualNeural"
     },
     "storageAccountName": {
       "value": "gptragstorageaccount"
@@ -156,40 +156,40 @@
       "value": "gptragcontainer"
     },
     "aiServicesName": {
-      "value": "gpt-rag-ai-services"
+      "value": "gpt-rag-ai-account"
     },
     "appServicePlanName": {
-      "value": "gpt-rag-app-service-plan"
+      "value": "gpt-rag-asp"
     },
     "appInsightsName": {
-      "value": "gpt-rag-app-insights"
+      "value": "gpt-rag-appinsights"
     },
     "appServiceName": {
-      "value": "gpt-rag-app-service"
+      "value": "gpt-rag-aservice"
     },
     "loadTestingName": {
-      "value": "gpt-rag-load-testing"
+      "value": "gpt-rag-loadtesting"
     },
     "orchestratorFunctionAppName": {
-      "value": "gpt-rag-orchestrator-function-app"
+      "value": "gpt-rag-orchestrator-functionapp"
     },
     "dataIngestionFunctionAppName": {
-      "value": "gpt-rag-data-ingestion-function-app"
+      "value": "gpt-rag-data-ingestion-functionapp"
     },
     "searchServiceName": {
-      "value": "gpt-rag-search-service"
+      "value": "gpt-rag-searchserv"
     },
     "openAiServiceName": {
-      "value": "gpt-rag-openai-service"
+      "value": "gpt-rag-openaiservice"
     },
     "azureStorageAccountPe": {
-      "value": "gpt-rag-storage-account-pe"
+      "value": "gpt-rag-storageaccount-pe"
     },
     "azureDbAccountPe": {
       "value": "gpt-rag-db-account-pe"
     },
     "azureKeyvaultPe": {
-      "value": "gpt-rag-keyvault-pe"
+      "value": "gpt-rag-key-vault-pe"
     },
     "azureOrchestratorPe": {
       "value": "gpt-rag-orchestrator-pe"
@@ -201,7 +201,7 @@
       "value": "gpt-rag-data-ingestion-pe"
     },
     "azureAiServicesPe": {
-      "value": "gpt-rag-ai-services-pe"
+      "value": "gpt-rag-aiservices-pe"
     },
     "azureOpenAiPe": {
       "value": "gpt-rag-openai-pe"
@@ -222,51 +222,51 @@
     },
     "azureReuseConfig": {
       "value": {
-        "aoaiReuse": false,
-        "existingAoaiResourceGroupName": "",
-        "existingAoaiName": "",
-        "appInsightsReuse": false,
-        "existingAppInsightsResourceGroupName": "",
-        "existingAppInsightsName": "",
-        "logAnalyticsWorkspaceReuse": false,
-        "existingLogAnalyticsWorkspaceResourceId": "",
-        "appServicePlanReuse": false,
-        "existingAppServicePlanResourceGroupName": "",
-        "existingAppServicePlanName": "",
-        "aiSearchReuse": false,
-        "existingAiSearchResourceGroupName": "",
-        "existingAiSearchName": "",
-        "orchestratorFunctionAppReuse": false,
-        "existingOrchestratorFunctionAppResourceGroupName": "",
-        "existingOrchestratorFunctionAppName": "",
-        "dataIngestionFunctionAppReuse": false,
-        "existingDataIngestionFunctionAppResourceGroupName": "",
-        "existingDataIngestionFunctionAppName": "",
-        "appServiceReuse": false,
-        "existingAppServiceName": "",
-        "existingAppServiceNameResourceGroupName": "",
-        "orchestratorFunctionAppStorageReuse": false,
-        "existingOrchestratorFunctionAppStorageName": "",
-        "existingOrchestratorFunctionAppStorageResourceGroupName": "",
-        "dataIngestionFunctionAppStorageReuse": false,
-        "existingDataIngestionFunctionAppStorageName": "",
-        "existingDataIngestionFunctionAppStorageResourceGroupName": "",
-        "aiServicesReuse": false,
-        "existingAiServicesResourceGroupName": "",
-        "existingAiServicesName": "",
-        "cosmosDbReuse": false,
-        "existingCosmosDbResourceGroupName": "",
-        "existingCosmosDbAccountName": "",
-        "existingCosmosDbDatabaseName": "",
-        "keyVaultReuse": false,
-        "existingKeyVaultResourceGroupName": "",
-        "existingKeyVaultName": "",
-        "storageReuse": false,
-        "existingStorageResourceGroupName": "",
-        "existingStorageName": "",
-        "vnetReuse": false,
-        "existingVnetResourceGroupName": "",
-        "existingVnetName": ""
+        "aoaiReuse": "${AOAI_REUSE}",
+        "existingAoaiResourceGroupName": "${AOAI_RESOURCE_GROUP_NAME}",
+        "existingAoaiName": "${AOAI_NAME}",
+        "appInsightsReuse": "${APP_INSIGHTS_REUSE}",
+        "existingAppInsightsResourceGroupName": "${APP_INSIGHTS_RESOURCE_GROUP_NAME}",
+        "existingAppInsightsName": "${APP_INSIGHTS_NAME}",
+        "logAnalyticsWorkspaceReuse": "${LOG_ANALYTICS_WORKSPACE_REUSE}",
+        "existingLogAnalyticsWorkspaceResourceId": "${LOG_ANALYTICS_WORKSPACE_ID}",
+        "appServicePlanReuse": "${APP_SERVICE_PLAN_REUSE}",
+        "existingAppServicePlanResourceGroupName": "${APP_SERVICE_PLAN_RESOURCE_GROUP_NAME}",
+        "existingAppServicePlanName": "${APP_SERVICE_PLAN_NAME}",
+        "aiSearchReuse": "${AI_SEARCH_REUSE}",
+        "existingAiSearchResourceGroupName": "${AI_SEARCH_RESOURCE_GROUP_NAME}",
+        "existingAiSearchName": "${AI_SEARCH_NAME}",
+        "orchestratorFunctionAppReuse": "${ORCHESTRATOR_FUNCTION_APP_REUSE}",
+        "existingOrchestratorFunctionAppResourceGroupName": "${ORCHESTRATOR_FUNCTION_APP_RESOURCE_GROUP_NAME}",
+        "existingOrchestratorFunctionAppName": "${ORCHESTRATOR_FUNCTION_APP_NAME}",
+        "dataIngestionFunctionAppReuse": "${DATA_INGESTION_FUNCTION_APP_REUSE}",
+        "existingDataIngestionFunctionAppResourceGroupName": "${DATA_INGESTION_FUNCTION_APP_RESOURCE_GROUP_NAME}",
+        "existingDataIngestionFunctionAppName": "${DATA_INGESTION_FUNCTION_APP_NAME}",
+        "appServiceReuse": "${APP_SERVICE_REUSE}",
+        "existingAppServiceName": "${APP_SERVICE_NAME}",
+        "existingAppServiceNameResourceGroupName": "${APP_SERVICE_RESOURCE_GROUP_NAME}",
+        "orchestratorFunctionAppStorageReuse": "${ORCHESTRATOR_FUNCTION_APP_STORAGE_REUSE}",
+        "existingOrchestratorFunctionAppStorageName": "${ORCHESTRATOR_FUNCTION_APP_STORAGE_NAME}",
+        "existingOrchestratorFunctionAppStorageResourceGroupName": "${ORCHESTRATOR_FUNCTION_APP_STORAGE_RESOURCE_GROUP_NAME}",
+        "dataIngestionFunctionAppStorageReuse": "${DATA_INGESTION_FUNCTION_APP_STORAGE_REUSE}",
+        "existingDataIngestionFunctionAppStorageName": "${DATA_INGESTION_FUNCTION_APP_STORAGE_NAME}",
+        "existingDataIngestionFunctionAppStorageResourceGroupName": "${DATA_INGESTION_FUNCTION_APP_STORAGE_RESOURCE_GROUP_NAME}",
+        "aiServicesReuse": "${AI_SERVICES_REUSE}",
+        "existingAiServicesResourceGroupName": "${AI_SERVICES_RESOURCE_GROUP_NAME}",
+        "existingAiServicesName": "${AI_SERVICES_NAME}",
+        "cosmosDbReuse": "${COSMOS_DB_REUSE}",
+        "existingCosmosDbResourceGroupName": "${COSMOS_DB_RESOURCE_GROUP_NAME}",
+        "existingCosmosDbAccountName": "${COSMOS_DB_ACCOUNT_NAME}",
+        "existingCosmosDbDatabaseName": "${COSMOS_DB_DATABASE_NAME}",
+        "keyVaultReuse": "${KEY_VAULT_REUSE}",
+        "existingKeyVaultResourceGroupName": "${KEY_VAULT_RESOURCE_GROUP_NAME}",
+        "existingKeyVaultName": "${KEY_VAULT_NAME}",
+        "storageReuse": "${STORAGE_REUSE}",
+        "existingStorageResourceGroupName": "${STORAGE_RESOURCE_GROUP_NAME}",
+        "existingStorageName": "${STORAGE_NAME}",
+        "vnetReuse": "${VNET_REUSE}",
+        "existingVnetResourceGroupName": "${VNET_RESOURCE_GROUP_NAME}",
+        "existingVnetName": "${VNET_NAME}"
       }
     }
   }
