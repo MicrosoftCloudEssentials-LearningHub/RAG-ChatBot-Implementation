@@ -122,7 +122,7 @@ https://github.com/user-attachments/assets/9bb475e4-7fef-46d9-9147-a28e806b4e1c
   azd init -t azure/gpt-rag -b agentic
   ```
 
-https://github.com/user-attachments/assets/0550187b-01a8-46ef-baa3-8319928578af
+https://github.com/user-attachments/assets/22d2c66b-fd1e-4967-9f6c-ae02e27b2036
 
 ### Step 2: Enable network isolation
 
