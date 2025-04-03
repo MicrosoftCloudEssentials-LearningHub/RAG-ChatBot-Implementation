@@ -124,6 +124,9 @@ https://github.com/user-attachments/assets/9bb475e4-7fef-46d9-9147-a28e806b4e1c
 
 https://github.com/user-attachments/assets/22d2c66b-fd1e-4967-9f6c-ae02e27b2036
 
+> [!IMPORTANT]
+> Update the information in the `GPT-RAG_SolutionAccelerator/infra/main.parameters.json` file, and make sure to save your changes before proceeding with the infrastructure deployment.
+
 ### Step 2: Enable network isolation
 
 > Azure network isolation is a security strategy that segments a network into distinct subnets or segments, each functioning as its own small network. This approach enhances security by preventing unauthorized access and data leakage. In Azure, network isolation can be achieved using Virtual Networks (VNets), Network Security Groups (NSGs), and Private Link, allowing precise control over inbound and outbound traffic.
@@ -171,6 +174,18 @@ https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b4976132-2b3e-4bdf-b02f-aa8b0643455d" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
+
+### Step 5: Application deployment
+
+1. To proceed with the deployment, use the Virtual Machine connected via Bastion (set up in step 4).
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/aee21cda-d047-4f6d-a568-8c9772639ca2" />
+
+2. Log into the VM using the username and authenticate with the `password stored in the keyvault`, as illustrated in the figure below.
+
+   https://github.com/user-attachments/assets/6b927de3-d54d-43b0-8fb1-7c0998827714
+
+   https://github.com/user-attachments/assets/25ec1fb6-d999-41e4-ac17-0c16b14a946d
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
