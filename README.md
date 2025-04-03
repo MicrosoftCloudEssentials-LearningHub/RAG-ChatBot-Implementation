@@ -11,7 +11,7 @@ Last updated: 2025-04-03
 
 ----------
 
-> [Quick overview](./instructions/0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
+> [Quick overview](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
