@@ -20,6 +20,11 @@ Last updated: 2025-04-04
 - [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
 - [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
 - [Integrate Azure services with virtual networks for network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services)
+- [GPT-4 and GPT-4 Turbo models max tokens](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-models)
+- [GPT-4 and GPT-4 Turbo model availability](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-model-availability)
+- [View the service principal for a managed identity using the Azure portal](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-to-view-managed-identity-service-principal?pivots=identity-mi-service-principal-portal#view-the-service-principal-for-a-managed-identity-using-the-azure-portal)
+- [Microsoft.Search searchServices bicep template](https://learn.microsoft.com/en-us/azure/templates/microsoft.search/searchservices?pivots=deployment-language-bicep)
+- [Recover/Purge a deleted resource](https://learn.microsoft.com/en-us/azure/ai-services/recover-purge-resources?tabs=azure-portal#recover-a-deleted-resource)
 
 </details>
 
@@ -262,6 +267,14 @@ https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585
    https://github.com/user-attachments/assets/6b927de3-d54d-43b0-8fb1-7c0998827714
 
    https://github.com/user-attachments/assets/25ec1fb6-d999-41e4-ac17-0c16b14a946d
+
+### Step 6: Install PowerShell 7 in the vm
+
+> After logging into Windows, [install PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4#installing-the-msi-package), as all other necessary components are already set up on the VM.
+
+https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
