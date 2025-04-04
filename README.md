@@ -46,6 +46,10 @@ Last updated: 2025-04-04
   - [Step 2: Enable network isolation](#step-2-enable-network-isolation)
   - [Step 3: Login to Azure](#step-3-login-to-azure)
   - [Step 4: Deploy the insfrastructure](#step-4-deploy-the-insfrastructure)
+  - [Step 5: Application deployment](#step-5-application-deployment)
+  - [Step 6: Install PowerShell 7 in the vm](#step-6-install-powershell-7-in-the-vm)
+  - [Step 7: Update azd on the VM](#step-7-update-azd-on-the-vm)
+
 
 </details>
 
