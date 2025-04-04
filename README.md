@@ -274,6 +274,15 @@ https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585
 
 https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
+### Step 7: Update azd on the VM
+
+>  Launch the `Command Prompt` and enter the following command to update azd to its latest version:
+
+  ```
+  choco upgrade azd  
+  ```
+
+  https://github.com/user-attachments/assets/777cdd6e-fa8f-49c2-9398-f94ac45be711
 
 
 <div align="center">
