@@ -46,9 +46,11 @@ Last updated: 2025-04-04
   - [Step 2: Enable network isolation](#step-2-enable-network-isolation)
   - [Step 3: Login to Azure](#step-3-login-to-azure)
   - [Step 4: Deploy the insfrastructure](#step-4-deploy-the-insfrastructure)
-  - [Step 5: Application deployment](#step-5-application-deployment)
+  - [Step 5: VM Login](#step-5-vm-login)
   - [Step 6: Install PowerShell 7 in the vm](#step-6-install-powershell-7-in-the-vm)
   - [Step 7: Update azd on the VM](#step-7-update-azd-on-the-vm)
+  - [Step 8: Application deployment](#step-8-application-deployment)
+
 
 
 </details>
@@ -260,7 +262,7 @@ https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585
   <img src="https://github.com/user-attachments/assets/b4976132-2b3e-4bdf-b02f-aa8b0643455d" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
-### Step 5: Application deployment
+### Step 5: VM login
 
 1. To proceed with the deployment, use the Virtual Machine connected via Bastion (set up in step 4).
 
@@ -287,6 +289,8 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
   ```
 
   https://github.com/user-attachments/assets/777cdd6e-fa8f-49c2-9398-f94ac45be711
+
+### Step 8: Application deployment
 
 
 <div align="center">
