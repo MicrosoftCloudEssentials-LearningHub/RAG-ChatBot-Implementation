@@ -66,18 +66,48 @@ Last updated: 2025-04-03
 
 ### Important Considerations for Production Environment
 
-- **Public Network Site**: This example is based on a public network site and is intended for demonstration purposes only. It showcases how several Azure resources can work together to achieve the desired result.
-- **Private Network Configuration**: For enhanced security, consider configuring your Azure resources to operate within a private network. This can be achieved using Azure Virtual Network (VNet) to isolate your resources and control inbound and outbound traffic. Implementing private endpoints for services like Azure Blob Storage and Azure Functions can further secure your data by restricting access to your VNet.
-- **Security**: Ensure that you implement appropriate security measures when deploying this solution in a production environment. This includes:
-  - **Securing Access**: Use Azure Entra ID (formerly known as Azure Active Directory or Azure AD) for authentication and role-based access control (RBAC) to manage permissions.
-  - **Managing Secrets**: Store sensitive information such as connection strings and API keys in Azure Key Vault.
-  - **Data Encryption**: Enable encryption for data at rest and in transit to protect sensitive information.
-- **Scalability**: While this example provides a basic setup, you may need to scale the resources based on your specific requirements. Azure services offer various scaling options to handle increased workloads. Consider using:
-  - **Auto-scaling**: Configure auto-scaling for Azure Functions and other services to automatically adjust based on demand.
-  - **Load Balancing**: Use Azure Load Balancer or Application Gateway to distribute traffic and ensure high availability.
-- **Cost Management**: Monitor and manage the costs associated with your Azure resources. Use Azure Cost Management and Billing to track usage and optimize resource allocation.
-- **Compliance**: Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
-- **Disaster Recovery**: Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
+<details>
+  <summary>Public Network Site</summary>
+  This example is based on a public network site and is intended for demonstration purposes only. It showcases how several Azure resources can work together to achieve the desired result.
+</details>
+
+<details>
+  <summary>Private Network Configuration</summary>
+  For enhanced security, consider configuring your Azure resources to operate within a private network. This can be achieved using Azure Virtual Network (VNet) to isolate your resources and control inbound and outbound traffic. Implementing private endpoints for services like Azure Blob Storage and Azure Functions can further secure your data by restricting access to your VNet.
+</details>
+
+<details>
+  <summary>Security</summary>
+  Ensure that you implement appropriate security measures when deploying this solution in a production environment. This includes:
+
+  - Securing Access: Use Azure Entra ID (formerly known as Azure Active Directory or Azure AD) for authentication and role-based access control (RBAC) to manage permissions.
+  - Managing Secrets: Store sensitive information such as connection strings and API keys in Azure Key Vault.
+  - Data Encryption: Enable encryption for data at rest and in transit to protect sensitive information.
+</details>
+
+<details>
+  <summary>Scalability</summary>
+  While this example provides a basic setup, you may need to scale the resources based on your specific requirements. Azure services offer various scaling options to handle increased workloads. Consider using:
+
+  - Auto-scaling: Configure auto-scaling for Azure Functions and other services to automatically adjust based on demand.
+  - Load Balancing: Use Azure Load Balancer or Application Gateway to distribute traffic and ensure high availability.
+
+</details>
+
+<details>
+  <summary>Cost Management</summary>
+  Monitor and manage the costs associated with your Azure resources. Use Azure Cost Management and Billing to track usage and optimize resource allocation.
+</details>
+
+<details>
+  <summary>Compliance</summary>
+  Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
+</details>
+
+<details>
+  <summary>Disaster Recovery</summary>
+   Implement a disaster recovery plan to ensure business continuity in case of failures. Use Azure Site Recovery and backup solutions to protect your data and applications.
+</details>
 
 ## Zero Trust Architecture
 
@@ -92,13 +122,59 @@ To deploy this solution accelerator, please make sure that you have installed al
 
 > The Azure Developer CLI (azd) is an `open-source tool` designed to streamline the end-to-end developer workflow on Azure. It provides `high-level commands` that simplify common developer tasks such as `project initialization, infrastructure provisioning, code deployment, and monitoring`. 
 
-| **Category** | **Details**|
-|-----------------------------|----------------------------------------|
-| **Key Features**            | - High-level commands for common developer tasks<br>- Integration with azd templates<br>- Support for terminal, IDE, and CI/CD pipelines<br>- Developer-friendly commands mapping to key workflow stages <br/> - Supported Languages: C#, Java, Node.js, Python  <br/> - Integration: Terminal, IDE (Integrated Development Environment), GitHub Actions pipeline |
-| **Commands Overview**       | - `azd init`: Initialize a new project<br>- `azd provision`: Provision multiple Azure resources<br>- `azd deploy`: Deploy application code<br>- `azd monitor`: Monitor deployed resources                    |
-| **Comparison with Other Tools** | - **Azure CLI**: Provides granular control over individual Azure resources<br>- **Azure PowerShell**: Similar to Azure CLI but uses PowerShell cmdlets<br>- **azd**: Automates higher-level development tasks |
-| **Templates**               | - Code projects adhering to azd structural conventions<br>- Include sample application code, infrastructure files, and configuration files<br>- `.azure` folder for essential Azure configurations            |
-| **Customization**           | - **Use Terraform with azd**: Integrate Terraform scripts within azd workflows to manage infrastructure as code, allowing for consistent and repeatable deployments across different environments. <br>- **Customize workflows using hooks**: Implement custom scripts or commands at various stages of the azd workflow (e.g., pre-deploy, post-deploy) to tailor the deployment process to specific project needs. <br>- **Manage environment variables**: Define and manage environment variables within azd to configure application settings and secrets, ensuring consistent behavior across different deployment environments. <br>- **Remote environment support**: Use azd to manage and deploy applications to remote environments, facilitating development and testing across geographically distributed teams and resources. |
+<details>
+<summary><strong>Key Features</strong></summary>
+
+- High-level commands for common developer tasks
+- Integration with azd templates
+- Support for terminal, IDE, and CI/CD pipelines
+- Developer-friendly commands mapping to key workflow stages
+- Supported Languages: C#, Java, Node.js, Python
+- Integration: Terminal, IDE (Integrated Development Environment), GitHub Actions pipeline
+- **Command Line Interface (CLI)**: azd provides a streamlined CLI experience for developers, enabling quick execution of tasks without needing to navigate complex Azure interfaces.
+- **Template Management**: azd templates are designed to be easily customizable, allowing developers to adapt them to specific project requirements.
+- **CI/CD Integration**: azd supports integration with popular CI/CD tools, facilitating automated deployment and testing workflows.
+
+</details>
+
+<details>
+<summary><strong>Commands Overview</strong></summary>
+
+- **Initialization (`azd init`)**: Initialize a new project; sets up the project structure, including necessary configuration files and directories.
+- **Provisioning (`azd provision`)**: Provision multiple Azure resources; automates the creation of Azure resources such as virtual machines, databases, and storage accounts.
+- **Deployment (`azd deploy`)**: Handles the deployment of application code to Azure, ensuring that all dependencies and configurations are correctly applied.
+- **Monitoring (`azd monitor`)**: Provides tools for tracking the performance and health of deployed resources, integrating with Azure Monitor and Application Insights.
+
+</details>
+
+<details>
+<summary><strong>Comparison with Other Tools</strong></summary>
+
+- **Azure CLI**: Provides granular control over individual Azure resources; ideal for detailed management of Azure resources, offering extensive command options for precise control.
+- **Azure PowerShell**:Similar to Azure CLI but uses PowerShell cmdlets; leverages PowerShell scripting capabilities for Azure management, suitable for users familiar with PowerShell syntax.
+- **azd**:  Automates higher-level development tasks; focuses on simplifying the overall development workflow, reducing the complexity of managing multiple Azure services.
+
+</details>
+
+<details>
+<summary><strong>Templates</strong></summary>
+
+- **Project Structure**: azd templates follow a standardized structure, making it easier for developers to understand and navigate the project.
+- **Sample Code**: Templates include sample application code to demonstrate best practices and provide a starting point for development.
+- **Infrastructure Files**: Templates come with predefined infrastructure files, such as ARM templates or Terraform scripts, to streamline resource provisioning.
+- **Configuration Management**: The `.azure` folder contains essential configuration files for managing Azure settings and secrets.
+
+</details>
+
+<details>
+<summary><strong>Customization</strong></summary>
+
+- **Use Terraform with azd**: Allows developers to use Terraform for infrastructure management, providing a consistent approach to resource provisioning; integrate Terraform scripts within azd workflows to manage infrastructure as code, allowing for consistent and repeatable deployments across different environments.
+- **Customize workflows using hooks**: Custom hooks enable developers to execute specific actions at various points in the deployment process, enhancing flexibility and control.; implement custom scripts or commands at various stages of the azd workflow (e.g., pre-deploy, post-deploy) to tailor the deployment process to specific project needs.
+- **Manage environment variables**: Define and manage environment variables within azd to configure application settings and secrets, ensuring consistent behavior across different deployment environments.
+- **Remote environment support**: Use azd to manage and deploy applications to remote environments, facilitating development and testing across geographically distributed teams and resources.
+
+</details>
 
 https://github.com/user-attachments/assets/2a9d7c6b-1260-4ad1-8889-ce01057d2b44
 
