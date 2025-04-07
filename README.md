@@ -11,8 +11,6 @@ Last updated: 2025-04-04
 
 ----------
 
-> [Quick overview](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
-
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
@@ -30,6 +28,12 @@ Last updated: 2025-04-04
 
 > [!IMPORTANT]
 > Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture (designed for scenarios without network isolation), and a standard Zero-Trust Architecture deployment. This is `just a guide`. It is not an official solution. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Referenceto Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
+> [Quick overview](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
+
+> [!TIP]
+> - `Batch processing involves uploading files to SharePoint`, where they can be `processed later`. <br/>
+> - `Real-time processing`, on the other hand, `would involve users uploading files directly within the app`, which could be stored in a `BLOB storage for immediate processing`.
 
 ## Content 
 
@@ -50,8 +54,6 @@ Last updated: 2025-04-04
   - [Step 6: Install PowerShell 7 in the vm](#step-6-install-powershell-7-in-the-vm)
   - [Step 7: Update azd on the VM](#step-7-update-azd-on-the-vm)
   - [Step 8: Application deployment](#step-8-application-deployment)
-
-
 
 </details>
 
@@ -127,7 +129,13 @@ Last updated: 2025-04-04
 > [!IMPORTANT]
 > Click [here for a more quick guidance about Zero Trust](./instructions/1_ZeroTrustRAG). For a `solution accelerator with a zero-trust architecture` please refer to [Microsoft's official GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
-To deploy this solution accelerator, please make sure that you have installed all the requirements mentioned in the [prerequisites section](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#getting-started) before proceeding. Below, you will find visual guidance that complements the [Zero Trust Architecture Deployment](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment) from the [Microsoft's official GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG).
+| **Aspect**                | **Details**                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|
+| **Application Components**| - **Data Ingestion**: Optimizes data chunking and indexing for retrieval. Integrates with SharePoint for document processing. Click [here for more information about the Sharepoint setup](https://github.com/Azure/GPT-RAG/blob/main/docs/INGESTION_SHAREPOINT_SETUP.md). <br> - **Orchestrator**: Manages retrieval and response generation. Functional (Semantic Kernel) or Agentic (AutoGen). <br> - **App Front-End**: User interface with React or Chainlit, following Backend for Front-End pattern. |
+| **Batch Processing**      | Handles large datasets in parallel. Ideal for data analysis and content generation. |
+
+> [!NOTE]
+> To deploy this solution accelerator, please make sure that you have installed all the requirements mentioned in the [prerequisites section](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#getting-started) before proceeding. Below, you will find visual guidance that complements the [Zero Trust Architecture Deployment](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment) from the [Microsoft's official GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG).
 
 ### Step 0.1: Install azd 
 
