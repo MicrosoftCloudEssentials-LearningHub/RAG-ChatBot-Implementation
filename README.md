@@ -298,6 +298,18 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
 ### Step 8: Application deployment
 
+> [!NOTE]
+> Please review these configurations: <br/>
+> - RemoteFX USB Device Redirection: Allows USB devices connected to your local computer to be used in the remote desktop session.`You can access and use local USB devices like storage drives, printers, or other peripherals directly from the remote session.` <br/>
+> - Prompt for Credentials on the Client Computer: This setting ensures that users are prompted to enter their login credentials (username and password) on their local computer before they connect to the Remote Desktop Session Host server. `By entering credentials on the local computer, users are providing their login information in a trusted environment. This reduces the risk of credential theft or interception that might occur if credentials were entered on the remote server.` <br/>
+> - Configure Server Authentication for Client: This setting controls how the client (your local computer) handles authentication when connecting to the Remote Desktop Session Host server. It ensures that the client verifies the server's identity before establishing a connection. `It provides users with confidence that their remote desktop session is secure and that they are connecting to the correct server.`
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/db726be0-49a7-4fe7-b042-b14aaa82983f" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
