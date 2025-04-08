@@ -310,7 +310,7 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
 https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332
 
-1. Let's make a new folder, for example `deploy` as mentioned in the [official guide](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment)
+1. Create a new folder, for example `deploy` as mentioned in the [official guide](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment)
 2. Once you've created the folder, go ahead and jump into it.
 
       ```
