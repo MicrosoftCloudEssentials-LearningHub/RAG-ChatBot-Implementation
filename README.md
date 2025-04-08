@@ -322,6 +322,8 @@ https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332
 
 3. Sets up a new project using the Azure GPT-RAG template: `azd init -t azure/gpt-rag`
 
+    https://github.com/user-attachments/assets/7943d8cc-c0d3-4ad2-a312-231e1438e805
+
 4. Logs you into Azure Developer CLI: `azd auth login`
 5. Logs you into your Azure account: `az login`
 6. Updates your environment settings with the latest configuration: `azd env refresh`
