@@ -316,7 +316,6 @@ https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332
       ```
       mkdir deploy  
       cd deploy
-      
       ```
 
     https://github.com/user-attachments/assets/8ea84df0-ac9a-4cad-be91-bfb24548d1d1
