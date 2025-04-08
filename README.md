@@ -310,6 +310,26 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
 https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332
 
+1. Let's make a new folder, for example `deploy` as mentioned in the [official guide](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment)
+2. Once you've created the folder, go ahead and jump into it.
+
+      ```
+      mkdir deploy  
+      cd deploy
+      
+      ```
+
+    https://github.com/user-attachments/assets/8ea84df0-ac9a-4cad-be91-bfb24548d1d1
+
+3. Sets up a new project using the Azure GPT-RAG template: `azd init -t azure/gpt-rag`
+
+4. Logs you into Azure Developer CLI: `azd auth login`
+5. Logs you into your Azure account: `az login`
+6. Updates your environment settings with the latest configuration: `azd env refresh`
+7. Deploys your project to Azure: `azd deploy`
+
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
