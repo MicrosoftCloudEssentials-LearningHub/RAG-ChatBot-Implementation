@@ -26,19 +26,8 @@ Last updated: 2025-04-04
 
 </details>
 
-> [!IMPORTANT]
-> Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture (designed for scenarios without network isolation), and a standard Zero-Trust Architecture deployment. This is `just a guide`. It is not an official solution. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Referenceto Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
-
-> [Quick overview](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
-
-> [!TIP]
-> - `Batch processing involves uploading files to SharePoint`, where they can be `processed later`. <br/>
-> - `Real-time processing`, on the other hand, `would involve users uploading files directly within the app`, which could be stored in a `BLOB storage for immediate processing`.
-
-## Content 
-
 <details>
-<summary><b>List of Content</b> (Click to expand)</summary>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Where to start?](#where-to-start)
 - [Basic Architecture](#basic-architecture)
@@ -56,6 +45,15 @@ Last updated: 2025-04-04
   - [Step 8: Application deployment](#step-8-application-deployment)
 
 </details>
+
+> [!IMPORTANT]
+> Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture (designed for scenarios without network isolation), and a standard Zero-Trust Architecture deployment. This is `just a guide`. It is not an official solution. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Referenceto Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
+> [Quick overview](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
+
+> [!TIP]
+> - `Batch processing involves uploading files to SharePoint`, where they can be `processed later`. <br/>
+> - `Real-time processing`, on the other hand, `would involve users uploading files directly within the app`, which could be stored in a `BLOB storage for immediate processing`.
 
 ## Where to start? 
 
