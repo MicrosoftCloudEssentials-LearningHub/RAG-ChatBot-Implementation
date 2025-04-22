@@ -350,6 +350,24 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
     https://github.com/user-attachments/assets/bfe9d038-4503-447e-b251-8da67bc0258a
 
 6. Updates your environment settings with the latest configuration: `azd env refresh`
+
+  ```powershell
+    PS C:\Users\vm-user\Downloads\RAG-ChatBot-Implementation\GPT-RAG_SolutionAccelerator\deploy> azd env refresh
+    
+    Refreshing environment gptbrowntest (azd env refresh)
+    
+    ? Select an Azure Subscription to use:  1. ME-timnab-1 (82378273-0fd3-378347834-42e0-9348)
+      (✓) Done: Retrieving Azure deployment (gptbrowntest-1745337566)
+      (✓) Done: Updated 63 environment variables
+    
+    Populated environment from Azure infrastructure deployment: gptbrowntest-1745337566
+    
+    SUCCESS: Environment refresh completed
+    View environment variables at C:\Users\vm-user\Downloads\RAG-ChatBot-Implementation\GPT-RAG_SolutionAccelerator\deploy\.azure\gptbrowntest\.env
+  ```
+
+  https://github.com/user-attachments/assets/4c3337e0-514c-4ad5-8324-e911d9542496
+
 7. Deploys your project to Azure: `azd deploy`
 
 
