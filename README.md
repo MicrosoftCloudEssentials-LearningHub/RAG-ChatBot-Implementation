@@ -7,7 +7,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-08
+Last updated: 2025-04-22
 
 ----------
 
@@ -335,8 +335,17 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
     https://github.com/user-attachments/assets/7943d8cc-c0d3-4ad2-a312-231e1438e805
 
-4. Logs you into Azure Developer CLI: `azd auth login`
+4. Logs you into Azure Developer CLI: `azd auth login`.
+
+> [!NOTE]
+> Ensure your admin account is correctly configured with Authenticator.
+
+  https://github.com/user-attachments/assets/f34a13eb-b045-40c9-8f99-edc4dc9d0d15
+
 5. Logs you into your Azure account: `az login`
+
+    https://github.com/user-attachments/assets/bfe9d038-4503-447e-b251-8da67bc0258a
+
 6. Updates your environment settings with the latest configuration: `azd env refresh`
 7. Deploys your project to Azure: `azd deploy`
 
