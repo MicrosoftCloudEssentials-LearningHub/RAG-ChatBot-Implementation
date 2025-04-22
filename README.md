@@ -370,8 +370,7 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
 7. Deploys your project to Azure: `azd deploy`
 
-
-
+    https://github.com/user-attachments/assets/aa248d9b-b1eb-42e3-9e6c-5e41bfdf5484
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
