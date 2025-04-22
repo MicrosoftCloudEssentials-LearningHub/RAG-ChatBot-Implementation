@@ -343,6 +343,9 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
   https://github.com/user-attachments/assets/f34a13eb-b045-40c9-8f99-edc4dc9d0d15
 
 5. Logs you into your Azure account: `az login`
+
+    https://github.com/user-attachments/assets/bfe9d038-4503-447e-b251-8da67bc0258a
+
 6. Updates your environment settings with the latest configuration: `azd env refresh`
 7. Deploys your project to Azure: `azd deploy`
 
