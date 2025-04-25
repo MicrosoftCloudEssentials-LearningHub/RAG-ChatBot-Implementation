@@ -378,9 +378,31 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
     
       https://github.com/user-attachments/assets/4c3337e0-514c-4ad5-8324-e911d9542496
 
-7. Deploys your project to Azure: `azd deploy`
+
+8. Builds and packages your application code into deployable artifacts without deploying them to Azure: `azd package`
+
+    > For example: 
+  
+    <div align="center">
+      <img src="https://github.com/user-attachments/assets/bdbe03ab-080c-4d72-a449-8e7a60c35390" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+    </div>
+
+9. Deploys your project to Azure: `azd deploy`
 
     https://github.com/user-attachments/assets/aa248d9b-b1eb-42e3-9e6c-5e41bfdf5484
+
+> [!NOTE]
+> If you encounter an error with `azd deploy`. For example:
+
+```
+ERROR: getting target resource: getting default resource groups for environment:
+gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suffix with value: 'gpt-rag-resource-group'
+```
+  <div align="center">
+    <img src="https://github.com/user-attachments/assets/844cea74-47b6-4682-a6af-c9b7d6c33059" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  </div>
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
