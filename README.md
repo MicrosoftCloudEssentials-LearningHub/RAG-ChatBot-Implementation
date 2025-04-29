@@ -392,17 +392,26 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
     https://github.com/user-attachments/assets/aa248d9b-b1eb-42e3-9e6c-5e41bfdf5484
 
 > [!NOTE]
-> If you encounter an error with `azd deploy`. For example:
+> **If you encounter an error with `azd deploy`:** 
 
 ```
 ERROR: getting target resource: getting default resource groups for environment:
 gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suffix with value: 'gpt-rag-resource-group'
 ```
+
   <div align="center">
     <img src="https://github.com/user-attachments/assets/844cea74-47b6-4682-a6af-c9b7d6c33059" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
   </div>
 
 
+> Please follow these steps to troubleshoot: <br/>
+> - Review the `infra/main.parameters.json` file for missing or incorrect values.  
+> - Run `az account show` to confirm you're logged into the correct Azure subscription.  
+> - Run `azd env list` to check available environments.  
+> - Run `azd env get-values` and make sure the values match those in `main.parameters.json`.  
+> - Optionally, run `azd deploy --verbose` for more detailed error output.  
+> For example: <br/>  
+> If `main.parameters.json` contains `"location": "westus2"`, make sure your environment has `AZURE_LOCATION=westus2`.
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
