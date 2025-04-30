@@ -49,7 +49,7 @@ Last updated: 2025-04-22
 > [!IMPORTANT]
 > Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture (designed for scenarios without network isolation), and a standard Zero-Trust Architecture deployment. This is `just a guide`. It is not an official solution. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Reference to Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
-| Basic Architecture (Public) | Basic Zero-Trust |  [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/main/media/architecture-GPT-RAG-ZeroTrust-LZ.png) |
+| Public Architecture  | Private Architecture |  [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/main/media/architecture-GPT-RAG-ZeroTrust-LZ.png) |
 | --- | --- | --- | 
 |  <img width="800" alt="image" src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" />    |   <img width="800" alt="image" src="https://github.com/user-attachments/assets/af835493-2d76-4216-8df6-3e258c9db949"> | <img width="800" alt="image" src="https://github.com/user-attachments/assets/cb7a167d-746d-458e-a7df-a8e517da3fea" /> |
 
