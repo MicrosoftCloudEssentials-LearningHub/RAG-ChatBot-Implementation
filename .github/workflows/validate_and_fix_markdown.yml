@@ -27,7 +27,7 @@ jobs:
         run: npm install -g markdownlint-cli
 
       - name: Lint and Fix Markdown files
-        run: markdownlint '**/*.md' --fix --config .github/.markdownlint.json
+        run: markdownlint '**/*.md' --fix --config .github/.markdownlint.json --ignore GPT-RAG_SolutionAccelerator/
 
       - name: Configure Git
         run: |
