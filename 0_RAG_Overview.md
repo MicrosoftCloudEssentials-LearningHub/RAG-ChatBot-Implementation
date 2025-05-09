@@ -1,4 +1,4 @@
-#  Retrieval-Augmented Generation (RAG) pattern - Overview 
+# Retrieval-Augmented Generation (RAG) pattern - Overview 
 
 Costa Rica
 
@@ -71,7 +71,6 @@ graph LR
 | **Cost Efficiency**       | Can be resource-intensive due to the need for frequent retraining and large labeled datasets. | More cost-effective as it minimizes the need for extensive retraining and leverages existing data sources. |
 | **Applications**          | Suitable for basic search and static content generation.                                | Ideal for complex applications such as healthcare, customer support, and content creation, where up-to-date and contextually relevant information is crucial. |
 
-
 ## Applications of RAG Pattern
 
 ```mermaid
@@ -97,10 +96,12 @@ graph LR
     R --> S[Definition]
     R --> T[Implementation] 
 ```
+
 <details>
 <summary><b>Question Answering</b></summary>
 
 > Providing accurate answers by retrieving relevant documents and generating responses based on them.
+
 - **Implementation**:
   - **Retrieval**:
     - Use Azure AI Search to index a large corpus of documents, such as research papers, articles, or FAQs.

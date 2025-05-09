@@ -56,6 +56,7 @@ Last updated: 2025-04-22
 > Here is a [quick overview about RAG](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
 
 > [!TIP]
+>
 > - `Batch processing involves uploading files to SharePoint`, where they can be `processed later`. <br/>
 > - `Real-time processing`, on the other hand, `would involve users uploading files directly within the app`, which could be stored in a `BLOB storage for immediate processing`.
 
@@ -67,8 +68,8 @@ Last updated: 2025-04-22
 > RAG Solution Accelerators options:
 
 - If you choose to use the [Basic Architecture](#basic-architecture), ([Terraform approach](./terraform-infrastructure/README.md)), please ensure that:
-  -  [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
-  -  [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
+  - [Terraform is installed on your local machine](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli#install-terraform).
+  - [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) to work with both Terraform and Azure commands.
 - If you opt for the [Zero Trust Architecture](#zero-trust-architecture), (Bicep approach), please ensure that you have installed all the requirements mentioned in the [prerequisites section](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#getting-started) before proceeding.
 
 ## Basic Architecture
@@ -99,6 +100,7 @@ Last updated: 2025-04-22
   <summary>Security</summary>
 
   > Ensure that you implement appropriate security measures when deploying this solution in a production environment. This includes: <br/>
+  >
   > - Securing Access: Use Azure Entra ID (formerly known as Azure Active Directory or Azure AD) for authentication and role-based access control (RBAC) to manage permissions. <br/>
   > - Managing Secrets: Store sensitive information such as connection strings and API keys in Azure Key Vault. <br/>
   > - Data Encryption: Enable encryption for data at rest and in transit to protect sensitive information.
@@ -109,6 +111,7 @@ Last updated: 2025-04-22
   <summary>Scalability</summary>
 
   > While this example provides a basic setup, you may need to scale the resources based on your specific requirements. Azure services offer various scaling options to handle increased workloads. Consider using: <br/>
+  >
   > - Auto-scaling: Configure auto-scaling for Azure Functions and other services to automatically adjust based on demand. <br/>
   > - Load Balancing: Use Azure Load Balancer or Application Gateway to distribute traffic and ensure high availability.
 
@@ -126,7 +129,6 @@ Last updated: 2025-04-22
 
   > Ensure that your deployment complies with relevant regulations and standards. Use Azure Policy to enforce compliance and governance policies across your resources.
 </details>
-
 
 <details>
   <summary>Disaster Recovery</summary>
@@ -214,13 +216,13 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 </details>
 
-https://github.com/user-attachments/assets/2a9d7c6b-1260-4ad1-8889-ce01057d2b44
+<https://github.com/user-attachments/assets/2a9d7c6b-1260-4ad1-8889-ce01057d2b44>
 
 ### Step 0.2: Install PowerShell 7
 
 > PowerShell 7 `complements Azure Developer CLI (azd) by providing robust automation capabilities that enhance the development and deployment workflows on Azure`. With PowerShell 7, you can `automate tasks such as provisioning resources, deploying applications, and managing configurations, which are integral to azd's operations.` For instance, you can use PowerShell scripts to automate the azd provision command, ensuring consistent infrastructure setup across different environments. PowerShell 7's ability to execute commands remotely aligns with azd's remote environment support, allowing seamless management of Azure resources from any location. By integrating PowerShell 7 scripts into azd workflows, developers can streamline their processes, improve efficiency, and maintain greater control over their Azure deployments.
 
-https://github.com/user-attachments/assets/9bb475e4-7fef-46d9-9147-a28e806b4e1c
+<https://github.com/user-attachments/assets/9bb475e4-7fef-46d9-9147-a28e806b4e1c>
 
 ### Step 1: Download the repository
 
@@ -236,7 +238,7 @@ https://github.com/user-attachments/assets/9bb475e4-7fef-46d9-9147-a28e806b4e1c
   azd init -t azure/gpt-rag -b agentic
   ```
 
-https://github.com/user-attachments/assets/22d2c66b-fd1e-4967-9f6c-ae02e27b2036
+<https://github.com/user-attachments/assets/22d2c66b-fd1e-4967-9f6c-ae02e27b2036>
 
 > [!IMPORTANT]
 > Update the information in the `GPT-RAG_SolutionAccelerator/infra/main.parameters.json` file, and make sure to save your changes before proceeding with the infrastructure deployment.
@@ -249,7 +251,7 @@ https://github.com/user-attachments/assets/22d2c66b-fd1e-4967-9f6c-ae02e27b2036
   azd env set AZURE_NETWORK_ISOLATION true  
   ```
 
-https://github.com/user-attachments/assets/4f493506-970d-4b1d-aee2-1b0972a365d7
+<https://github.com/user-attachments/assets/4f493506-970d-4b1d-aee2-1b0972a365d7>
 
 ### Step 3: Login to Azure
 
@@ -267,7 +269,7 @@ https://github.com/user-attachments/assets/4f493506-970d-4b1d-aee2-1b0972a365d7
       az login
       ```
 
-https://github.com/user-attachments/assets/ed8833ee-5edc-4d28-8b45-2d6ae75e2bf6
+<https://github.com/user-attachments/assets/ed8833ee-5edc-4d28-8b45-2d6ae75e2bf6>
 
 ### Step 4: Deploy the insfrastructure
 
@@ -277,7 +279,7 @@ https://github.com/user-attachments/assets/ed8833ee-5edc-4d28-8b45-2d6ae75e2bf6
   azd provision
   ```
 
-https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585
+<https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585>
 
 > Once it is finished, you will see something like this:
 
@@ -297,30 +299,31 @@ https://github.com/user-attachments/assets/015d2e96-978f-4606-beac-e25f03253585
 
 2. Log into the VM using the username and authenticate with the `password stored in the keyvault`, as illustrated in the figure below.
 
-   https://github.com/user-attachments/assets/6b927de3-d54d-43b0-8fb1-7c0998827714
+   <https://github.com/user-attachments/assets/6b927de3-d54d-43b0-8fb1-7c0998827714>
 
-   https://github.com/user-attachments/assets/25ec1fb6-d999-41e4-ac17-0c16b14a946d
+   <https://github.com/user-attachments/assets/25ec1fb6-d999-41e4-ac17-0c16b14a946d>
 
 ### Step 6: Install PowerShell 7 in the vm
 
 > After logging into Windows, [install PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4#installing-the-msi-package), as all other necessary components are already set up on the VM.
 
-https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
+<https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb>
 
 ### Step 7: Update azd on the VM
 
->  Launch the `Command Prompt` and enter the following command to update azd to its latest version:
+> Launch the `Command Prompt` and enter the following command to update azd to its latest version:
 
   ```
   choco upgrade azd  
   ```
 
-  https://github.com/user-attachments/assets/777cdd6e-fa8f-49c2-9398-f94ac45be711
+  <https://github.com/user-attachments/assets/777cdd6e-fa8f-49c2-9398-f94ac45be711>
 
 ### Step 8: Application deployment
 
 > [!NOTE]
 > Please review these configurations: <br/>
+>
 > - RemoteFX USB Device Redirection: Allows USB devices connected to your local computer to be used in the remote desktop session.`You can access and use local USB devices like storage drives, printers, or other peripherals directly from the remote session.` <br/>
 > - Prompt for Credentials on the Client Computer: This setting ensures that users are prompted to enter their login credentials (username and password) on their local computer before they connect to the Remote Desktop Session Host server. `By entering credentials on the local computer, users are providing their login information in a trusted environment. This reduces the risk of credential theft or interception that might occur if credentials were entered on the remote server.` <br/>
 > - Configure Server Authentication for Client: This setting controls how the client (your local computer) handles authentication when connecting to the Remote Desktop Session Host server. It ensures that the client verifies the server's identity before establishing a connection. `It provides users with confidence that their remote desktop session is secure and that they are connecting to the correct server.`
@@ -329,7 +332,7 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
     <img src="https://github.com/user-attachments/assets/db726be0-49a7-4fe7-b042-b14aaa82983f" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
   </div>
   
-  https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332
+  <https://github.com/user-attachments/assets/daf3df9d-8c77-42b8-9b84-6728ef4a3332>
 
 1. Create a new folder, for example `deploy` as mentioned in the [official guide](https://github.com/Azure/GPT-RAG?tab=readme-ov-file#zero-trust-architecture-deployment)
 2. Once you've created the folder, go ahead and jump into it.
@@ -339,25 +342,25 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
       cd deploy
       ```
 
-    https://github.com/user-attachments/assets/8ea84df0-ac9a-4cad-be91-bfb24548d1d1
+    <https://github.com/user-attachments/assets/8ea84df0-ac9a-4cad-be91-bfb24548d1d1>
 
 > [!IMPORTANT]
 > When executing the `azd init for the app` and `azd env refresh` commands, ensure that the `environment name, subscription, and region are consistent` with those used during the `initial infrastructure provisioning`.
 
 3. Sets up a new project using the Azure GPT-RAG template: `azd init -t azure/gpt-rag`
   
-    https://github.com/user-attachments/assets/094a0830-2a33-42ae-821c-b8ae199fd772
+    <https://github.com/user-attachments/assets/094a0830-2a33-42ae-821c-b8ae199fd772>
 
 4. Logs you into Azure Developer CLI: `azd auth login`.
 
 > [!NOTE]
 > Ensure your admin account is correctly configured with Authenticator.
 
-  https://github.com/user-attachments/assets/f34a13eb-b045-40c9-8f99-edc4dc9d0d15
+  <https://github.com/user-attachments/assets/f34a13eb-b045-40c9-8f99-edc4dc9d0d15>
 
 5. Logs you into your Azure account: `az login`
 
-    https://github.com/user-attachments/assets/bfe9d038-4503-447e-b251-8da67bc0258a
+    <https://github.com/user-attachments/assets/bfe9d038-4503-447e-b251-8da67bc0258a>
 
 6. Updates your environment settings with the latest configuration: `azd env refresh`
 
@@ -376,8 +379,7 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
         View environment variables at C:\Users\vm-user\Downloads\RAG-ChatBot-Implementation\GPT-RAG_SolutionAccelerator\deploy\.azure\gptbrowntest\.env
       ```
     
-      https://github.com/user-attachments/assets/4c3337e0-514c-4ad5-8324-e911d9542496
-
+      <https://github.com/user-attachments/assets/4c3337e0-514c-4ad5-8324-e911d9542496>
 
 8. Builds and packages your application code into deployable artifacts without deploying them to Azure: `azd package`
 
@@ -389,7 +391,7 @@ https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb
 
 9. Deploys your project to Azure: `azd deploy`
 
-    https://github.com/user-attachments/assets/aa248d9b-b1eb-42e3-9e6c-5e41bfdf5484
+    <https://github.com/user-attachments/assets/aa248d9b-b1eb-42e3-9e6c-5e41bfdf5484>
 
 > [!NOTE]
 > **If you encounter an error with `azd deploy`:** 
@@ -403,8 +405,8 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
     <img src="https://github.com/user-attachments/assets/844cea74-47b6-4682-a6af-c9b7d6c33059" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
   </div>
 
-
 > Please follow these steps to troubleshoot: <br/>
+>
 > - Review the `infra/main.parameters.json` file for missing or incorrect values.  
 > - Run `az account show` to confirm you're logged into the correct Azure subscription.  
 > - Run `azd env list` to check available environments.  

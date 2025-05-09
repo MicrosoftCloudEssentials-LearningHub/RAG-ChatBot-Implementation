@@ -1,4 +1,4 @@
-#  Zero Trust RAG Architecture - Overview
+# Zero Trust RAG Architecture - Overview
 
 Costa Rica
 
@@ -31,7 +31,6 @@ Last updated: 2025-05-09
 </div>
 
 From [Microsoft Security](https://www.microsoft.com/en-us/security/business/zero-trust?msockid=38ec3806873362243e122ce086486339)
-
 
 ## Components
 
@@ -85,4 +84,3 @@ From [Zero Trust Architecture Deployment](https://github.com/Azure/GPT-RAG?tab=r
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
-

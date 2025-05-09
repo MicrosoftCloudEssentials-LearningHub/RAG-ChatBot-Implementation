@@ -10,7 +10,6 @@ Last updated: 2025-05-09
 
 ----------
 
-
 > This demo is about how to setup secure document searches within a designated network, ensuring that your data remains protected while leveraging the capabilities of Azure OpenAI. <br/>
 
 > You could use the `RAG pattern` to improve the search experience in your web application. For instance, when a `user queries the search system`, it can retrieve `relevant documents from Azure Storage Blob` Containers and use the `retrieved information to generate a more accurate and detailed search result`. [Click here for more information about RAG](./0_RAG_Overview.md).
@@ -33,7 +32,7 @@ Last updated: 2025-05-09
 - [Configure Private Endpoints for Azure OpenAI](#configure-private-endpoints-for-azure-openai)
 - [Set Up Network Security Groups NSGs](#set-up-network-security-groups-nsgs)
 - [Create index/Upload Documents](#create-indexupload-documents)
- - [Configure and Deploy AI model](#configure-and-deploy-ai-model)
+- [Configure and Deploy AI model](#configure-and-deploy-ai-model)
  
 </details>
 
@@ -66,12 +65,12 @@ Click here to see more about [Workflow in Zero Trust Architecture](./2_ZeroTrust
 
 ### Set Up Azure AI Search
 
- - Create Azure AI Search Resource: In the Azure portal, create a new Azure AI Search resource.
- - Configure Search Service: Provide the necessary details
-    - Name: Enter a name for your search service.
-    - Resource Group: Use the same resource group as your Azure OpenAI resource.
-    - Location: Use the same region for reduced latency.
-    - Pricing Tier: Select a pricing tier based on your needs.
+- Create Azure AI Search Resource: In the Azure portal, create a new Azure AI Search resource.
+- Configure Search Service: Provide the necessary details
+  - Name: Enter a name for your search service.
+  - Resource Group: Use the same resource group as your Azure OpenAI resource.
+  - Location: Use the same region for reduced latency.
+  - Pricing Tier: Select a pricing tier based on your needs.
   
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/09222c27-994f-44b6-bf04-fa9c3d0fb07e">
     
@@ -98,7 +97,7 @@ Click here to see more about [Workflow in Zero Trust Architecture](./2_ZeroTrust
 
 ### Integrate with Virtual Network (VNet)
 
->  Deploy your VMs, Azure AI Search, and Azure OpenAI within the VNet.
+> Deploy your VMs, Azure AI Search, and Azure OpenAI within the VNet.
 
 ```mermaid
 graph TD
@@ -161,11 +160,11 @@ graph TD
   | **Private Endpoint Connection** | - Provides a network interface that connects you privately and securely to a service powered by Azure Private Link.<br>- Ideal for securing the connection between Azure AI Search and Azure OpenAI within the same Virtual Network.<br>- Offers a higher level of security by ensuring that the connection remains within the VNet.<br>- Can offer better performance as the traffic remains within the Azure backbone network. | - Requires manual setup of private endpoints for both Azure AI Search and Azure OpenAI.<br>- DNS settings must be correctly configured to resolve the private endpoints.                                                |
   | **VNet Peering**       | - Enables resources in different VNets to communicate with low latency and high bandwidth, as if they were within the same network.<br>- Useful when Azure AI Search and Azure OpenAI are in different VNets.<br>- Allows full connectivity between VNets, making it suitable for scenarios where multiple resources need to communicate across VNets. | - Peering links must be created in both VNets.<br>- NSGs should be configured to allow traffic from the peered VNet.<br>- Additional costs may be incurred for data transfer between VNets.                            |
 
-  - Search for the resource ID of the Azure OpenAI service:
+- Search for the resource ID of the Azure OpenAI service:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/d94492b6-f0cb-4a32-b5b9-9bf895fb464c">
 
- - Create the shared private link or the `private endpoint` as needed:
+- Create the shared private link or the `private endpoint` as needed:
 
    > Shared private access:
    
@@ -177,7 +176,7 @@ graph TD
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/3db7df26-b7ca-4519-b8bf-6f4abc9d5441">
 
-    - While doing this you can also setup the Network Security Group (NSG) if it's not already set up.
+  - While doing this you can also setup the Network Security Group (NSG) if it's not already set up.
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/7f5a9363-e6da-4552-9375-8384e6a3bbc2">
 
@@ -216,7 +215,6 @@ graph TD
   - Provide the necessary details:
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/34fce8f1-ddf5-4cfa-8306-6c03f59c1cf7">
-
 
 - Login into the VM, and go the AI Search. You can use Azure Bastion to connect.
 
