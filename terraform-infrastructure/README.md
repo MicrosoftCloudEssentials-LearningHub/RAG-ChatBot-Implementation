@@ -81,7 +81,6 @@ graph TD;
 
         > At the end, you will see a message in green if everything was executed successfully: 
 
-
         <img width="550" alt="Screenshot 2025-03-18 145143" src="https://github.com/user-attachments/assets/4741e863-1ccd-4f2a-a0b8-d5d1964bd890" />
 
    - **Order Now**: Applies the changes required to reach the desired state of the configuration. It prompts for confirmation before making any changes. It also uses the variable values specified in `terraform.tfvars`.
@@ -94,16 +93,15 @@ graph TD;
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/2b32b63f-3e9f-46da-a5e9-c39360135251">
 
-     
    - **Remove**: Destroys the infrastructure managed by Terraform. It prompts for confirmation before deleting any resources. It also uses the variable values specified in `terraform.tfvars`.
     
         ```sh
         terraform destroy -var-file terraform.tfvars
         ```
+
         > At the end, you will see a message in green if everything was executed successfully: 
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/f2089d03-3a3d-431d-b462-8148ef519104">
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
