@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-05-09
 
 ----------
 
@@ -15,7 +15,6 @@ Last updated: 2024-11-19
 <details>
 <summary><b> References </b> (Click to expand)</summary>
    
-- [RAG Microsoft Drawio/visio templates](https://github.com/Azure/GPT-RAG/blob/main/media/visio/Enterprise%20RAG.vsdx)
 - [RAG Microsoft Enterprise RAG Solution Accelerator (GPT-RAG) - github repo](https://github.com/Azure/GPT-RAG)
 - [Overview – Apply Zero Trust principles to Azure IaaS](https://learn.microsoft.com/en-us/security/zero-trust/azure-infrastructure-overview)
 - [Zero Trust defined](https://www.microsoft.com/en-us/security/business/zero-trust?msockid=38ec3806873362243e122ce086486339)
@@ -86,3 +85,4 @@ From [Zero Trust Architecture Deployment](https://github.com/Azure/GPT-RAG?tab=r
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
+
