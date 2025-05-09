@@ -86,3 +86,4 @@ From [Zero Trust Architecture Deployment](https://github.com/Azure/GPT-RAG?tab=r
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
+
