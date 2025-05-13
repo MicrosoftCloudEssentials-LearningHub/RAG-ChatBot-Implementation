@@ -24,7 +24,7 @@ Last updated: 2025-05-09
 
 ## Overview
 
-> As Microsoft defined Zero Trust:
+> Zero Trust AI architecture in Microsoft Azure is a `security framework designed to protect data, applications, and infrastructure by assuming that threats can come from both inside and outside the network`. This model operates on the principle of "never trust, always verify", meaning `every access request is thoroughly authenticated and authorized based on all available data points, regardless of its origin. The architecture integrates multiple layers of security, including strong identity verification, device compliance checks, and least privilege access, ensuring that only authorized users and devices can access sensitive resources`. By continuously monitoring and validating each request, Zero Trust AI architecture helps organizations minimize risks and enhance their overall security posture. As Microsoft defined Zero Trust:
 
 <div align="center">
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/1736d8bd-cb75-497d-8b0a-71e8d5344c9f" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
