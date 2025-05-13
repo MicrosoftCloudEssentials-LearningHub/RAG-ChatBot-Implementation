@@ -72,10 +72,10 @@ Click here to see more about [Workflow in Zero Trust Architecture](./2_ZeroTrust
   - Location: Use the same region for reduced latency.
   - Pricing Tier: Select a pricing tier based on your needs.
   
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/09222c27-994f-44b6-bf04-fa9c3d0fb07e">
-    
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/9420a863-f22c-4236-9687-9e3799af15c8">
-        
+      <img width="550" alt="image" src="https://github.com/user-attachments/assets/09222c27-994f-44b6-bf04-fa9c3d0fb07e">
+  
+      <img width="550" alt="image" src="https://github.com/user-attachments/assets/9420a863-f22c-4236-9687-9e3799af15c8">
+      
 - Establish the network connection by choosing to either set up the resource with a public configuration and adjust the network settings later, or integrate the network configuration during the resource creation process.
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/b16c4621-9645-4c8f-9378-fb6674a7f7c6">
