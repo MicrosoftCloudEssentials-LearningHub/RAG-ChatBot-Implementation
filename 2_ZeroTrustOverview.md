@@ -52,7 +52,7 @@ From [Microsoft Security](https://www.microsoft.com/en-us/security/business/zero
 > Network Interface & Network Security Groups: 
 
 <div align="center">
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/11b7bcfb-6822-4b55-bcbb-f2adc993f1cb" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/aa342b5d-76ed-4b1e-8ab6-18a1dbc19701" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
 > Zero trust: Initial Phase
