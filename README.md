@@ -51,7 +51,7 @@ Last updated: 2025-04-22
 
 | [Public Architecture](#basic-architecture)  | [Private Architecture](./1_PrivateArchitecture.md) |  [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/main/media/architecture-GPT-RAG-ZeroTrust-LZ.png) |
 | --- | --- | --- | 
-|  <img width="800" alt="image" src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" />    |   <img width="800" alt="image" src="https://github.com/user-attachments/assets/af835493-2d76-4216-8df6-3e258c9db949"> | <img width="800" alt="image" src="https://github.com/user-attachments/assets/cb7a167d-746d-458e-a7df-a8e517da3fea" /> |
+|  <img width="800" alt="image" src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" />    |   <img width="800" alt="image" src="https://github.com/user-attachments/assets/af835493-2d76-4216-8df6-3e258c9db949"> | <img width="800" alt="image" src="https://github.com/user-attachments/assets/67e7d9eb-f757-4fe9-85f4-d5bb08b9e55f" /> |
 
 > Here is a [quick overview about RAG](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
 
