@@ -35,39 +35,7 @@ Last updated: 2025-05-15
 
 > `Azure AI Document Intelligence is a cloud-based AI service (SaaS) that provides an API for document processing`. It `extracts text, tables, and key data from PDFs, images, and scanned documents using AI models.` It automates workflows, supports prebuilt and custom models, and integrates with Azure AI services. Common uses include invoice processing, contract analysis, and healthcare forms. Developers can access it via APIs or SDKs in Python, .NET, and Java.
 
-> [!NOTE]
-> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
-
-> E.g.0 Example of estimation: 
-
-- Number of documents: 50
-- Pages per document: 4
-- Total pages: 200
-
-   > Microsoft offers a free tier (F0) that allows users to test all its features. The free tier includes a `limited number of pages that can be scanned per request`. `As of now, the free allocation enables users to analyze up to two pages per request, and up to 500 pages included per month` If the total number of pages and features fall within the allowed usage, it can be used accordingly.
-
-   <https://github.com/user-attachments/assets/96081a96-61b9-47a3-9caf-0f77e389217e>
-
-> E.g.1 of estimation: 
-
-- Number of documents: 500
-- Pages per document: 20
-- Total pages: 10,000
-
-> E.g.2 of estimation: 
-
-- Number of documents: 2000
-- Pages per document: 10
-- Total pages: 20,000
-
-   > For both scenarios note: <br/>
-   > - Custom: Custom models you train using your own labeled data. These models are tailored to your specific document types and structures. <br/>
-   > - Pre-built: These are ready-to-use models for common document types. <br/>
-   > - Read: Uses OCR (Optical Character Recognition) to extract text, paragraphs, and detect languages from documents. It's a basic text extraction service. <br/>
-   > - Add-on: Additional features of Form Recognizer that incur extra charges. E.g High Resolution, Font, and Formula. <br/>
-   > - Query: Allows querying document content using natural language
-
-  <https://github.com/user-attachments/assets/50e6770d-4b83-4a0b-a639-7b1f26b29b4b>
+Please click here []() to get more information. 
 
 ## AI Search
 
