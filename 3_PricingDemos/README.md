@@ -28,68 +28,29 @@ Last updated: 2025-05-15
    
 </details>
 
-> [!IMPORTANT]
-> The information provided and any document (such as scripts, sample codes, etc.) is provided `AS-IS` and `WITH ALL FAULTS`. Pricing estimates are for `demonstration purposes only and do not reflect final pricing`. `Microsoft assumes no liability` for your use of this information and makes no guarantees or warranties, expressed or implied, regarding its accuracy or completeness, including any pricing details. `Please note that these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
-
 ## Document Intelligence
 
 > `Azure AI Document Intelligence is a cloud-based AI service (SaaS) that provides an API for document processing`. It `extracts text, tables, and key data from PDFs, images, and scanned documents using AI models.` It automates workflows, supports prebuilt and custom models, and integrates with Azure AI services. Common uses include invoice processing, contract analysis, and healthcare forms. Developers can access it via APIs or SDKs in Python, .NET, and Java.
 
-> [!NOTE]
-> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
-
-> E.g.0 Example of estimation: 
-
-- Number of documents: 50
-- Pages per document: 4
-- Total pages: 200
-
-   > Microsoft offers a free tier (F0) that allows users to test all its features. The free tier includes a `limited number of pages that can be scanned per request`. `As of now, the free allocation enables users to analyze up to two pages per request, and up to 500 pages included per month` If the total number of pages and features fall within the allowed usage, it can be used accordingly.
-
-   <https://github.com/user-attachments/assets/96081a96-61b9-47a3-9caf-0f77e389217e>
-
-> E.g.1 of estimation: 
-
-- Number of documents: 500
-- Pages per document: 20
-- Total pages: 10,000
-
-> E.g.2 of estimation: 
-
-- Number of documents: 2000
-- Pages per document: 10
-- Total pages: 20,000
-
-   > For both scenarios note: <br/>
-   > - Custom: Custom models you train using your own labeled data. These models are tailored to your specific document types and structures. <br/>
-   > - Pre-built: These are ready-to-use models for common document types. <br/>
-   > - Read: Uses OCR (Optical Character Recognition) to extract text, paragraphs, and detect languages from documents. It's a basic text extraction service. <br/>
-   > - Add-on: Additional features of Form Recognizer that incur extra charges. E.g High Resolution, Font, and Formula. <br/>
-   > - Query: Allows querying document content using natural language
-
-  <https://github.com/user-attachments/assets/50e6770d-4b83-4a0b-a639-7b1f26b29b4b>
+Please click here [Demonstration: Azure AI Document Intelligence Pricing](./0_Doc-Intellig.md) to get more information. 
 
 ## AI Search
 
-> Azure AI Search is a `cloud-based search-as-a-service` from Microsoft that enables developers to build `intelligent, scalable search experiences` into web, mobile, and enterprise applications. It combines `full-text search` with `AI-powered capabilities` like `semantic ranking`, `natural language processing`, and `cognitive skills` for content enrichment. With `built-in scalability`, `enterprise-grade security`, and `global availability`, hhelps users `quickly find relevant information` across large datasets, ideal for use cases like `e-commerce`, `knowledge management`, and `digital content discovery`.
+> Azure AI Search is a `cloud-based search-as-a-service` from Microsoft that enables developers to build `intelligent, scalable search experiences` into web, mobile, and enterprise applications. It combines `full-text search` with `AI-powered capabilities` like `semantic ranking`, `natural language processing`, and `cognitive skills` for content enrichment. With `built-in scalability`, `enterprise-grade security`, and `global availability`, helps users `quickly find relevant information` across large datasets, ideal for use cases like `e-commerce`, `knowledge management`, and `digital content discovery`.
+
+Please click here [Demonstration: Azure AI Search Pricing](./1_AI-Search.md) to get more information. 
+
+## Azure Open AI or AI Foundry
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
-
->  Priced based on a capacity-based model using Search Units (SUs), and charges vary depending on the tier and features you use. You are charged hourly based on the number of SUs, which are calculated as:
-
-   $$
-   \text{SUs} = \text{Replicas} \times \text{Partitions}
-   $$
-
-   https://github.com/user-attachments/assets/809199a9-8a3f-4540-b4fa-d6358e685c01
 
 ## Storage Account  
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
-## Azure Open AI or AI Foundry
+## Cosmos DB 
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
@@ -128,6 +89,9 @@ Last updated: 2025-05-15
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
+> [!IMPORTANT]
+> The information provided and any document (such as scripts, sample codes, etc.) is provided `AS-IS` and `WITH ALL FAULTS`. Pricing estimates are for `demonstration purposes only and do not reflect final pricing`. `Microsoft assumes no liability` for your use of this information and makes no guarantees or warranties, expressed or implied, regarding its accuracy or completeness, including any pricing details. `Please note that these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
