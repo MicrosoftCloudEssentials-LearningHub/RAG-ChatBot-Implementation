@@ -76,13 +76,13 @@ Last updated: 2025-05-15
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
->  Priced based on a capacity-based model using Search Units (SUs), and charges vary depending on the tier and features you use. You are charged hourly based on the number of SUs, which are calculated as:
+> Priced based on a capacity-based model using Search Units (SUs), and charges vary depending on the tier and features you use. You are charged hourly based on the number of SUs, which are calculated as:
 
    $$
    \text{SUs} = \text{Replicas} \times \text{Partitions}
    $$
 
-   https://github.com/user-attachments/assets/809199a9-8a3f-4540-b4fa-d6358e685c01
+   <https://github.com/user-attachments/assets/809199a9-8a3f-4540-b4fa-d6358e685c01>
 
 ## Azure Open AI or AI Foundry
 
