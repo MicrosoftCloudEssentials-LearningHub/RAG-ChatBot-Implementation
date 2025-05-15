@@ -19,8 +19,8 @@ Last updated: 2025-05-15
    \text{SUs} = \text{Replicas} \times \text{Partitions}
    $$
 
-
 > E.g.1: Small Knowledge Base
+
 - **Number of documents**: 2,000  
 - **Pages per document**: 10  
 - **Total pages**: 20,000  
@@ -29,6 +29,7 @@ Last updated: 2025-05-15
 - **Suggested tier**: `Basic or Standard S1 with 1 replica, 1 partition`
 
 > E.g.2: E-commerce Product Catalog
+
 - **Number of products**: 50,000  
 - **Attributes per product**: 15 (title, description, price, tags, etc.)  
 - **Estimated index size**: ~ 1–2 GB  
@@ -36,6 +37,7 @@ Last updated: 2025-05-15
 - **Suggested tier**: `Standard S1 with 2 replicas, 1 partition (for high availability)`  
 
 > E.g.3: Legal Document Archive
+
 - **Number of documents**: 100,000  
 - **Pages per document**: 25  
 - **Total pages**: 2.5 million  
@@ -44,6 +46,7 @@ Last updated: 2025-05-15
 - **Suggested tier**: `Standard S2 or Storage Optimized L1 with 2+ partitions`  
 
 > E.g.4: News Aggregator
+
 - **Articles per day**: 5,000  
 - **Retention**: 1 year  
 - **Total documents**: ~ 1.8 million  
