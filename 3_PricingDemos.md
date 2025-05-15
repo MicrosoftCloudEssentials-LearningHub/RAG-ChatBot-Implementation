@@ -17,6 +17,8 @@ Last updated: 2025-05-15
 > 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
+
+ - [Document Intelligence pricing](https://azure.microsoft.com/en-in/pricing/details/ai-document-intelligence/?msockid=38ec3806873362243e122ce086486339)
    
 </details>
 
@@ -56,6 +58,15 @@ Last updated: 2025-05-15
 - Number of documents: 2000
 - Pages per document: 10
 - Total pages: 20,000
+
+   > For both scenarios note: <br/>
+   > - Custom: Custom models you train using your own labeled data. These models are tailored to your specific document types and structures. <br/>
+   > - Pre-built: These are ready-to-use models for common document types. <br/>
+   > - Read: Uses OCR (Optical Character Recognition) to extract text, paragraphs, and detect languages from documents. It's a basic text extraction service. <br/>
+   > - Add-on: Additional features of Form Recognizer that incur extra charges. E.g High Resolution, Font, and Formula. <br/>
+   > - Query: Allows querying document content using natural language
+
+  https://github.com/user-attachments/assets/50e6770d-4b83-4a0b-a639-7b1f26b29b4b
 
 ## AI Search
 
