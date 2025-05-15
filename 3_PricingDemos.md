@@ -84,12 +84,17 @@ Last updated: 2025-05-15
 
    https://github.com/user-attachments/assets/809199a9-8a3f-4540-b4fa-d6358e685c01
 
+## Azure Open AI or AI Foundry
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
 ## Storage Account  
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
-## Azure Open AI or AI Foundry
+## Cosmos DB 
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
