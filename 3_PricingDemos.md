@@ -30,25 +30,73 @@ Last updated: 2025-05-15
 
 ## Document Intelligence
 
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
+> E.g.0 Example of estimation: 
+- Number of documents: 50
+- Pages per document: 4
+- Total pages: 200
+
+> E.g.1 of estimation: 
+- Number of documents: 500
+- Pages per document: 20
+- Total pages: 10,000
+
+> E.g.2 of estimation: 
+- Number of documents: 2000
+- Pages per document: 10
+- Total pages: 20,000
+
 ## AI Search
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 ## Storage Account 
 
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
 ## Azure Open AI or AI Foundry
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 ## Key Vault 
 
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
 ## AI Services 
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 ## Virtual Machine 
 
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
 ## App Service 
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 ## Function App
 
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
 ## Network 
 
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
 ## Front Door 
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
