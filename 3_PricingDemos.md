@@ -18,7 +18,7 @@ Last updated: 2025-05-15
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
- - [Document Intelligence pricing](https://azure.microsoft.com/en-in/pricing/details/ai-document-intelligence/?msockid=38ec3806873362243e122ce086486339)
+- [Document Intelligence pricing](https://azure.microsoft.com/en-in/pricing/details/ai-document-intelligence/?msockid=38ec3806873362243e122ce086486339)
    
 </details>
 
@@ -66,7 +66,7 @@ Last updated: 2025-05-15
    > - Add-on: Additional features of Form Recognizer that incur extra charges. E.g High Resolution, Font, and Formula. <br/>
    > - Query: Allows querying document content using natural language
 
-  https://github.com/user-attachments/assets/50e6770d-4b83-4a0b-a639-7b1f26b29b4b
+  <https://github.com/user-attachments/assets/50e6770d-4b83-4a0b-a639-7b1f26b29b4b>
 
 ## AI Search
 
