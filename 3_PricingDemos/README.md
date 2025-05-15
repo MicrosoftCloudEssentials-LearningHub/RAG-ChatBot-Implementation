@@ -14,10 +14,11 @@ Last updated: 2025-05-15
 
 > [!NOTE]
 > Use these values in the [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) as a reference. While prices may be adjusted, this guide serves as a foundational resource for the procedure to be followed. Keep in mind that `costs will depend on the specific architecture you choose and your unique requirements`. This breakdown provides an overview of key components `you may require all, some, or even additional elements based on your use case.`
-> 
+
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
+- [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
 - [Document Intelligence pricing](https://azure.microsoft.com/en-in/pricing/details/ai-document-intelligence/?msockid=38ec3806873362243e122ce086486339)
 - [Azure AI Search pricing](https://azure.microsoft.com/en-us/pricing/details/search/?msockid=38ec3806873362243e122ce086486339)
 
