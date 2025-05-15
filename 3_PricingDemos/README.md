@@ -35,22 +35,13 @@ Last updated: 2025-05-15
 
 > `Azure AI Document Intelligence is a cloud-based AI service (SaaS) that provides an API for document processing`. It `extracts text, tables, and key data from PDFs, images, and scanned documents using AI models.` It automates workflows, supports prebuilt and custom models, and integrates with Azure AI services. Common uses include invoice processing, contract analysis, and healthcare forms. Developers can access it via APIs or SDKs in Python, .NET, and Java.
 
-Please click here []() to get more information. 
+Please click here [Demonstration: Azure AI Document Intelligence Pricing](./0_Doc-Intellig.md) to get more information. 
 
 ## AI Search
 
-> Azure AI Search is a `cloud-based search-as-a-service` from Microsoft that enables developers to build `intelligent, scalable search experiences` into web, mobile, and enterprise applications. It combines `full-text search` with `AI-powered capabilities` like `semantic ranking`, `natural language processing`, and `cognitive skills` for content enrichment. With `built-in scalability`, `enterprise-grade security`, and `global availability`, hhelps users `quickly find relevant information` across large datasets, ideal for use cases like `e-commerce`, `knowledge management`, and `digital content discovery`.
+> Azure AI Search is a `cloud-based search-as-a-service` from Microsoft that enables developers to build `intelligent, scalable search experiences` into web, mobile, and enterprise applications. It combines `full-text search` with `AI-powered capabilities` like `semantic ranking`, `natural language processing`, and `cognitive skills` for content enrichment. With `built-in scalability`, `enterprise-grade security`, and `global availability`, helps users `quickly find relevant information` across large datasets, ideal for use cases like `e-commerce`, `knowledge management`, and `digital content discovery`.
 
-> [!NOTE]
-> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
-
-> Priced based on a capacity-based model using Search Units (SUs), and charges vary depending on the tier and features you use. You are charged hourly based on the number of SUs, which are calculated as:
-
-   $$
-   \text{SUs} = \text{Replicas} \times \text{Partitions}
-   $$
-
-   <https://github.com/user-attachments/assets/809199a9-8a3f-4540-b4fa-d6358e685c01>
+Please click here [Demonstration: Azure AI Search Pricing](./1_AI-Search.md) to get more information. 
 
 ## Azure Open AI or AI Foundry
 
