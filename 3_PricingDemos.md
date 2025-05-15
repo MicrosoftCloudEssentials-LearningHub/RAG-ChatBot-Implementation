@@ -34,16 +34,19 @@ Last updated: 2025-05-15
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 > E.g.0 Example of estimation: 
+
 - Number of documents: 50
 - Pages per document: 4
 - Total pages: 200
 
 > E.g.1 of estimation: 
+
 - Number of documents: 500
 - Pages per document: 20
 - Total pages: 10,000
 
 > E.g.2 of estimation: 
+
 - Number of documents: 2000
 - Pages per document: 10
 - Total pages: 20,000
