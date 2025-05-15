@@ -43,7 +43,7 @@ Last updated: 2025-05-15
 
    > Microsoft offers a free tier (F0) that allows users to test all its features. The free tier includes a `limited number of pages that can be scanned per request`. `As of now, the free allocation enables users to analyze up to two pages per request, and up to 500 pages included per month` If the total number of pages and features fall within the allowed usage, it can be used accordingly.
 
-   https://github.com/user-attachments/assets/96081a96-61b9-47a3-9caf-0f77e389217e
+   <https://github.com/user-attachments/assets/96081a96-61b9-47a3-9caf-0f77e389217e>
 
 > E.g.1 of estimation: 
 
