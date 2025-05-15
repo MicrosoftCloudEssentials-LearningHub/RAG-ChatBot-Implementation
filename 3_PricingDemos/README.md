@@ -26,7 +26,20 @@ Last updated: 2025-05-15
 
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
-   
+
+- [Document Intelligence](#document-intelligence)
+- [AI Search](#ai-search)
+- [Azure Open AI or AI Foundry](#azure-open-ai-or-ai-foundry)
+- [Storage Account](#storage-account)
+- [Cosmos DB](#cosmos-db)
+- [Key Vault](#key-vault)
+- [AI Services](#ai-services)
+- [Virtual Machine](#virtual-machine)
+- [App Service](#app-service)
+- [Function App](#function-app)
+- [Network](#network)
+- [Front Door](#front-door)
+
 </details>
 
 ## Document Intelligence
