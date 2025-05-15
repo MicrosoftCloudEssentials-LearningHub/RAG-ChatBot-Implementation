@@ -19,7 +19,8 @@ Last updated: 2025-05-15
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Document Intelligence pricing](https://azure.microsoft.com/en-in/pricing/details/ai-document-intelligence/?msockid=38ec3806873362243e122ce086486339)
-   
+- [Azure AI Search pricing](https://azure.microsoft.com/en-us/pricing/details/search/?msockid=38ec3806873362243e122ce086486339)
+
 </details>
 
 <details>
@@ -70,10 +71,20 @@ Last updated: 2025-05-15
 
 ## AI Search
 
+> Azure AI Search is a `cloud-based search-as-a-service` from Microsoft that enables developers to build `intelligent, scalable search experiences` into web, mobile, and enterprise applications. It combines `full-text search` with `AI-powered capabilities` like `semantic ranking`, `natural language processing`, and `cognitive skills` for content enrichment. With `built-in scalability`, `enterprise-grade security`, and `global availability`, hhelps users `quickly find relevant information` across large datasets, ideal for use cases like `e-commerce`, `knowledge management`, and `digital content discovery`.
+
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
-## Storage Account 
+>  Priced based on a capacity-based model using Search Units (SUs), and charges vary depending on the tier and features you use. You are charged hourly based on the number of SUs, which are calculated as:
+
+   $$
+   \text{SUs} = \text{Replicas} \times \text{Partitions}
+   $$
+
+   https://github.com/user-attachments/assets/809199a9-8a3f-4540-b4fa-d6358e685c01
+
+## Storage Account  
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
