@@ -110,7 +110,6 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 3. **Azure Cognitive Services – Translator**: Enables multilingual RAG solutions by translating user queries or retrieved documents into the desired language before passing them to the LLM.
 4. **Azure AI Content Safety**: Helps detect and filter harmful or inappropriate content in both retrieved documents and generated responses, ensuring responsible AI use in RAG applications.
 5. **Azure AI Custom Neural Voice & Speech Services** *(for voice-based RAG)*: Useful if your RAG solution includes voice input/output, enabling transcription, synthesis, and voice interaction.
-
 6. **Azure Machine Learning**: Can be used to train or fine-tune custom models, manage vector embeddings, or evaluate RAG performance using custom metrics and pipelines.
 
 ## Front Door 
