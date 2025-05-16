@@ -91,7 +91,7 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 
 ## Network 
 
-> Key Azure networking components** commonly used in a **Retrieval-Augmented Generation (RAG)** architecture, and how they contribute to **security**, **performance**, and **connectivity**:
+> Key Azure networking components commonly used in a **Retrieval-Augmented Generation (RAG)** architecture, and how they contribute to **security**, **performance**, and **connectivity**:
 
 1. **Virtual Network (VNet)**: is a private, isolated network in Azure that allows resources like VMs, Azure Functions, and databases to securely communicate with each other. In a RAG solution, it ensures that components like **Azure OpenAI**, **Cognitive Search**, and **Cosmos DB** are connected securely and efficiently.
 2. **Subnet**: is a segment within a VNet that helps organize and isolate resources. For example, you might place **Function Apps** in one subnet and **vector databases** in another to apply different security rules or routing policies.
