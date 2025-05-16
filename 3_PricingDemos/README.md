@@ -57,7 +57,7 @@ Please click here [Demonstration: Azure AI Search Pricing](./1_AI-Search.md) to 
 ## Azure Open AI or AI Foundry
 
 
-> **Azure Open AI** is a `cloud-based generative AI service` that exclusively provides OpenAI models (e.g., GPT‑3.5 and GPT‑4) for natural language processing, text generation, and semantic understanding.  <br/>
+> **Azure Open AI** is a cloud-based generative AI service `that exclusively provides OpenAI models` (e.g., GPT‑3.5 and GPT‑4) for natural language processing, text generation, and semantic understanding.  <br/>
 > **Azure AI Foundry** `supports every type of AI model, allowing developers to deploy and manage a wide range of models` (from OpenAI’s to other machine learning architectures) for diverse intelligent applications.
 
 Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-AIFoundry.md) to get more information. 
