@@ -33,11 +33,11 @@ Last updated: 2025-05-15
 - [Storage Account](#storage-account)
 - [Cosmos DB](#cosmos-db)
 - [Key Vault](#key-vault)
-- [AI Services](#ai-services)
 - [Virtual Machine](#virtual-machine)
 - [App Service](#app-service)
 - [Function App](#function-app)
 - [Network](#network)
+- [AI Services](#ai-services)
 - [Front Door](#front-door)
 
 </details>
@@ -77,11 +77,6 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
-## AI Services 
-
-> [!NOTE]
-> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
-
 ## Virtual Machine 
 
 > [!NOTE]
@@ -98,6 +93,11 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
 
 ## Network 
+
+> [!NOTE]
+> Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
+
+## AI Services 
 
 > [!NOTE]
 > Please note the last updated date, as the values shown in the video might change over time due to price adjustments.
