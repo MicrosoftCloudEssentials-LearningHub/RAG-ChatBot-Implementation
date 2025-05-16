@@ -78,8 +78,7 @@ $$
 \text{Total Cost} = N \times \left(\frac{\text{Tokens in Prompt} + \text{Tokens in Response}}{1000}\right) \times \text{Cost per 1,000 Tokens}
 $$
 
-
-Find below some examples:
+> Find below some examples:
 
 <details>
 <summary><strong>Definitions</strong></summary>
