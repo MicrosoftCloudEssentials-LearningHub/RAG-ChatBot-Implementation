@@ -1,4 +1,4 @@
-# App re-deployment - Quick Guide
+# Application Redeployment - Quick Guide
 
 Costa Rica
 
