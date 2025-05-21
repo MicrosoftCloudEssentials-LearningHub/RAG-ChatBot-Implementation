@@ -369,11 +369,11 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
         
         Refreshing environment gptbrowntest (azd env refresh)
         
-        ? Select an Azure Subscription to use:  1. ME-timnab-1 (82378273-0fd3-378347834-42e0-9348)
+        ? Select an Azure Subscription to use:  1. ME-timnab-1 (8237827342e0-9348)
           (✓) Done: Retrieving Azure deployment (gptbrowntest-1745337566)
           (✓) Done: Updated 63 environment variables
         
-        Populated environment from Azure infrastructure deployment: gptbrowntest-1745337566
+        Populated environment from Azure infrastructure deployment: gptbrowntest-1747566
         
         SUCCESS: Environment refresh completed
         View environment variables at C:\Users\vm-user\Downloads\RAG-ChatBot-Implementation\GPT-RAG_SolutionAccelerator\deploy\.azure\gptbrowntest\.env
