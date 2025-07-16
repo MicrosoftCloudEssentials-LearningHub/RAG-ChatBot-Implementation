@@ -14,7 +14,9 @@ Last updated: 2025-04-22
 > To adjust the output token limit in the UI, please [modify this value](https://github.com/Azure/gpt-rag-frontend/blob/main/frontend/src/components/QuestionInput/QuestionInput.tsx#L61-L68)
 > After making the changes, [redeploy the application by following these steps](./how-redeploy-app.md).
  
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-31-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
