@@ -80,6 +80,7 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 ## App Service 
 
 > Azure App Service is a cloud-based Platform-as-a-Service `(PaaS)` offering from Microsoft that enables developers to `build, host, and scale web applications and APIs` quickly and efficiently. It supports multiple languages like `.NET`, `Java`, `Node.js`, `Python`, and `PHP`, and provides built-in capabilities like `auto-scaling`, `custom domains`, `SSL certificates`, and `CI/CD integration`. App Service includes two key components:  
+>
 > - **Web App**: for hosting `websites`, `RESTful APIs`, and `backend services` with full support for `custom code`, `frameworks`, and `containers`.  
 > - **Function App**: for running `event-driven serverless functions` that scale automatically and are ideal for `background tasks`, `data processing`, and `microservices`.  
 
@@ -115,6 +116,7 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 ## Front Door 
 
 > **Azure Front Door** is a `cloud-native global application delivery network` and a `Platform-as-a-Service (PaaS)` offering from Microsoft that provides `high-performance, secure, and scalable entry points` for your web applications and APIs. **Support SaaS applications and APIs** by acting as a secure, intelligent gateway that improves **performance**, **availability**, and **protection** for cloud-based services—including those used in **RAG (Retrieval-Augmented Generation)** solutions. It offers features like: <br/>
+>
 > - Global HTTP/HTTPS load balancing <br/>
 > - SSL offloading <br/>
 > - Web Application Firewall (WAF) <br/>
