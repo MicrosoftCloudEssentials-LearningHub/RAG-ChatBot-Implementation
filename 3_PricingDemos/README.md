@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-05-15
+Last updated: 2025-07-16
 
 ----------
 
@@ -80,6 +80,7 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 ## App Service 
 
 > Azure App Service is a cloud-based Platform-as-a-Service `(PaaS)` offering from Microsoft that enables developers to `build, host, and scale web applications and APIs` quickly and efficiently. It supports multiple languages like `.NET`, `Java`, `Node.js`, `Python`, and `PHP`, and provides built-in capabilities like `auto-scaling`, `custom domains`, `SSL certificates`, and `CI/CD integration`. App Service includes two key components:  
+>
 > - **Web App**: for hosting `websites`, `RESTful APIs`, and `backend services` with full support for `custom code`, `frameworks`, and `containers`.  
 > - **Function App**: for running `event-driven serverless functions` that scale automatically and are ideal for `background tasks`, `data processing`, and `microservices`.  
 
@@ -115,6 +116,7 @@ Please click here [Demonstration: Azure Open AI & AI Foundry Pricing](./2_AOAI-A
 ## Front Door 
 
 > **Azure Front Door** is a `cloud-native global application delivery network` and a `Platform-as-a-Service (PaaS)` offering from Microsoft that provides `high-performance, secure, and scalable entry points` for your web applications and APIs. **Support SaaS applications and APIs** by acting as a secure, intelligent gateway that improves **performance**, **availability**, and **protection** for cloud-based services—including those used in **RAG (Retrieval-Augmented Generation)** solutions. It offers features like: <br/>
+>
 > - Global HTTP/HTTPS load balancing <br/>
 > - SSL offloading <br/>
 > - Web Application Firewall (WAF) <br/>
@@ -134,7 +136,9 @@ graph TD
 > [!IMPORTANT]
 > The information provided and any document (such as scripts, sample codes, etc.) is provided `AS-IS` and `WITH ALL FAULTS`. Pricing estimates are for `demonstration purposes only and do not reflect final pricing`. `Microsoft assumes no liability` for your use of this information and makes no guarantees or warranties, expressed or implied, regarding its accuracy or completeness, including any pricing details. `Please note that these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-988-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
