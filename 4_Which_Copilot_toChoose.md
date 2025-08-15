@@ -15,26 +15,29 @@ Last updated: 2025-08-14
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
-*   **AI strategy & decision tree** — *Cloud Adoption Framework*\
-    <https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy>
-*   **Which Copilot is right for your org** — *Microsoft 365 Copilot*\
-    <https://learn.microsoft.com/copilot/microsoft-365/which-copilot-for-your-organization>
-*   **Choose the right agent solution** — *Copilot Studio vs SDKs vs Azure AI*\
-    <https://learn.microsoft.com/microsoft-365/agents-sdk/choose-agent-solution>
-*   **Copilot Studio overview**\
-    <https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio>
-*   **Declarative agents tool comparison**\
-    <https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison>
-*   **Extensibility planning guide (agents for M365 Copilot)**\
-    <https://learn.microsoft.com/microsoft-365-copilot/extensibility/planning-guide>
-*   **Training path: Build a foundation to build AI agents & extend M365 Copilot**\
-    <https://learn.microsoft.com/training/paths/build-foundation-extend-microsoft-365-copilot/>
+- [AI strategy & decision tree](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy) - Cloud Adoption Framework
+- [Which Copilot is right for your org](https://learn.microsoft.com/copilot/microsoft-365/which-copilot-for-your-organization) - Microsoft 365 Copilot
+- [Choose the right agent solution](https://learn.microsoft.com/microsoft-365/agents-sdk/choose-agent-solution) - Copilot Studio vs SDKs vs Azure AI
+- [Copilot Studio overview](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) - Copilot Studio
+- [Declarative agents tool comparison](https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison) - Declarative Agents
+- [Extensibility planning guide (agents for M365 Copilot)](https://learn.microsoft.com/microsoft-365-copilot/extensibility/planning-guide) - Extensibility Planning
+- [Training path: Build a foundation to build AI agents & extend M365 Copilot](https://learn.microsoft.com/training/paths/build-foundation-extend-microsoft-365-copilot/) - Training Path
 
 </details>
 
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
+- [Where to start?](#where-to-start)
+- [Quick decision tree text + mermaid](#quick-decision-tree-text--mermaid)
+- [At-a-glance: Product picker](#at-a-glance-product-picker)
+- [Copilot Studio vs Azure AI Foundry Azure AI Studio](#copilot-studio-vs-azure-ai-foundry-azure-ai-studio)
+- [Extending Microsoft 365 Copilot with agents](#extending-microsoft-365-copilot-with-agents)
+- [Implementation considerations security, data, networking](#implementation-considerations-security-data-networking)
+- [FAQ](#faq)
+    - [Q1. Is Copilot Studio only for chat?](#q1-is-copilot-studio-only-for-chat)
+    - [Q2. When do I prefer Azure AI Foundry?](#q2-when-do-i-prefer-azure-ai-foundry)
+    - [Q3. Can I extend Microsoft 365 Copilot with my own domain agent?](#q3-can-i-extend-microsoft-365-copilot-with-my-own-domain-agent)
 
 </details>
 
