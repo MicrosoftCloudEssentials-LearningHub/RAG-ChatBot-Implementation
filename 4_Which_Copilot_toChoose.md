@@ -138,7 +138,7 @@ From [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoptio
 
 ### Q3. Can I extend Microsoft 365 Copilot with my own domain agent?
 
-> Yes—use `agents` (declarative) and related SDKs; see the tool comparison and planning guidance. Please read more about here [Declarative agents tool comparison](https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison), [Extensibility planning guide (agents for M365 Copilot)](https://learn.microsoft.com/microsoft-365-copilot/extensibility/planning-guide).
+> Yes, use `agents` (declarative) and related SDKs; see the tool comparison and planning guidance. Please read more about here [Declarative agents tool comparison](https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison), [Extensibility planning guide (agents for M365 Copilot)](https://learn.microsoft.com/microsoft-365-copilot/extensibility/planning-guide).
 
 
 <!-- START BADGE -->
