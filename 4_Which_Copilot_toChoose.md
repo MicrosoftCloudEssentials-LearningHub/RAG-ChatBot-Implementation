@@ -68,6 +68,7 @@ Last updated: 2025-08-18
 
 <img width="846" height="1048" alt="ai-chat-decision-flow drawio" src="https://github.com/user-attachments/assets/480e0fe1-017c-47c2-a3b1-c8c4064c8ddb" />
 
+Click here to [access the diagram](./docs/ai-chat-decision-flow.drawio)
 
 <details>
 <summary><b>More details</b> (Click to expand)</summary>
