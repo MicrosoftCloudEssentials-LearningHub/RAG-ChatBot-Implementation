@@ -49,21 +49,24 @@ Last updated: 2025-08-18
 
 ## Quick decision tree 
 
-- If you need: → choose `Microsoft 365 Copilot`.
-    - `in‑app AI in Word/Excel/PowerPoint/Teams with enterprise protections` 
-- If you need: → choose `Copilot Studio`.
-    - a `custom business agent` (low-code)
-    - `multi‑channel` (Teams/web)
-    - automation with `Power Platform`
-    - quick time‑to‑value 
-- If you need:  → choose `Azure AI Foundry (Azure AI Studio)/ Azure Open AI`.
-    - a `developer platform` for `RAG`
-    - multi‑agent patterns
-    - `model choice`
-    -  evaluations
-    -   deep integration
-- If you simply want: → `Microsoft Copilot (consumer)`
-    - a `web-grounded personal assistant` (not for sensitive work data) 
+> [!TIP]
+> - If you need: → choose `Microsoft 365 Copilot`.
+>    - `in‑app AI in Word/Excel/PowerPoint/Teams with enterprise protections` 
+> - If you need: → choose `Copilot Studio`.
+>    - a `custom business agent` (low-code)
+>    - `multi‑channel` (Teams/web)
+>    - automation with `Power Platform`
+>    - quick time‑to‑value 
+>- If you need:  → choose `Azure AI Foundry (Azure AI Studio)/ Azure Open AI`.
+>    - a `developer platform` for `RAG`
+>    - multi‑agent patterns
+>    - `model choice`
+>    -  evaluations
+>    -   deep integration
+>- If you simply want: → `Microsoft Copilot (consumer)`
+>    - a `web-grounded personal assistant` (not for sensitive work data) 
+
+<img width="846" height="1048" alt="ai-chat-decision-flow drawio" src="https://github.com/user-attachments/assets/480e0fe1-017c-47c2-a3b1-c8c4064c8ddb" />
 
 
 <details>
