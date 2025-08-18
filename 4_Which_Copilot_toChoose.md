@@ -138,7 +138,7 @@ From [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoptio
 
 ### Q2. When do I prefer Azure AI Foundry?
 
-> When you need `RAG/multi-agent`, model choice, evaluations, and deep integration/testing under your DevOps and networking controls. Please read more about it here [Extending Microsoft 365 Copilot with agents](#extending-microsoft-365-copilot-with-agents)
+> When you need `RAG/multi-agent`, model choice, evaluations, and deep integration/testing under your DevOps and networking controls.
 
 ### Q3. Can I extend Microsoft 365 Copilot with my own domain agent?
 
