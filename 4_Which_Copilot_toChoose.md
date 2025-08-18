@@ -45,11 +45,7 @@ Last updated: 2025-08-18
 ## Where to start?
 
 1.  **Clarify the goal**: productivity in M365 apps, a custom line-of-business agent, or a full-blown AI app/platform?
-2.  **Match to service model**: **SaaS (Copilots)** for speed, **PaaS (Azure AI)** for control, **IaaS** for maximum customization.
-
-    <img width="858" height="1546" alt="image" src="https://github.com/user-attachments/assets/702b07f1-4a92-4e76-82ef-601aec91c9ea" />
-    
-    From [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy) 
+2.  **Match to service model**: **SaaS (Copilots)** for speed, **PaaS (Azure AI)** for control, **IaaS** for maximum customization. Read more about it here [Implementation considerations security, data, networking](#implementation-considerations-security-data-networking)
 
 ## Quick decision tree 
 
@@ -103,6 +99,9 @@ Last updated: 2025-08-18
 > - ![flex](https://img.shields.io/badge/flexibility-blue?style=flat) Must run in tightly isolated environments or custom GPU stacks? `Choose IaaS.`
 > - ![control](https://img.shields.io/badge/customization-orange?style=flat) Unsure? Start on `PaaS for speed + control; move edge cases to IaaS if required.`
 
+<details>
+<summary><b>More details</b> (Click to expand)</summary>
+
 | Dimension | ![SaaS](https://img.shields.io/badge/SaaS-fastest-brightgreen?style=flat) Microsoft Copilots | ![PaaS](https://img.shields.io/badge/PaaS-control-orange?style=flat) Azure AI Foundry | ![IaaS](https://img.shields.io/badge/IaaS-flexibility-blue?style=flat) Self-managed on VMs/Kubernetes |
 |---|---|---|---|
 | Service model fit | Fastest path to value for productivity and common copilots | High control and customization for app/platform copilots | Maximum flexibility for bespoke/regulated builds |
@@ -120,6 +119,12 @@ Last updated: 2025-08-18
 | Scaling & ops | Microsoft manages | Azure platform-managed with quotas and SLAs | You provision, scale, patch, monitor |
 | Governance & lifecycle | Power Platform environments, DLP policies, solution packaging | Azure Policy/Blueprints, DevOps pipelines, IaC (Bicep/Terraform) | Your SDLC, IaC, change control, audits |
 | Risks / trade‑offs | Less deep customization; feature roadmap dependency | Service quotas/limits; more components to secure | Highest ops burden; capacity planning and reliability on you |
+
+</details>
+
+<img width="858" height="1546" alt="image" src="https://github.com/user-attachments/assets/702b07f1-4a92-4e76-82ef-601aec91c9ea" />
+
+From [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy) 
 
 ## FAQ
 
