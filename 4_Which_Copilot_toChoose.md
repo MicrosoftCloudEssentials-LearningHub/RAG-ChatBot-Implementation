@@ -132,6 +132,12 @@ Click here to [access the diagram](./docs/ai-chat-decision-flow.drawio)
 
 From [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy) 
 
+> To understand more about [Introduction to Microsoft Azure: Describe cloud concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) click here, also find a quick summary:
+
+<img width="709" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/7bc73a87-3b57-4f41-87de-5e72f3dfc6c7">
+
+From [Cloud computing - Service Models: SAAS, PAAS, IAAS - Which Is Better For Business](https://dev.to/artemkobilinskiy/cloud-service-models-saas-paas-iaas-which-is-better-for-business-574k), more details [here about it](https://qualitapps.com/en/what-are-the-iaas-paas-and-saas-cloud-service-models/)
+
 ## FAQ
 
 ### Q1. Is Copilot Studio only for chat?
