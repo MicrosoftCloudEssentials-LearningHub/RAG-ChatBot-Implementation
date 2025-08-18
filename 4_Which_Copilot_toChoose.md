@@ -33,9 +33,9 @@ Last updated: 2025-08-18
 - [Copilot Studio vs Azure AI Foundry Azure AI Studio](#copilot-studio-vs-azure-ai-foundry-azure-ai-studio)
 - [Implementation considerations security, data, networking](#implementation-considerations-security-data-networking)
 - [FAQ](#faq)
-    - [Q1. Is Copilot Studio only for chat?](#q1-is-copilot-studio-only-for-chat)
-    - [Q2. When do I prefer Azure AI Foundry?](#q2-when-do-i-prefer-azure-ai-foundry)
-    - [Q3. Can I extend Microsoft 365 Copilot with my own domain agent?](#q3-can-i-extend-microsoft-365-copilot-with-my-own-domain-agent)
+  - [Q1. Is Copilot Studio only for chat?](#q1-is-copilot-studio-only-for-chat)
+  - [Q2. When do I prefer Azure AI Foundry?](#q2-when-do-i-prefer-azure-ai-foundry)
+  - [Q3. Can I extend Microsoft 365 Copilot with my own domain agent?](#q3-can-i-extend-microsoft-365-copilot-with-my-own-domain-agent)
 
 </details>
 
@@ -44,27 +44,28 @@ Last updated: 2025-08-18
 
 ## Where to start?
 
-1.  **Clarify the goal**: productivity in M365 apps, a custom line-of-business agent, or a full-blown AI app/platform?
-2.  **Match to service model**: **SaaS (Copilots)** for speed, **PaaS (Azure AI)** for control, **IaaS** for maximum customization. Read more about it here [Implementation considerations security, data, networking](#implementation-considerations-security-data-networking)
+1. **Clarify the goal**: productivity in M365 apps, a custom line-of-business agent, or a full-blown AI app/platform?
+2. **Match to service model**: **SaaS (Copilots)** for speed, **PaaS (Azure AI)** for control, **IaaS** for maximum customization. Read more about it here [Implementation considerations security, data, networking](#implementation-considerations-security-data-networking)
 
 ## Quick decision tree 
 
 > [!TIP]
+>
 > - If you need: → choose `Microsoft 365 Copilot`.
->    - `in‑app AI in Word/Excel/PowerPoint/Teams with enterprise protections` 
+>   - `in‑app AI in Word/Excel/PowerPoint/Teams with enterprise protections` 
 > - If you need: → choose `Copilot Studio`.
->    - a `custom business agent` (low-code)
->    - `multi‑channel` (Teams/web)
->    - automation with `Power Platform`
->    - quick time‑to‑value 
+>   - a `custom business agent` (low-code)
+>   - `multi‑channel` (Teams/web)
+>   - automation with `Power Platform`
+>   - quick time‑to‑value 
 >- If you need:  → choose `Azure AI Foundry (Azure AI Studio)/ Azure Open AI`.
->    - a `developer platform` for `RAG`
->    - multi‑agent patterns
->    - `model choice`
->    -  evaluations
->    -   deep integration
+>   - a `developer platform` for `RAG`
+>   - multi‑agent patterns
+>   - `model choice`
+>   - evaluations
+>   - deep integration
 >- If you simply want: → `Microsoft Copilot (consumer)`
->    - a `web-grounded personal assistant` (not for sensitive work data) 
+>   - a `web-grounded personal assistant` (not for sensitive work data) 
 
 <img width="846" height="1048" alt="ai-chat-decision-flow drawio" src="https://github.com/user-attachments/assets/480e0fe1-017c-47c2-a3b1-c8c4064c8ddb" />
 
@@ -98,6 +99,7 @@ Click here to [access the diagram](./docs/ai-chat-decision-flow.drawio)
 ## Implementation considerations (security, data, networking)
 
 > [!TIP]
+>
 > - ![fastest](https://img.shields.io/badge/fastest-brightgreen?style=flat) Need fastest productivity impact across M365? `Choose SaaS (M365 Copilot/Copilot Studio).`
 > - ![control](https://img.shields.io/badge/customization-orange?style=flat) Building a domain copilot or RAG API with enterprise controls? `Choose PaaS (Azure AI Foundry).`
 > - ![flex](https://img.shields.io/badge/flexibility-blue?style=flat) Must run in tightly isolated environments or custom GPU stacks? `Choose IaaS.`
@@ -143,7 +145,6 @@ From [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoptio
 ### Q3. Can I extend Microsoft 365 Copilot with my own domain agent?
 
 > Yes, use `agents` (declarative) and related SDKs; see the tool comparison and planning guidance. Please read more about here [Declarative agents tool comparison](https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-tool-comparison), [Extensibility planning guide (agents for M365 Copilot)](https://learn.microsoft.com/microsoft-365-copilot/extensibility/planning-guide).
-
 
 <!-- START BADGE -->
 <div align="center">
