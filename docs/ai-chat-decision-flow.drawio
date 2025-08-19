@@ -95,7 +95,7 @@
         <mxCell id="cost_header" value="Pricing Models" style="text;html=1;strokeColor=#E5E7EB;fillColor=#F3F4F6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#111827;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="315" y="830" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cost_details" value="• Included with some M365 SKUs&#xa;• Per-user licensing for M365 Copilot&#xa;• Capacity-based for Copilot Studio&#xa;• Pay-as-you-go for Azure AI Studio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#111827;" parent="1" vertex="1">
+        <mxCell id="cost_details" value="• Included with some M365 SKUs&lt;br&gt;• Per-user licensing for M365 Copilot&lt;br&gt;• Capacity-based for Copilot Studio&lt;br&gt;• Pay-as-you-go for Azure AI Foundry" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#111827;" parent="1" vertex="1">
           <mxGeometry x="315" y="860" width="250" height="70" as="geometry" />
         </mxCell>
         <mxCell id="devops_header" value="DevOps &amp; Integration" style="text;html=1;strokeColor=#E5E7EB;fillColor=#F3F4F6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#111827;fontStyle=1" parent="1" vertex="1">
@@ -113,7 +113,7 @@
         <mxCell id="5dSzTPS8oh1tkHBNw1xO-2" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="604" y="562" width="234" height="149" as="geometry" />
         </mxCell>
-        <mxCell id="azureAI" value="Azure AI Studio" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E5E7EB;strokeWidth=2;shadow=1;fontSize=16;fontColor=#111827;fontStyle=1;align=center;verticalAlign=top;" parent="5dSzTPS8oh1tkHBNw1xO-2" vertex="1">
+        <mxCell id="azureAI" value="Azure AI Foundry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E5E7EB;strokeWidth=2;shadow=1;fontSize=16;fontColor=#111827;fontStyle=1;align=center;verticalAlign=top;" parent="5dSzTPS8oh1tkHBNw1xO-2" vertex="1">
           <mxGeometry x="34" y="29" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="tech_azureAI" value="• Full developer control over models&#xa;• RAG, tools, agents support&#xa;• VNet/Private Link networking&#xa;• Prompt Flow with CI/CD pipeline&#xa;• Pay-as-you-go pricing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#111827;" parent="5dSzTPS8oh1tkHBNw1xO-2" vertex="1">
