@@ -67,7 +67,7 @@ Last updated: 2025-08-18
 >- If you simply want: → `Microsoft Copilot (consumer)`
 >   - a `web-grounded personal assistant` (not for sensitive work data) 
 
-<img width="846" height="1048" alt="ai-chat-decision-flow drawio" src="https://github.com/user-attachments/assets/480e0fe1-017c-47c2-a3b1-c8c4064c8ddb" />
+<img width="846" height="1048" alt="ai-chat-decision-flow drawio" src="https://github.com/user-attachments/assets/9e5423bb-e8c1-49d9-8ff9-ff5f327213ff" />
 
 Click here to [access the diagram](./docs/ai-chat-decision-flow.drawio)
 
