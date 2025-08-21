@@ -15,6 +15,8 @@ Last updated: 2025-08-18
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Microsoft Copilot Studio pricing](https://azure.microsoft.com/en-us/pricing/details/copilot-studio/?msockid=38ec3806873362243e122ce086486339)
+- [Get access to Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing#get-access-to-copilot-studio) - pricing overview 
 - [AI strategy & decision tree](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy) - Cloud Adoption Framework
 - [Which Copilot is right for your org](https://learn.microsoft.com/copilot/microsoft-365/which-copilot-for-your-organization) - Microsoft 365 Copilot
 - [Choose the right agent solution](https://learn.microsoft.com/microsoft-365/agents-sdk/choose-agent-solution) - Copilot Studio vs SDKs vs Azure AI
