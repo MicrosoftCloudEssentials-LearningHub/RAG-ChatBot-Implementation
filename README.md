@@ -58,7 +58,6 @@ Last updated: 2025-08-18
 | --- | --- | --- | 
 |  <img width="800" alt="image" src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" />    |   <img width="800" alt="image" src="https://github.com/user-attachments/assets/af835493-2d76-4216-8df6-3e258c9db949"> | <img width="800" alt="image" src="https://github.com/user-attachments/assets/67e7d9eb-f757-4fe9-85f4-d5bb08b9e55f" /> |
 
-
 <details>
 <summary><b>RAG + Fabric (Private Chatbot with your data + Dashboards)</b> (Click to expand)</summary>
 
