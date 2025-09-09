@@ -7,7 +7,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-08-18
+Last updated: 2025-09-09
 
 ----------
 
@@ -57,6 +57,13 @@ Last updated: 2025-08-18
 | [Public Architecture](#basic-architecture)  | [Private Architecture](./1_PrivateArchitecture.md) |  [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG) |
 | --- | --- | --- | 
 |  <img width="800" alt="image" src="https://github.com/user-attachments/assets/5444e87c-32af-44e8-aa86-22fe4082c4f4" />    |   <img width="800" alt="image" src="https://github.com/user-attachments/assets/af835493-2d76-4216-8df6-3e258c9db949"> | <img width="800" alt="image" src="https://github.com/user-attachments/assets/67e7d9eb-f757-4fe9-85f4-d5bb08b9e55f" /> |
+
+<details>
+<summary><b>RAG + Fabric (Private Chatbot with your data + Dashboards)</b> (Click to expand)</summary>
+
+<img width="2621" height="1776" alt="ZeroTrustPrivateBot-RAG+Fabric drawio" src="https://github.com/user-attachments/assets/7537d6a7-faa8-492a-9e51-af3fccdbcccc" />
+
+</details>
 
 > Here is a [quick overview about RAG](./0_RAG_Overview.md), explaining how it works, its applications, and how to implement it using Azure AI services.
 
@@ -422,7 +429,7 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1341-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-18</p>
+  <img src="https://img.shields.io/badge/Total%20views-1344-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-09-09</p>
 </div>
 <!-- END BADGE -->
