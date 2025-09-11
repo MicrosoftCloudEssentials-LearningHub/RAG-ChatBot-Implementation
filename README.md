@@ -14,7 +14,7 @@ Last updated: 2025-09-09
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
-- [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql 
+- [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql on prem/Sharepoint
 - [Azure Developer CLI commands overview](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands)
 - [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
 - [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
