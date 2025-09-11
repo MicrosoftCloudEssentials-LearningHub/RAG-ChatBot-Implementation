@@ -48,7 +48,7 @@ Last updated: 2025-09-09
 </details>
 
 > [!NOTE]
-> How to query from `Sharepoint Library`: <br/> [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main)
+> How to query from `Sharepoint Library`: [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main)  <br/>
 > - Access & Authentication: Integration uses a `service principal accoun`t registered in Azure Entra ID to authenticate and access the SharePoint document library via Microsoft Graph API. This avoids using personal accounts for programmatic access.
 > - Data Ingestion Flow: The RAG system connects to the SharePoint library using the provided credentials, retrieves documents (mainly PDFs), and processes them for indexing.
 > - Component Architecture: The `ingestion is handled by a function app, which takes files from SharePoint, converts them into vectors/embeddings, and stores them in the index for search`.
