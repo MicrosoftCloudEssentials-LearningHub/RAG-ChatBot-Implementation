@@ -51,8 +51,14 @@ Last updated: 2025-09-09
 > How to query from `Sharepoint Library`: [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main)  <br/>
 > - Access & Authentication: Integration uses a `service principal accoun`t registered in Azure Entra ID to authenticate and access the SharePoint document library via Microsoft Graph API. This avoids using personal accounts for programmatic access.
 > - Data Ingestion Flow: The RAG system connects to the SharePoint library using the provided credentials, retrieves documents (mainly PDFs), and processes them for indexing.
-> - Code Structure: Key integration logic resides in files such as [sharePoint_files_indexer.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/jobs/sharepoint_files_indexer.py) (main orchestrator for indexing) and [sharePoint.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/tools/sharepoint.py) (handles API interactions), and [document_chunking.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/chunking/document_chunking.py)
-> - Chunking: Documents are chunked using a `common logic module, not specific to SharePoint`, to prepare data for embedding and indexing.
+> - Code Structure: Key integration logic resides in files such as:
+>   - Main orchestrator for ingestion of SharePoint files into Azure AI Search: [sharePoint_files_indexer.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/jobs/sharepoint_files_indexer.py) (main orchestrator for indexing)
+>     - Streams metadata via Graph API (without loading all at once).
+>     - For each file: download, check if changed, chunk, and index.
+>     - Tracks total, succeeded, and failed counts, and logs progress every N files.
+>     - Uses in-memory tracking of failures for review.
+>   -  Handles API interaction: [sharePoint.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/tools/sharepoint.py)
+>   -  Documents are chunked using a `common logic module, not specific to SharePoint`, to prepare data for embedding and indexing: [document_chunking.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/chunking/document_chunking.py)
 > - Current Limitation: Only one `SharePoint library is supported at a time, but the code can be extended to support multiple libraries by creating additional indexes.`
 > - No Preview Connector: The integration `does not use the AI Foundry SharePoint preview connector; it relies on custom code developed before that connector was available.` 
 > - Component Architecture: The `ingestion is handled by a function app, which takes files from SharePoint, converts them into vectors/embeddings, and stores them in the index for search`.
