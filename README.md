@@ -57,6 +57,14 @@ Last updated: 2025-09-09
 > - Current Limitation: Only one `SharePoint library is supported at a time, but the code can be extended to support multiple libraries by creating additional indexes.`
 > - No Preview Connector: The integration `does not use the AI Foundry SharePoint preview connector; it relies on custom code developed before that connector was available.` 
 
+```
+SharePoint Site → Metadata Streamer → Document Downloader → Chunker → Azure AI Search
+
+                     ↓
+
+                Deleted Items Checker → Purge Deleted Items
+ ```
+
 > [!NOTE]
 > How to query from `SQL on prem?`: <br/>
 > This process `involved converting natural language to SQL, where we integrated the SQL database with the Agentic framework. When a user submits a query from the frontend, the system extracts relevant schema details from the AI search index to generate a SQL query with a few example cases. The query is then executed on the SQL server to fetch the records, and the results are displayed in natural language on the UI using an LLM.`  Here more about how it works: [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) 
