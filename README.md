@@ -47,7 +47,17 @@ Last updated: 2025-09-09
 
 </details>
 
-> [!TIP]
+> [!NOTE]
+> How to query from `Sharepoint Library`: <br/> [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main)
+> - Access & Authentication: Integration uses a `service principal accoun`t registered in Azure Entra ID to authenticate and access the SharePoint document library via Microsoft Graph API. This avoids using personal accounts for programmatic access.
+> - Data Ingestion Flow: The RAG system connects to the SharePoint library using the provided credentials, retrieves documents (mainly PDFs), and processes them for indexing.
+> - Component Architecture: The `ingestion is handled by a function app, which takes files from SharePoint, converts them into vectors/embeddings, and stores them in the index for search`.
+> - Code Structure: Key integration logic resides in files such as [sharePoint_files_indexer.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/jobs/sharepoint_files_indexer.py) (main orchestrator for indexing) and [sharePoint.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/tools/sharepoint.py) (handles API interactions), and [document_chunking.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/chunking/document_chunking.py)
+> - Chunking: Documents are chunked using a `common logic module, not specific to SharePoint`, to prepare data for embedding and indexing.
+> - Current Limitation: Only one `SharePoint library is supported at a time, but the code can be extended to support multiple libraries by creating additional indexes.`
+> - No Preview Connector: The integration `does not use the AI Foundry SharePoint preview connector; it relies on custom code developed before that connector was available.` 
+
+> [!NOTE]
 > How to query from `SQL on prem?`: <br/>
 > This process `involved converting natural language to SQL, where we integrated the SQL database with the Agentic framework. When a user submits a query from the frontend, the system extracts relevant schema details from the AI search index to generate a SQL query with a few example cases. The query is then executed on the SQL server to fetch the records, and the results are displayed in natural language on the UI using an LLM.`  Here more about how it works: [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) 
 
