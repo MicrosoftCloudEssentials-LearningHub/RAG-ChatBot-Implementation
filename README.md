@@ -7,7 +7,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-09-09
+Last updated: 2025-09-18
 
 ----------
 
@@ -15,6 +15,11 @@ Last updated: 2025-09-09
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql on prem/Sharepoint
+- `How we managed PII?`
+  - [Detect and redact Personally Identifying Information in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii): If you're building on existing solutions and want to add layers via APIs or SDKs, consider using Azure AI language tools to identify and extract Personally Identifiable Information (PII).
+  - [Presidio - Data Protection and De-identification SDK](https://github.com/microsoft/presidio): When you need an `open-source option for detecting and managing sensitive data, Presidio` is a great fit. It can be `integrated into your systems to detect, redact, mask, and anonymize PII across text, images, and structured data.`
+  - [How data is protected and audited in Microsoft 365 and Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing): If you're working with Microsoft 365 Copilot and need to understand its data protection model, this overview explains how it handles security and compliance.
+  - [Considerations to manage Microsoft 365 Copilot and Channel Agent in Teams for security and compliance](https://learn.microsoft.com/en-us/purview/ai-m365-copilot-considerations): When managing compliance across Copilot deployments, Microsoft Purview offers tools to help govern data securely.
 - [Azure Developer CLI commands overview](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands)
 - [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
 - [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
@@ -49,6 +54,7 @@ Last updated: 2025-09-09
 
 > [!NOTE]
 > How to query from `Sharepoint Library`: [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main)  <br/>
+>
 > - Access & Authentication: Integration uses a `service principal accoun`t registered in Azure Entra ID to authenticate and access the SharePoint document library via Microsoft Graph API. This avoids using personal accounts for programmatic access.
 > - Data Ingestion Flow: The RAG system connects to the SharePoint library using the provided credentials, retrieves documents (mainly PDFs), and processes them for indexing.
 > - Code Structure: Key integration logic resides in files such as:
@@ -57,8 +63,8 @@ Last updated: 2025-09-09
 >     - For each file: download, check if changed, chunk, and index.
 >     - Tracks total, succeeded, and failed counts, and logs progress every N files.
 >     - Uses in-memory tracking of failures for review.
->   -  Handles API interaction: [sharePoint.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/tools/sharepoint.py)
->   -  Documents are chunked using a `common logic module, not specific to SharePoint`, to prepare data for embedding and indexing: [document_chunking.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/chunking/document_chunking.py)
+>   - Handles API interaction: [sharePoint.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/tools/sharepoint.py)
+>   - Documents are chunked using a `common logic module, not specific to SharePoint`, to prepare data for embedding and indexing: [document_chunking.py](https://github.com/Azure/gpt-rag-ingestion/blob/main/chunking/document_chunking.py)
 > - Current Limitation: Only one `SharePoint library is supported at a time, but the code can be extended to support multiple libraries by creating additional indexes.`
 > - No Preview Connector: The integration `does not use the AI Foundry SharePoint preview connector; it relies on custom code developed before that connector was available.` 
 > - Component Architecture: The `ingestion is handled by a function app, which takes files from SharePoint, converts them into vectors/embeddings, and stores them in the index for search`.
@@ -453,7 +459,7 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1344-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-09-09</p>
+  <img src="https://img.shields.io/badge/Total%20views-1428-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-09-18</p>
 </div>
 <!-- END BADGE -->
