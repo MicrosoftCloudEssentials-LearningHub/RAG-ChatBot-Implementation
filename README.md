@@ -15,6 +15,11 @@ Last updated: 2025-09-09
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql on prem/Sharepoint
+- `How we managed PII?`
+  - [Detect and redact Personally Identifying Information in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii): If you're building on existing solutions and want to add layers via APIs or SDKs, consider using Azure AI language tools to identify and extract Personally Identifiable Information (PII).
+  - [Presidio - Data Protection and De-identification SDK](https://github.com/microsoft/presidio): When you need an `open-source option for detecting and managing sensitive data, Presidio` is a great fit. It can be `integrated into your systems to detect, redact, mask, and anonymize PII across text, images, and structured data.`
+  - [How data is protected and audited in Microsoft 365 and Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing): If you're working with Microsoft 365 Copilot and need to understand its data protection model, this overview explains how it handles security and compliance.
+  - [Considerations to manage Microsoft 365 Copilot and Channel Agent in Teams for security and compliance](https://learn.microsoft.com/en-us/purview/ai-m365-copilot-considerations): When managing compliance across Copilot deployments, Microsoft Purview offers tools to help govern data securely.
 - [Azure Developer CLI commands overview](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands)
 - [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
 - [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
