@@ -71,6 +71,9 @@ Last updated: 2025-08-18
 
 <img width="846" height="1048" alt="ai-chat-decision-flow drawio" src="https://github.com/user-attachments/assets/9e5423bb-e8c1-49d9-8ff9-ff5f327213ff" />
 
+> [!NOTE]
+> `When users don't want/need to create their own interface or customized view`, they can `leverage the AI integrated into our products and services, depending on their needs.` For example, if they require visualizations capabilities with AI assistance, they can use the AI already built into `Fabric/Power Bi to generate reports, ask questions, etc.` Click here to read more about it [AI Strategy decision tree](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/strategy) 
+
 Click here to [access the diagram](./docs/ai-chat-decision-flow.drawio)
 
 <details>
