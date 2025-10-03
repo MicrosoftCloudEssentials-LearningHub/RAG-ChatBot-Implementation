@@ -7,9 +7,16 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-09-18
+Last updated: 2025-10-03
 
 ----------
+
+> `How we move from basic coding all the way to AI agents?`
+>
+> - We all `start with scripting`, no matter the language, it’s the first step. `Simple/complex instructions, written line by line`, to get something done
+> - Then comes `machine learning`. At this stage, we’re not reinventing the math, we’re `leveraging powerful packages built on deep statistical and mathematical foundations.` These tools let us `automate smarter processes, like reviewing claims with predictive analytics. You’re not just coding anymore; you’re building systems that learn and adapt.`
+> - `LLMs`. This is what most people mean when they say `AI.` Think of `yourself as the architect, and the LLM as your strategic engine. You can plug into it via an API, a key, or through integrated services. It’s not just about automation, it’s about reasoning, understanding, and generating human-like responses.`
+> - And finally, `agents`. These are LLMs with the `ability to act`. They don’t just respond, `they take initiative. They can create code, trigger workflows, make decisions, interact with tools, with other agents. It’s where intelligence meets execution`
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
@@ -459,7 +466,7 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1428-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-09-18</p>
+  <img src="https://img.shields.io/badge/Total%20views-1320-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-10-03</p>
 </div>
 <!-- END BADGE -->
