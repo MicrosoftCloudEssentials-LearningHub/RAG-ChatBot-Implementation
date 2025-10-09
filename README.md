@@ -21,6 +21,9 @@ Last updated: 2025-10-03
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Microsoft Docs - Azure resources docs](https://github.com/MicrosoftDocs) - backend specifications
+- [Front Door limits](https://github.com/MicrosoftDocs/azure-docs/blob/main/includes/front-door-limits.md)
+- [Front Door routing limits](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits)
 - [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql on prem/Sharepoint
 - `How we managed PII?`
   - [Detect and redact Personally Identifying Information in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii): If you're building on existing solutions and want to add layers via APIs or SDKs, consider using Azure AI language tools to identify and extract Personally Identifiable Information (PII).
