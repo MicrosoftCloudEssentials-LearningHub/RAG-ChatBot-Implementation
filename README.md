@@ -467,6 +467,11 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
 > For example: <br/>  
 > If `main.parameters.json` contains `"location": "westus2"`, make sure your environment has `AZURE_LOCATION=westus2`.
 
+> [!NOTE]
+> A `golden dataset` for RAG is your trusted, `curated set of documents or files that the system retrieves from when answering questions`. It’s a clean, accurate, and `representative subset of all possible data free of noise and errors`, so the model always pulls reliable context. Is a `subset of files, for example, and known Q&A pairs chosen from the larger data source.` These are the “benchmark” `questions where the correct answers are already known`, so they can be `used later to measure system accuracy and performance`. Other `expert users are free to ask additional questions during testing, but those will still pull context from the same curated files in the golden dataset (subset datasource) `. In short, it’s the trusted evaluation set for your proof of concept for example.
+
+<img width="411" height="243" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/40682ec2-77e4-4413-88e5-d343f036f084" />
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1320-limegreen" alt="Total views">
