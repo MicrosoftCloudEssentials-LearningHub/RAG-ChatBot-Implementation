@@ -28,7 +28,6 @@ Last updated: 2025-11-03
 | **Budget & Timeline**    | What’s your budget and timeline for this initiative?                                | `We have a 3-month window and a $50K budget.`                                      | Helps prioritize scope and feasibility.|
 | **Success Metrics**      | How will you measure the success of this AI solution?                               | `Reduction in ticket resolution time by 30%.`                                      | Aligns technical goals with business KPIs.|
 
-
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1413-limegreen" alt="Total views">
