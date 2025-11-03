@@ -111,6 +111,8 @@ $$
 > Provisioned Throughput Units (PTUs) <br/>
 > Tokens Per Minute (TPM)
 
+E.g 
+
 | **PTUs** | **Calls per Minute** | **Tokens in Prompt** | **Tokens in Response** | **Tokens per Minute (TPM)** |
 |----------|----------------------|----------------------|------------------------|-----------------------------|
 | 1        | 10                   | 50                   | 100                    | 1,500                       |
