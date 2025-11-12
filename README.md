@@ -11,7 +11,6 @@ Last updated: 2025-11-12
 
 ----------
 
-
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
@@ -226,7 +225,6 @@ SharePoint Site → Metadata Streamer → Document Downloader → Chunker → Az
 </details>
 
 </details>
-
 
 ## Zero Trust Architecture
 
