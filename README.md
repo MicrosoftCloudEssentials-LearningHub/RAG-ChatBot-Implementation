@@ -7,16 +7,9 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-11-03
+Last updated: 2025-11-12
 
 ----------
-
-> `How we move from basic coding all the way to AI agents?`
->
-> - We all `start with scripting`, no matter the language, it’s the first step. `Simple/complex instructions, written line by line`, to get something done
-> - Then comes `machine learning`. At this stage, we’re not reinventing the math, we’re `leveraging powerful packages built on deep statistical and mathematical foundations.` These tools let us `automate smarter processes, like reviewing claims with predictive analytics. You’re not just coding anymore; you’re building systems that learn and adapt.`
-> - `LLMs`. This is what most people mean when they say `AI.` Think of `yourself as the architect, and the LLM as your strategic engine. You can plug into it via an API/key, or through integrated services. It’s not just about automation, it’s about reasoning, understanding, and generating human-like responses.`
-> - And finally, `agents`. These are LLMs with the `ability to act`. They don’t just respond, `they take initiative. They can create code, trigger workflows, make decisions, interact with tools, with other agents. It’s where intelligence meets execution`
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
@@ -62,9 +55,38 @@ Last updated: 2025-11-03
 
 </details>
 
-> [!NOTE]
-> How to query from `Sharepoint Library`: [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main)  <br/>
+> In the context of developing an E2E solution or application. Each stage builds confidence (technical, functional, and strategical), until we ready to scale and support the solution in the real world. Think of them as milestones in the journey from idea to production:
+
+`Idea → PoC → PoV → MVP → Dev → Test → UAT → Prod → Continuous Improvement`
+
+<details>
+<summary><b>Detailed phases</b> (Click to expand)</summary>
+  
+| Phase | Goal | What Happens | Focus | Audience | Example |
+|-------|------|--------------|-------|----------|---------|
+| **PoC (Proof of Concept)** | Validate technical feasibility | Build a minimal version to prove that the core idea or technology can work | Infrastructure setup, basic UI, simple workflows, mock data | Internal tech teams, architects | Can we integrate this new AI model into our system? |
+| **PoV (Proof of Value)** | Demonstrate business value | Expand the PoC to show how the solution aligns with business goals and KPIs | Real use cases, measurable outcomes, stakeholder engagement | Business leaders, sponsors, decision-makers | Does this solution reduce processing time by 30% as expected? |
+| **MVP (Minimum Viable Product)** | Deliver a usable product with core features | Build the smallest set of features that delivers value and can be deployed | Real users, feedback loops, iterative improvements | Early adopters, pilot users | A working app with login, dashboard, and one key feature |
+| **Dev (Development)** | Build and refine the product | Full-scale development of features, integrations, and backend logic | Code quality, version control, collaboration | Developers, QA, product managers | — |
+| **Test (System/Integration Testing)** | Ensure the system works as expected | Run automated/manual tests, fix bugs, validate integrations | Functional testing, regression testing, performance | QA teams, developers | — |
+| **UAT (User Acceptance Testing)** | Validate with real users before go-live | Business users test the system in a near-production environment | Usability, business rules, edge cases | End users, business analysts, stakeholders | — |
+| **Prod (Production)** | Go live and deliver value | Deploy the solution to the live environment for real users | Stability, monitoring, support, feedback | All users, support teams, business owners | — |
+
+> `How we move from basic coding all the way to AI agents?`
 >
+> - We all `start with scripting`, no matter the language, it’s the first step. `Simple/complex instructions, written line by line`, to get something done
+> - Then comes `machine learning`. At this stage, we’re not reinventing the math, we’re `leveraging powerful packages built on deep statistical and mathematical foundations.` These tools let us `automate smarter processes, like reviewing claims with predictive analytics. You’re not just coding anymore; you’re building systems that learn and adapt.`
+> - `LLMs`. This is what most people mean when they say `AI.` Think of `yourself as the architect, and the LLM as your strategic engine. You can plug into it via an API/key, or through integrated services. It’s not just about automation, it’s about reasoning, understanding, and generating human-like responses.`
+> - And finally, `agents`. These are LLMs with the `ability to act`. They don’t just respond, `they take initiative. They can create code, trigger workflows, make decisions, interact with tools, with other agents. It’s where intelligence meets execution`
+
+</details>
+
+> [!NOTE]
+> How to query from `Sharepoint Library`: [GPT-RAG Data Ingestion](https://github.com/Azure/gpt-rag-ingestion/tree/main) 
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
+
 > - Access & Authentication: Integration uses a `service principal accoun`t registered in Azure Entra ID to authenticate and access the SharePoint document library via Microsoft Graph API. This avoids using personal accounts for programmatic access.
 > - Data Ingestion Flow: The RAG system connects to the SharePoint library using the provided credentials, retrieves documents (mainly PDFs), and processes them for indexing.
 > - Code Structure: Key integration logic resides in files such as:
@@ -86,10 +108,18 @@ SharePoint Site → Metadata Streamer → Document Downloader → Chunker → Az
 
                 Deleted Items Checker → Purge Deleted Items
  ```
+ 
+</details>
 
 > [!NOTE]
 > How to query from `SQL on prem?`: <br/>
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
+  
 > This process `involved converting natural language to SQL, where we integrated the SQL database with the Agentic framework. When a user submits a query from the frontend, the system extracts relevant schema details from the AI search index to generate a SQL query with a few example cases. The query is then executed on the SQL server to fetch the records, and the results are displayed in natural language on the UI using an LLM.`  Here more about how it works: [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) 
+
+</details>
 
 > [!IMPORTANT]
 > Disclaimer: This repository contains example of a Retrieval-Augmented Generation (RAG) chat bot with a basic architecture (designed for scenarios without network isolation), and a standard Zero-Trust Architecture deployment. This is `just a guide`. It is not an official solution. For official guidance, support, or more detailed information. Please refer [RAG with Zero-Trust – Architecture Reference to Microsoft's official documentation](https://github.com/Azure/GPT-RAG) or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
@@ -133,6 +163,11 @@ SharePoint Site → Metadata Streamer → Document Downloader → Chunker → Az
 </div>
 
 ### Important Considerations for Production Environment
+
+<details>
+<summary>Click to expand</summary>
+
+> Some considerations:
 
 <details>
   <summary>Public Network Site</summary>
@@ -189,6 +224,8 @@ SharePoint Site → Metadata Streamer → Document Downloader → Chunker → Az
 
 </details>
 
+</details>
+
 ## Zero Trust Architecture
 
 > Zero Trust AI architecture in Microsoft Azure is a `security framework designed to protect data, applications, and infrastructure by assuming that threats can come from both inside and outside the network`. This model operates on the principle of "never trust, always verify", meaning `every access request is thoroughly authenticated and authorized based on all available data points, regardless of its origin. The architecture integrates multiple layers of security, including strong identity verification, device compliance checks, and least privilege access, ensuring that only authorized users and devices can access sensitive resources`. By continuously monitoring and validating each request, Zero Trust AI architecture helps organizations minimize risks and enhance their overall security posture.
@@ -214,6 +251,11 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 > The Azure Developer CLI (azd) is an `open-source tool` designed to streamline the end-to-end developer workflow on Azure. It provides `high-level commands` that simplify common developer tasks such as `project initialization, infrastructure provisioning, code deployment, and monitoring`. 
 
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
+
+> More detailed technical information:
+  
 <details>
 <summary><strong>Key Features</strong></summary>
 
@@ -270,13 +312,23 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 <https://github.com/user-attachments/assets/2a9d7c6b-1260-4ad1-8889-ce01057d2b44>
 
+</details>
+
 ### Step 0.2: Install PowerShell 7
 
 > PowerShell 7 `complements Azure Developer CLI (azd) by providing robust automation capabilities that enhance the development and deployment workflows on Azure`. With PowerShell 7, you can `automate tasks such as provisioning resources, deploying applications, and managing configurations, which are integral to azd's operations.` For instance, you can use PowerShell scripts to automate the azd provision command, ensuring consistent infrastructure setup across different environments. PowerShell 7's ability to execute commands remotely aligns with azd's remote environment support, allowing seamless management of Azure resources from any location. By integrating PowerShell 7 scripts into azd workflows, developers can streamline their processes, improve efficiency, and maintain greater control over their Azure deployments.
 
+<details>
+<summary><b> Visual reference here </b> (Click to expand)</summary>
+
 <https://github.com/user-attachments/assets/9bb475e4-7fef-46d9-9147-a28e806b4e1c>
 
+</details>
+
 ### Step 1: Download the repository
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
 
 > Standard orchestrator
 
@@ -292,6 +344,8 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 <https://github.com/user-attachments/assets/22d2c66b-fd1e-4967-9f6c-ae02e27b2036>
 
+</details>
+
 > [!IMPORTANT]
 > Update the information in the `GPT-RAG_SolutionAccelerator/infra/main.parameters.json` file, and make sure to save your changes before proceeding with the infrastructure deployment.
 
@@ -299,13 +353,21 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 > Azure network isolation is a security strategy that segments a network into distinct subnets or segments, each functioning as its own small network. This approach enhances security by preventing unauthorized access and data leakage. In Azure, network isolation can be achieved using Virtual Networks (VNets), Network Security Groups (NSGs), and Private Link, allowing precise control over inbound and outbound traffic.
 
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
+
   ```
   azd env set AZURE_NETWORK_ISOLATION true  
   ```
 
 <https://github.com/user-attachments/assets/4f493506-970d-4b1d-aee2-1b0972a365d7>
 
+</details>
+
 ### Step 3: Login to Azure
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
 
 > Make sure you log in to both:
 
@@ -323,9 +385,14 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 <https://github.com/user-attachments/assets/ed8833ee-5edc-4d28-8b45-2d6ae75e2bf6>
 
+</details>
+
 ### Step 4: Deploy the insfrastructure
 
 > `azd provision` command in Azure Developer CLI (azd) automates the deployment of necessary Azure resources for an application. It uses infrastructure-as-code templates to set up Azure services, ensuring consistent and repeatable deployments across different environments.
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
 
   ```
   azd provision
@@ -343,7 +410,14 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
   <img src="https://github.com/user-attachments/assets/b4976132-2b3e-4bdf-b02f-aa8b0643455d" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
+</details>
+
 ### Step 5: VM login
+
+> AI/Data Science VM
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
 
 1. To proceed with the deployment, use the Virtual Machine connected via Bastion (set up in step 4).
 
@@ -355,13 +429,23 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
    <https://github.com/user-attachments/assets/25ec1fb6-d999-41e4-ac17-0c16b14a946d>
 
+</details>
+
 ### Step 6: Install PowerShell 7 in the vm
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
 
 > After logging into Windows, [install PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4#installing-the-msi-package), as all other necessary components are already set up on the VM.
 
 <https://github.com/user-attachments/assets/c089a26e-8b31-466b-a052-a05d73d488fb>
 
+</details>
+
 ### Step 7: Update azd on the VM
+
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
 
 > Launch the `Command Prompt` and enter the following command to update azd to its latest version:
 
@@ -371,9 +455,13 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
   <https://github.com/user-attachments/assets/777cdd6e-fa8f-49c2-9398-f94ac45be711>
 
+</details>
+
 ### Step 8: Application deployment
 
-> [!NOTE]
+<details>
+<summary><b> Details </b> (Click to expand)</summary>
+
 > Please review these configurations: <br/>
 >
 > - RemoteFX USB Device Redirection: Allows USB devices connected to your local computer to be used in the remote desktop session.`You can access and use local USB devices like storage drives, printers, or other peripherals directly from the remote session.` <br/>
@@ -396,7 +484,6 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
     <https://github.com/user-attachments/assets/8ea84df0-ac9a-4cad-be91-bfb24548d1d1>
 
-> [!IMPORTANT]
 > When executing the `azd init for the app` and `azd env refresh` commands, ensure that the `environment name, subscription, and region are consistent` with those used during the `initial infrastructure provisioning`.
 
 3. Sets up a new project using the Azure GPT-RAG template: `azd init -t azure/gpt-rag`
@@ -405,7 +492,6 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
 4. Logs you into Azure Developer CLI: `azd auth login`.
 
-> [!NOTE]
 > Ensure your admin account is correctly configured with Authenticator.
 
   <https://github.com/user-attachments/assets/f34a13eb-b045-40c9-8f99-edc4dc9d0d15>
@@ -445,8 +531,7 @@ From [Standard Zero-Trust Architecture](https://github.com/Azure/GPT-RAG/blob/ma
 
     <https://github.com/user-attachments/assets/aa248d9b-b1eb-42e3-9e6c-5e41bfdf5484>
 
-> [!NOTE]
-> **If you encounter an error with `azd deploy`:** 
+> **If you find an error with `azd deploy`:** 
 
 ```
 ERROR: getting target resource: getting default resource groups for environment:
@@ -467,14 +552,16 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
 > For example: <br/>  
 > If `main.parameters.json` contains `"location": "westus2"`, make sure your environment has `AZURE_LOCATION=westus2`.
 
+</details>
+
 > [!NOTE]
-> A `golden dataset` for RAG is your trusted, `curated set of documents or files that the system retrieves from when answering questions`. It’s a clean, accurate, and `representative subset of all possible data free of noise and errors`, so the model always pulls reliable context. Is a `subset of files, for example, and known Q&A pairs chosen from the larger data source.` These are the “benchmark” `questions where the correct answers are already known`, so they can be `used later to measure system accuracy and performance`. Other `expert users are free to ask additional questions during testing, but those will still pull context from the same curated files in the golden dataset (subset datasource)`. In short, it’s the trusted evaluation set for your proof of concept for example.
+> A `golden dataset` for RAG is your trusted `curated set of documents or files that the system retrieves from when answering questions`. It’s a clean, accurate, and `representative subset of all possible data free of noise and errors`, so the model always pulls reliable context. Is a `subset of files, for example, and known Q&A pairs chosen from the larger data source.` These are the “benchmark” `questions where the correct answers are already known`, so they can be `used later to measure system accuracy and performance`. Other `expert users are free to ask additional questions during testing, but those will still pull context from the same curated files in the golden dataset (subset datasource)`. In short, it’s the trusted evaluation set for your proof of concept for example.
 
 <img width="411" height="243" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/40682ec2-77e4-4413-88e5-d343f036f084" />
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1413-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-11-03</p>
+  <img src="https://img.shields.io/badge/Total%20views-1386-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-11-12</p>
 </div>
 <!-- END BADGE -->
