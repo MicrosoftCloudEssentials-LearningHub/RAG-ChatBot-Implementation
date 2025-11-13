@@ -14,6 +14,7 @@ Last updated: 2025-11-12
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Connect with partners](https://marketplace.microsoft.com/en-us/marketplace/partner-dir/)
 - [Microsoft Docs - Azure resources docs](https://github.com/MicrosoftDocs) - backend specifications
 - [Front Door limits](https://github.com/MicrosoftDocs/azure-docs/blob/main/includes/front-door-limits.md)
 - [Front Door routing limits](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits)
