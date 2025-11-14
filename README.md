@@ -46,7 +46,8 @@ flowchart LR
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
-
+    
+- [Azure Updates](https://azure.microsoft.com/en-us/updates/)
 - [Connect with partners](https://marketplace.microsoft.com/en-us/marketplace/partner-dir/)
 - [Microsoft Docs - Azure resources docs](https://github.com/MicrosoftDocs) - backend specifications
 - [Front Door limits](https://github.com/MicrosoftDocs/azure-docs/blob/main/includes/front-door-limits.md)
