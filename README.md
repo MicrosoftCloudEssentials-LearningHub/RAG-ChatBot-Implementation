@@ -92,6 +92,9 @@ flowchart LR
 > In the context of developing an E2E solution or application. Each stage builds confidence (technical, functional, and strategical), until we ready to scale and support the solution in the real world. Think of them as milestones in the journey from idea to production:
 
 `Idea → PoC → PoV → MVP → Dev → Test → UAT → Prod → Continuous Improvement`
+> - PoC: Build a minimal version to prove that the `core idea` or `technology can work` → `Infrastructure setup, basic UI, simple workflows, mock data`
+> - PoV: Aligns with `business goals and KPIs` → `Stakeholder engagement`
+> - MVP: Usable `product with core features` → `Set of features that delivers value and can be deployed` → Dev, Test, UAT (User Acceptance Testing), Prod
 
 <details>
 <summary><b>Detailed phases</b> (Click to expand)</summary>
