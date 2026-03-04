@@ -11,6 +11,55 @@ Last updated: 2025-11-12
 
 ----------
 
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+    
+- [Azure Updates](https://azure.microsoft.com/en-us/updates/)
+- [Connect with partners](https://marketplace.microsoft.com/en-us/marketplace/partner-dir/)
+- [Microsoft Docs - Azure resources docs](https://github.com/MicrosoftDocs) - backend specifications
+- [Front Door limits](https://github.com/MicrosoftDocs/azure-docs/blob/main/includes/front-door-limits.md)
+- [Front Door routing limits](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits)
+- [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql on prem/Sharepoint
+- `How we managed PII?`
+  - [Detect and redact Personally Identifying Information in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii): If you're building on existing solutions and want to add layers via APIs or SDKs, consider using Azure AI language tools to identify and extract Personally Identifiable Information (PII).
+  - [Presidio - Data Protection and De-identification SDK](https://github.com/microsoft/presidio): When you need an `open-source option for detecting and managing sensitive data, Presidio` is a great fit. It can be `integrated into your systems to detect, redact, mask, and anonymize PII across text, images, and structured data.`
+  - [How data is protected and audited in Microsoft 365 and Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing): If you're working with Microsoft 365 Copilot and need to understand its data protection model, this overview explains how it handles security and compliance.
+  - [Considerations to manage Microsoft 365 Copilot and Channel Agent in Teams for security and compliance](https://learn.microsoft.com/en-us/purview/ai-m365-copilot-considerations): When managing compliance across Copilot deployments, Microsoft Purview offers tools to help govern data securely.
+- [Azure Developer CLI commands overview](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands)
+- [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
+- [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
+- [Integrate Azure services with virtual networks for network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services)
+- [GPT-4 and GPT-4 Turbo models max tokens](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-models)
+- [GPT-4 and GPT-4 Turbo model availability](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-model-availability)
+- [View the service principal for a managed identity using the Azure portal](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-to-view-managed-identity-service-principal?pivots=identity-mi-service-principal-portal#view-the-service-principal-for-a-managed-identity-using-the-azure-portal)
+- [Microsoft.Search searchServices bicep template](https://learn.microsoft.com/en-us/azure/templates/microsoft.search/searchservices?pivots=deployment-language-bicep)
+- [Recover/Purge a deleted resource](https://learn.microsoft.com/en-us/azure/ai-services/recover-purge-resources?tabs=azure-portal#recover-a-deleted-resource)
+- [TechWorkshop L300: Win the database acceleration](https://microsoft.github.io/TechExcel-Win-the-Database-Platform/)
+- [MSFT - Multi-Agent Custom Automation Engine Solution Accelerator](https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator?tab=readme-ov-file)
+
+</details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Where to start?](#where-to-start)
+- [Basic Architecture](#basic-architecture)
+  - [Important Considerations for Production Environment](#important-considerations-for-production-environment)
+- [Zero Trust Architecture](#zero-trust-architecture)
+  - [Step 0.1: Install azd](#step-01-install-azd)
+  - [Step 0.2: Install PowerShell 7](#step-02-install-powershell-7)
+  - [Step 1: Download the repository](#step-1-download-the-repository)
+  - [Step 2: Enable network isolation](#step-2-enable-network-isolation)
+  - [Step 3: Login to Azure](#step-3-login-to-azure)
+  - [Step 4: Deploy the insfrastructure](#step-4-deploy-the-insfrastructure)
+  - [Step 5: VM Login](#step-5-vm-login)
+  - [Step 6: Install PowerShell 7 in the vm](#step-6-install-powershell-7-in-the-vm)
+  - [Step 7: Update azd on the VM](#step-7-update-azd-on-the-vm)
+  - [Step 8: Application deployment](#step-8-application-deployment)
+
+</details>
+
 > `How we move from basic coding all the way to AI agents?`
 
 
@@ -64,53 +113,6 @@ flowchart LR
 > - Use human‑in‑the‑loop ➝ `When high‑risk or domain‑sensitive answers`; Show shortlisted snippets for human review before final LLM response.
 > </details>
 
-<details>
-<summary><b>List of References</b> (Click to expand)</summary>
-    
-- [Azure Updates](https://azure.microsoft.com/en-us/updates/)
-- [Connect with partners](https://marketplace.microsoft.com/en-us/marketplace/partner-dir/)
-- [Microsoft Docs - Azure resources docs](https://github.com/MicrosoftDocs) - backend specifications
-- [Front Door limits](https://github.com/MicrosoftDocs/azure-docs/blob/main/includes/front-door-limits.md)
-- [Front Door routing limits](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits)
-- [GPT-RAG Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) - also in charge of sql on prem/Sharepoint
-- `How we managed PII?`
-  - [Detect and redact Personally Identifying Information in text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii): If you're building on existing solutions and want to add layers via APIs or SDKs, consider using Azure AI language tools to identify and extract Personally Identifiable Information (PII).
-  - [Presidio - Data Protection and De-identification SDK](https://github.com/microsoft/presidio): When you need an `open-source option for detecting and managing sensitive data, Presidio` is a great fit. It can be `integrated into your systems to detect, redact, mask, and anonymize PII across text, images, and structured data.`
-  - [How data is protected and audited in Microsoft 365 and Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing): If you're working with Microsoft 365 Copilot and need to understand its data protection model, this overview explains how it handles security and compliance.
-  - [Considerations to manage Microsoft 365 Copilot and Channel Agent in Teams for security and compliance](https://learn.microsoft.com/en-us/purview/ai-m365-copilot-considerations): When managing compliance across Copilot deployments, Microsoft Purview offers tools to help govern data securely.
-- [Azure Developer CLI commands overview](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands)
-- [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
-- [What is PowerShell?](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5)
-- [Integrate Azure services with virtual networks for network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services)
-- [GPT-4 and GPT-4 Turbo models max tokens](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-models)
-- [GPT-4 and GPT-4 Turbo model availability](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-model-availability)
-- [View the service principal for a managed identity using the Azure portal](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-to-view-managed-identity-service-principal?pivots=identity-mi-service-principal-portal#view-the-service-principal-for-a-managed-identity-using-the-azure-portal)
-- [Microsoft.Search searchServices bicep template](https://learn.microsoft.com/en-us/azure/templates/microsoft.search/searchservices?pivots=deployment-language-bicep)
-- [Recover/Purge a deleted resource](https://learn.microsoft.com/en-us/azure/ai-services/recover-purge-resources?tabs=azure-portal#recover-a-deleted-resource)
-- [TechWorkshop L300: Win the database acceleration](https://microsoft.github.io/TechExcel-Win-the-Database-Platform/)
-- [MSFT - Multi-Agent Custom Automation Engine Solution Accelerator](https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator?tab=readme-ov-file)
-
-</details>
-
-<details>
-<summary><b>Table of Content</b> (Click to expand)</summary>
-
-- [Where to start?](#where-to-start)
-- [Basic Architecture](#basic-architecture)
-  - [Important Considerations for Production Environment](#important-considerations-for-production-environment)
-- [Zero Trust Architecture](#zero-trust-architecture)
-  - [Step 0.1: Install azd](#step-01-install-azd)
-  - [Step 0.2: Install PowerShell 7](#step-02-install-powershell-7)
-  - [Step 1: Download the repository](#step-1-download-the-repository)
-  - [Step 2: Enable network isolation](#step-2-enable-network-isolation)
-  - [Step 3: Login to Azure](#step-3-login-to-azure)
-  - [Step 4: Deploy the insfrastructure](#step-4-deploy-the-insfrastructure)
-  - [Step 5: VM Login](#step-5-vm-login)
-  - [Step 6: Install PowerShell 7 in the vm](#step-6-install-powershell-7-in-the-vm)
-  - [Step 7: Update azd on the VM](#step-7-update-azd-on-the-vm)
-  - [Step 8: Application deployment](#step-8-application-deployment)
-
-</details>
 
 > In the context of developing an E2E solution or application. Each stage builds confidence (technical, functional, and strategical), until we ready to scale and support the solution in the real world. Think of them as milestones in the journey from idea to production:
 
