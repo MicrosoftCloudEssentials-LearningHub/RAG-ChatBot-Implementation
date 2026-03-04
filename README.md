@@ -7,10 +7,9 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-11-12
+Last updated: 2026-03-04
 
 ----------
-
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
@@ -62,7 +61,6 @@ Last updated: 2025-11-12
 
 > `How we move from basic coding all the way to AI agents?`
 
-
 ```mermaid
 flowchart LR
     A[Scripting: Line-by-line instructions] --> B[Machine Learning: Packages + statistical foundations]
@@ -101,7 +99,7 @@ flowchart LR
 > - Add embeddings + [vector search](https://learn.microsoft.com/en-us/azure/search/vector-search-ranking) ➝ `When queries are open‑ended or paraphrased`; embed query and docs, run ANN similarity to surface semantically relevant passages.
 > - Use hybrid (sparse + dense) search ➝ `When you need precision and semantic recall`; apply metadata/keyword filters first, then run vector similarity on the filtered set and combine scores.
 > - Apply metadata‑first retrieval ➝ `When tenant/product/date matter`; filter by metadata to narrow scope, then run vector or keyword search inside that subset.
-> - Chunk long documents ➝` When docs exceed model context`; split into passages, embed chunks, and retrieve at passage level to build context for the LLM.
+> - Chunk long documents ➝`When docs exceed model context`; split into passages, embed chunks, and retrieve at passage level to build context for the LLM.
 > - Add a reranker ➝ `When top‑k contains noise`; rerank retrieved passages with a lightweight model or LLM to pick the best context before generation.
 > - Use caching for hot queries ➝ `When queries repeat`; cache top‑k results or final answers (Redis) to cut embedding and LLM costs and reduce latency.
 > - Embed on‑demand / incremental re‑embed ➝ `When corpus is large or changing`; embed only new/high‑value docs or re‑embed incrementally to control cost.
@@ -111,12 +109,13 @@ flowchart LR
 > - Add monitoring, governance, and security ➝ `When production or sensitive data`(ALWAYS only OPTIONAL for DEMO with DUMMY data); log relevance/latency, enforce access controls, encrypt vectors, and audit usage.
 > - Scale vector infra (tune index) ➝ `When throughput/latency SLAs matter`; tune [ANN](https://learn.microsoft.com/en-us/azure/search/vector-search-ranking#about-ann) (Approximate Nearest Neighbor) index parameters, sharding, and replica strategy in your vector store.
 > - Use human‑in‑the‑loop ➝ `When high‑risk or domain‑sensitive answers`; Show shortlisted snippets for human review before final LLM response.
+>
 > </details>
-
 
 > In the context of developing an E2E solution or application. Each stage builds confidence (technical, functional, and strategical), until we ready to scale and support the solution in the real world. Think of them as milestones in the journey from idea to production:
 
 `Idea → PoC → PoV → MVP → Dev → Test → UAT → Prod → Continuous Improvement`
+>
 > - PoC: Build a minimal version to prove that the `core idea` or `technology can work` → `Infrastructure setup, basic UI, simple workflows, mock data`
 > - PoV: Aligns with `business goals and KPIs` → `Stakeholder engagement`
 > - MVP: Usable `product with core features` → `Set of features that delivers value and can be deployed` → Dev, Test, UAT (User Acceptance Testing), Prod
@@ -623,7 +622,7 @@ gpt-rag-resource-group: resource not found: 0 resource groups with prefix or suf
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1386-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-11-12</p>
+  <img src="https://img.shields.io/badge/Total%20views-1337-limegreen" alt="Total views">
+  <p>Refresh Date: 2026-03-04</p>
 </div>
 <!-- END BADGE -->
