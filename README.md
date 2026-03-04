@@ -49,7 +49,7 @@ flowchart LR
 > <details> <summary><b> Quick explanation about trends: </b> (Click to expand)</summary>
 >
 > - LLM + AI Search is enough ➝ `When Knowledge Base is small and queries predictable`; use metadata/keyword filters to retrieve exact passages and pass them to the LLM for generation.
-> - Add embeddings + vector search ➝ `When queries are open‑ended or paraphrased`; embed query and docs, run ANN similarity to surface semantically relevant passages.
+> - Add embeddings + [vector search](https://learn.microsoft.com/en-us/azure/search/vector-search-ranking) ➝ `When queries are open‑ended or paraphrased`; embed query and docs, run ANN similarity to surface semantically relevant passages.
 > - Use hybrid (sparse + dense) search ➝ `When you need precision and semantic recall`; apply metadata/keyword filters first, then run vector similarity on the filtered set and combine scores.
 > - Apply metadata‑first retrieval ➝ `When tenant/product/date matter`; filter by metadata to narrow scope, then run vector or keyword search inside that subset.
 > - Chunk long documents ➝` When docs exceed model context`; split into passages, embed chunks, and retrieve at passage level to build context for the LLM.
