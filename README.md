@@ -44,6 +44,26 @@ flowchart LR
 > [!NOTE]
 > A landing zone is a general `cloud framework that sets up the core structure for all workloads`. Each use case (like an app, data pipeline, or API) then builds on top of this framework, using the `same environments (Dev → Test → UAT → Prod) and CI/CD pipelines to move code safely into production.` It’s general by design, but `applied per use case.`
 
+> [!TIP]
+> Start simple (LLM + AI Search); add embeddings/vector search when keyword recall fails; add hybrid, reranker, and orchestration as scale, accuracy, and workflow complexity grow.
+> <details> <summary><b> Quick explanation about trends: </b> (Click to expand)</summary>
+>
+> - LLM + AI Search is enough ➝ `When Knowledge Base is small and queries predictable`; use metadata/keyword filters to retrieve exact passages and pass them to the LLM for generation.
+> - Add embeddings + vector search ➝ `When queries are open‑ended or paraphrased`; embed query and docs, run ANN similarity to surface semantically relevant passages.
+> - Use hybrid (sparse + dense) search ➝ `When you need precision and semantic recall`; apply metadata/keyword filters first, then run vector similarity on the filtered set and combine scores.
+> - Apply metadata‑first retrieval ➝ `When tenant/product/date matter`; filter by metadata to narrow scope, then run vector or keyword search inside that subset.
+> - Chunk long documents ➝` When docs exceed model context`; split into passages, embed chunks, and retrieve at passage level to build context for the LLM.
+> - Add a reranker ➝ `When top‑k contains noise`; rerank retrieved passages with a lightweight model or LLM to pick the best context before generation.
+> - Use caching for hot queries ➝ `When queries repeat`; cache top‑k results or final answers (Redis) to cut embedding and LLM costs and reduce latency.
+> - Embed on‑demand / incremental re‑embed ➝ `When corpus is large or changing`; embed only new/high‑value docs or re‑embed incrementally to control cost.
+> - Add selective embedding ➝ `When cost matters`; embed only high‑value document types (SLA docs, policies, manuals) and use keyword search for the rest.
+> - Add reranking + citation extraction ➝ `When answers must be precise or auditable`; rerank and extract exact snippets with source metadata for the LLM to cite.
+> - Introduce orchestration / Semantic Kernel / Agent framework / etc ➝ `When workflows are multi‑step or stateful`; orchestrate retrieval, tool calls, planning, memory, and multi‑turn logic around the LLM.
+> - Add monitoring, governance, and security ➝ `When production or sensitive data`(ALWAYS only OPTIONAL for DEMO with DUMMY data); log relevance/latency, enforce access controls, encrypt vectors, and audit usage.
+> - Scale vector infra (tune index) ➝ `When throughput/latency SLAs matter`; tune [ANN](https://learn.microsoft.com/en-us/azure/search/vector-search-ranking#about-ann) (Approximate Nearest Neighbor) index parameters, sharding, and replica strategy in your vector store.
+> - Use human‑in‑the‑loop ➝ `When high‑risk or domain‑sensitive answers`; Show shortlisted snippets for human review before final LLM response.
+> </details>
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
     
