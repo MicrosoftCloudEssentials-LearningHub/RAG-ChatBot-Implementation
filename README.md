@@ -13,7 +13,9 @@ Last updated: 2026-03-04
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
-    
+
+- [Azure status history](https://azure.status.microsoft/en-us/status/history/)
+- [Claude Status](https://status.claude.com/)    
 - [Azure Updates](https://azure.microsoft.com/en-us/updates/)
 - [Connect with partners](https://marketplace.microsoft.com/en-us/marketplace/partner-dir/)
 - [Microsoft Docs - Azure resources docs](https://github.com/MicrosoftDocs) - backend specifications
